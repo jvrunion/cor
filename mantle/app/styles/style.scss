@@ -1,0 +1,184 @@
+@import "bootstrap-sass/lib/bootstrap";
+
+/* Put your CSS here */
+html, body {
+	margin: 30px 0;
+	background-color: rgb(239, 239, 239);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(239, 239, 239)), to(rgb(255, 255, 255)));
+	background-image: -webkit-linear-gradient(top, rgb(239, 239, 239), rgb(255, 255, 255));
+	background-image: -moz-linear-gradient(top, #efefef, white);
+	background-image: -o-linear-gradient(top, #efefef, white);
+	background-image: linear-gradient(to bottom, rgb(233, 233, 233), rgb(255, 255, 255));
+	height: 100%;
+	background-attachment: fixed;
+}
+
+body {
+	color: rgb(129, 129, 129);
+}
+
+.navbar-default {
+	background-color: rgb(68, 68, 68);
+	border-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.navbar-default .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 100;
+/*	margin-left: 3%;*/
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: rgb(217, 233, 224);
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(190, 189, 189);
+}
+.brand-pure {
+	color: rgb(250, 185, 115);
+	font-weight: 200;
+	padding: 0px;
+}
+a.content-brand {
+	font-size: 24px;
+	font-weight: 100;
+	color: rgb(75, 172, 156);
+}
+strong.routes-group {
+	font-weight: 100;
+	font-size: 18px;
+}
+.list-group {
+	margin-bottom: 20px;
+	padding-left: 0;
+	margin-top: 15px;
+	border-radius: 8px 8px 8px 8px;
+	display: block;
+	background: rgb(114, 218, 213);
+}
+.list-group-item {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: rgb(250, 185, 115);
+	border: 1px solid rgb(248, 158, 61);
+	color: rgb(255, 255, 255);
+	text-shadow: -4px 1px rgb(250, 185, 115);
+	font-size: 18px;
+	font-weight: 100;
+}
+.well h1, .h1 {
+	font-size: 40px;
+	font-weight: 100;
+	padding: 0px 0px 10px 20px;
+	color: rgb(34, 19, 3);
+}
+.panel {
+	position:relative;
+}
+.panel h2 {
+	font-weight: 100;
+	font-size: 26px;
+	padding: 0px 0px 10px 20px;
+	color: #000;
+}
+.panel p {
+	font-weight: 100;
+	font-size: 18px;
+	padding: 0px 10px 10px 20px;
+}
+.well img {
+	max-width: 100%;
+	width: 100%;
+}
+.panel-blurb {
+	position: relative;
+	width: 100%;
+	padding-left: 20px;
+	background: rgb(0, 0, 0);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: rgb(255, 255, 255);
+	font-size: 26px;
+	font-weight: 100;
+	top: -55px;
+	opacity: 0.85;
+}
+footer {
+	background: rgb(51, 51, 51);
+	padding: 20px 0px 0px 0px;
+	color: rgb(255, 255, 255);
+	overflow: auto;
+	width: 100%;
+}
+.mega-footer {
+	list-style: none;
+	margin-left: 0px;
+	width: 100%;
+	overflow: auto;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	box-shadow: 0px 5px 20px rgb(34, 34, 34);
+}
+.mega-footer-item {
+	font-weight: 100;
+	font-size: 15px;
+	float: left;
+	width: 15%;
+	border-left: 1px solid rgb(68, 68, 68);
+	border-bottom: 1px solid rgb(34, 34, 34);
+	margin-bottom: 10px;
+	margin-right: 20px;
+	padding-left: 10px;
+	border-radius: 0px 0px 0px 8px;
+	line-height: 45px;
+	padding-right: 10px;
+}
+.mega-header {
+	list-style: none;
+	margin-left:0px;
+	width:100%;
+}
+.mega-header-item {
+	font-weight: 100;
+	font-size: 16px;
+	float: left;
+	width: auto;
+	color: rgb(250, 185, 115);
+	margin-right: 20px;
+	padding-left: 10px;
+	border-radius: 0px 0px 0px 4px;
+	line-height: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+.mega-header-item:hover {
+	color:#fff;
+	cursor: pointer;
+}
+
+.mega-footer-item:hover {
+	background: rgb(68, 68, 68);
+	border-top-color: none;
+	border-right-color: none;
+	border-left-color: none;
+	cursor: pointer;
+	text-shadow:1px 1px #000;
+	border-radius: 0px;
+}
+.comment-container {
+	width: 100%;
+	background: rgb(68, 68, 68);
+	float: left;
+	clear: both;
+	padding: 20px 0px 95px 35px;
+	min-height:200px;
+}
+
+.disqus-me {
+	width: 90%;
+	margin: 0px auto;
+}
