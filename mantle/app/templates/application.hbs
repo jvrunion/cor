@@ -1,0 +1,72 @@
+<div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">C<span class="brand-pure">O</span>RE<span class="brand-pure">U</span>I</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="mega-header">
+                <li class="mega-header-item">Mega</li>
+                <li class="mega-header-item">Menu</li>
+                <li class="mega-header-item">System</li>
+                <li class="mega-header-item">For</li>
+                <li class="mega-header-item">Site</li>
+                <li class="mega-header-item">Navigation</li>                
+            </ul>        
+        </div>
+    </nav>
+    <div class="container-fluid" id="main">
+        <div class="row">
+            <div>
+                <div class="col-md-3">
+                    <div class="well sidebar-nav">
+                        <strong class="routes-group">C<span class="brand-pure">O</span>REUI</strong>
+                        <ul class="list-group">
+                        {{#each item in controller}}
+                            <li class="list-group-item">{{item}}</li>
+                        {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    {{outlet}}
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+        <footer>
+            <ul class="mega-footer">
+                <li class="mega-footer-item">Mega</li>
+                <li class="mega-footer-item">Menu</li>
+                <li class="mega-footer-item">System</li>
+                <li class="mega-footer-item">For</li>
+                <li class="mega-footer-item">Site</li>
+                <li class="mega-footer-item">Navigation</li>
+            </ul>
+            <div class="comment-container">
+                <div class="disqus-me">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                        var disqus_shortname = 'freshjs'; // required: replace example with your forum shortname
+
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>                    
+                </div>
+            </div>
+        </footer>
+        </div>
+    </div>
+</div>
