@@ -1,5 +1,5 @@
 @import "bootstrap-sass/lib/bootstrap";
-
+@import "bootstrap-sass/lib/_glyphicons";
 /* Put your CSS here */
 html, body {
 	margin: 30px 0;
@@ -16,9 +16,8 @@ html, body {
 body {
 	color: rgb(129, 129, 129);
 }
-
 .navbar-default {
-	background-color: rgb(68, 68, 68);
+	background-color: rgb(27, 27, 27);
 	border-color: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
@@ -27,7 +26,6 @@ body {
 	color: #fff;
 	font-size: 25px;
 	font-weight: 100;
-/*	margin-left: 3%;*/
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: rgb(217, 233, 224);
@@ -35,14 +33,14 @@ body {
 	color: rgb(190, 189, 189);
 }
 .brand-pure {
-	color: rgb(250, 185, 115);
+	color: rgb(248, 46, 8);
 	font-weight: 200;
 	padding: 0px;
 }
 a.content-brand {
 	font-size: 24px;
 	font-weight: 100;
-	color: rgb(75, 172, 156);
+	color: rgb(248, 46, 8);
 }
 strong.routes-group {
 	font-weight: 100;
@@ -61,18 +59,31 @@ strong.routes-group {
 	display: block;
 	padding: 10px 15px;
 	margin-bottom: -1px;
-	background-color: rgb(250, 185, 115);
-	border: 1px solid rgb(248, 158, 61);
+	background-color: rgb(248, 46, 8);
+	border: 1px solid rgb(248, 64, 30);
 	color: rgb(255, 255, 255);
-	text-shadow: -4px 1px rgb(250, 185, 115);
-	font-size: 18px;
+	text-shadow: -4px 1px rgb(248, 46, 8);
+	font-size: 15px;
 	font-weight: 100;
 }
-.well h1, .h1 {
-	font-size: 40px;
+.list-group-item:hover {
+	border-top: 1px solid rgb(224, 47, 14);
+	cursor: pointer;
+	background-color: rgb(246, 66, 33);
+	text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.well h1 {
+	font-size: 30px;
 	font-weight: 100;
-	padding: 0px 0px 10px 20px;
+	padding: 0px;
 	color: rgb(34, 19, 3);
+	opacity: .35;
+	margin-top: 0px;
+}
+
+h1.hero {
+	opacity: 1.0;
+	font-size: 50px
 }
 .panel {
 	position:relative;
@@ -80,13 +91,16 @@ strong.routes-group {
 .panel h2 {
 	font-weight: 100;
 	font-size: 26px;
-	padding: 0px 0px 10px 20px;
+	padding: 0px 0px 10px 10px;
 	color: #000;
 }
 .panel p {
 	font-weight: 100;
-	font-size: 18px;
+	font-size: 16px;
 	padding: 0px 10px 10px 20px;
+}
+.well.sidebar-nav{
+	margin-left: 25px;
 }
 .well img {
 	max-width: 100%;
@@ -145,7 +159,7 @@ footer {
 	font-size: 16px;
 	float: left;
 	width: auto;
-	color: rgb(250, 185, 115);
+	color: rgb(248, 46, 8);
 	margin-right: 20px;
 	padding-left: 10px;
 	border-radius: 0px 0px 0px 4px;
@@ -159,15 +173,13 @@ footer {
 	color:#fff;
 	cursor: pointer;
 }
-
 .mega-footer-item:hover {
-	background: rgb(68, 68, 68);
-	border-top-color: none;
-	border-right-color: none;
-	border-left-color: none;
+	background: rgb(248, 46, 8);
 	cursor: pointer;
-	text-shadow:1px 1px #000;
-	border-radius: 0px;
+	text-shadow: 1px 1px rgb(0, 0, 0);
+	border-radius: 0px 0px 0px 4px;
+	border-right: 1px solid rgba(10, 10, 10, 0.75);
+	border-bottom: 1px solid rgb(255, 105, 68);
 }
 .comment-container {
 	width: 100%;
@@ -177,8 +189,16 @@ footer {
 	padding: 20px 0px 95px 35px;
 	min-height:200px;
 }
-
 .disqus-me {
 	width: 90%;
 	margin: 0px auto;
+}
+.carousel-caption {
+	left: 20%;
+	right: 20%;
+	padding-bottom: 30px;
+	background: rgba(0, 0, 0, 0.68);
+	font-size: 26px;
+	font-weight: 100;
+	color: rgb(155, 155, 155);
 }
