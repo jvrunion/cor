@@ -1,0 +1,1 @@
+!function(){window.Core=Ember.Application.create()}(),function(){Core.Store=DS.Store.extend(),Core.ApplicationAdapter=DS.FixtureAdapter}(),function(){Core.ApplicationRoute=Ember.Route.extend({model:function(){return["HTML5","CSS3","JavaScript","jQuery","Ember.js","Leaflet.js"]}})}();

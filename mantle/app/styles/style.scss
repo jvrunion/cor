@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-default {
-	background-color: rgb(68, 68, 68);
+	background-color: rgb(27, 27, 27);
 	border-color: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
@@ -27,7 +27,6 @@ body {
 	color: #fff;
 	font-size: 25px;
 	font-weight: 100;
-/*	margin-left: 3%;*/
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: rgb(217, 233, 224);
@@ -35,14 +34,14 @@ body {
 	color: rgb(190, 189, 189);
 }
 .brand-pure {
-	color: rgb(250, 185, 115);
+	color: rgb(248, 46, 8);
 	font-weight: 200;
 	padding: 0px;
 }
 a.content-brand {
 	font-size: 24px;
 	font-weight: 100;
-	color: rgb(75, 172, 156);
+	color: rgb(248, 46, 8);
 }
 strong.routes-group {
 	font-weight: 100;
@@ -61,11 +60,11 @@ strong.routes-group {
 	display: block;
 	padding: 10px 15px;
 	margin-bottom: -1px;
-	background-color: rgb(250, 185, 115);
-	border: 1px solid rgb(248, 158, 61);
+	background-color: rgb(248, 46, 8);
+	border: 1px solid rgb(248, 64, 30);
 	color: rgb(255, 255, 255);
-	text-shadow: -4px 1px rgb(250, 185, 115);
-	font-size: 18px;
+	text-shadow: -4px 1px rgb(248, 46, 8);
+	font-size: 15px;
 	font-weight: 100;
 }
 .well h1, .h1 {
@@ -87,6 +86,9 @@ strong.routes-group {
 	font-weight: 100;
 	font-size: 18px;
 	padding: 0px 10px 10px 20px;
+}
+.well.sidebar-nav{
+	margin-left: 25px;
 }
 .well img {
 	max-width: 100%;
@@ -145,7 +147,7 @@ footer {
 	font-size: 16px;
 	float: left;
 	width: auto;
-	color: rgb(250, 185, 115);
+	color: rgb(248, 46, 8);
 	margin-right: 20px;
 	padding-left: 10px;
 	border-radius: 0px 0px 0px 4px;
@@ -159,14 +161,10 @@ footer {
 	color:#fff;
 	cursor: pointer;
 }
-
 .mega-footer-item:hover {
-	background: rgb(68, 68, 68);
-	border-top-color: none;
-	border-right-color: none;
-	border-left-color: none;
+	background: rgb(248, 114, 8);
 	cursor: pointer;
-	text-shadow:1px 1px #000;
+	text-shadow: 1px 1px rgb(0, 0, 0);
 	border-radius: 0px;
 }
 .comment-container {
