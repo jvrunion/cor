@@ -1,5 +1,4 @@
 @import "bootstrap-sass/lib/bootstrap";
-@import "bootstrap-sass/lib/_glyphicons";
 /* Put your CSS here */
 html, body {
 	margin: 30px 0;
@@ -15,6 +14,10 @@ html, body {
 
 body {
 	color: rgb(129, 129, 129);
+}
+#main {
+	margin: 0px auto;
+	width: 90%;
 }
 .navbar-default {
 	background-color: rgb(27, 27, 27);
@@ -81,6 +84,24 @@ strong.routes-group {
 	margin-top: 0px;
 }
 
+.well {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: whitesmoke;
+	border: 1px solid rgb(227, 227, 227);
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	overflow: auto;
+}
+
+.well.sidebar-nav {
+	margin-left: 25px;
+/*	position: fixed;*/
+/*	width: 21.22%;*/
+}
+
 h1.hero {
 	opacity: 1.0;
 	font-size: 50px
@@ -99,32 +120,46 @@ h1.hero {
 	font-size: 16px;
 	padding: 0px 10px 10px 20px;
 }
-.well.sidebar-nav{
-	margin-left: 25px;
-}
 .well img {
 	max-width: 100%;
-	width: 100%;
+	margin: 0px 5%;
+	width: 90%;
+	margin-top: 40px;
+	background: whitesmoke;
+}
+.well img.hero-image {
+	width: 83%;
+	margin: 0px auto;
 }
 .panel-blurb {
 	position: relative;
 	width: 100%;
-	padding-left: 20px;
+	padding-left: 40px;
 	background: rgb(0, 0, 0);
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	color: rgb(255, 255, 255);
 	font-size: 26px;
 	font-weight: 100;
-	top: -55px;
+	top: -77px;
 	opacity: 0.85;
+	margin-bottom: -40px;
+}
+.alpha-content {
+	margin: 0px auto;
+	background: rgb(0, 0, 0);
+	overflow: hidden;
+	display: block;
 }
 footer {
 	background: rgb(51, 51, 51);
-	padding: 20px 0px 0px 0px;
+	padding: 0px;
 	color: rgb(255, 255, 255);
 	overflow: auto;
 	width: 100%;
+	border-top: 1px solid rgb(150, 149, 149);
+	box-shadow: 0px 10px 35px rgb(0, 0, 0);
+	margin-top: 55px;
 }
 .mega-footer {
 	list-style: none;
@@ -169,6 +204,9 @@ footer {
 	margin-bottom: 0px;
 	text-transform: uppercase;
 }
+.mega-header-item.active {
+	color: rgb(255, 255, 255);
+}
 .mega-header-item:hover {
 	color:#fff;
 	cursor: pointer;
@@ -186,11 +224,11 @@ footer {
 	background: rgb(68, 68, 68);
 	float: left;
 	clear: both;
-	padding: 20px 0px 95px 35px;
+	padding: 10px 0px 95px 15px;
 	min-height:200px;
 }
 .disqus-me {
-	width: 90%;
+	width: 100%;
 	margin: 0px auto;
 }
 .carousel-caption {
@@ -201,4 +239,28 @@ footer {
 	font-size: 26px;
 	font-weight: 100;
 	color: rgb(155, 155, 155);
+}
+.carousel-inner {
+	background: #007ea1;
+	display: block;
+	width: 100%;
+	height: auto;
+	line-height: 1;
+	margin: 0px auto;
+	min-height: 350px;
+	max-height: 350px;	
+}
+.set-center {
+	margin:0px auto;
+}
+#main .well {
+	max-width: 1040px;
+	margin:0px auto;
+}
+#map { 
+	height: 350px; 
+	margin-bottom: 15px;
+}
+.leaflet-popup-content {
+	color: rgb(51, 51, 51);
 }
