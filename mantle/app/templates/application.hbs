@@ -67,21 +67,28 @@
     </div>    
 </div>
 <script type="text/javascript">
+    
     var map = L.map('map');
+
     map.locate({setView: true, maxZoom: 12});
+
     function onLocationFound(e) {
-    var radius = e.accuracy / 2;
-    L.marker(e.latlng).addTo(map)
-        .bindPopup("You are within " + radius + " meters from this point").openPopup();
-    L.circle(e.latlng, radius).addTo(map);
+        var radius = e.accuracy / 2;
+        L.marker(e.latlng).addTo(map)
+            .bindPopup("You are within " + radius + " meters from this point").openPopup();
+        L.circle(e.latlng, radius).addTo(map);
     }
+
     function onLocationError(e) {
         alert(e.message);
     }
+
     map.on('locationfound', onLocationFound);  
     map.on('locationerror', onLocationError);            
+
     L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
        maxZoom: 12,
        minZoom: 12
     }).addTo(map);
+
 </script>

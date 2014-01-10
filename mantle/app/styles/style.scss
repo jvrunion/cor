@@ -1,3 +1,84 @@
+/* [09] Fonts
+-------------------------------------------------------*/
+ @font-face {
+    font-family:'SerifaStd45Light';
+    src: url('fonts/serifastd-light-webfont.eot?') format('eot'), url('fonts/serifastd-light-webfont.woff') format('woff'), url('fonts/serifastd-light-webfont.ttf') format('truetype'), url('fonts/serifastd-light-webfont.svg#webfonti40PSMy5') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family:'SerifaStd65Bold';
+    src: url('fonts/serifastd-bold-webfont.eot?') format('eot'), url('fonts/serifastd-bold-webfont.woff') format('woff'), url('fonts/serifastd-bold-webfont.ttf') format('truetype'), url('fonts/serifastd-bold-webfont.svg#webfont6rd2oKQN') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family:'SerifaBold';
+    src: url('fonts/serifa_bold-webfont.eot?'), url('fonts/serifa_bold-webfont.woff') format('woff'), url('fonts/serifa_bold-webfont.ttf') format('truetype'), url('fonts/serifa_bold-webfont.svg#webfontDzRjFeN8') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family:'SerifaBlack';
+    src: url('fonts/serifa_black-webfont.eot?'), url('fonts/serifa_black-webfont.woff') format('woff'), url('fonts/serifa_black-webfont.ttf') format('truetype'), url('fonts/serifa_black-webfont.svg#webfontDzRjFeN8') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family:'SerifaLight';
+    src: url('fonts/serifa_light-webfont.eot?'), url('fonts/serifa_light-webfont.woff') format('woff'), url('fonts/serifa_light-webfont.ttf') format('truetype'), url('fonts/serifa_light-webfont.svg#webfontKqCC3CdP') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family:'SerifaRoman';
+    src: url('fonts/serifa_regular-webfont.eot?'), url('fonts/serifa_regular-webfont.woff') format('woff'), url('fonts/serifa_regular-webfont.ttf') format('truetype'), url('fonts/serifa_regular-webfont.svg#webfonteVsSsEeM') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family:'UniversLTBold';
+    src: url('fonts/universltstd-bold-webfont.eot?'), url('fonts/universltstd-bold-webfont.woff') format('woff'), url('fonts/universltstd-bold-webfont.ttf') format('truetype'), url('fonts/universltstd-bold-webfont.svg#webfontGYp1RLpL') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    /* only has 2 characters in it for a down triangle the letter 's' and ',' */
+    font-family:'TriangleDing';
+    src: url('fonts/guifx_v2_transports-webfont.eot?'), url('fonts/guifx_v2_transports-webfont.woff') format('woff'), url('fonts/guifx_v2_transports-webfont.ttf') format('truetype'), url('fonts/guifx_v2_transports-webfont.svg#webfontlhe9bRIp') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+.Serifa45Light {
+    font-family:'SerifaStd45Light', sans-serif;
+    font-weight: 400;
+}
+.Serifa65Bold {
+    font-family:'SerifaStd65Bold', sans-serif;
+    font-weight: 400;
+}
+.SerifaBold {
+    font-family:'SerifaBold', sans-serif;
+    font-weight: 400;
+}
+.SerifaBlack {
+    font-family:'SerifaBlack', sans-serif;
+    font-weight: 400;
+}
+.SerifaLight {
+    font-family:'SerifaLight', sans-serif;
+    font-weight: 400;
+}
+.SerifaRoman {
+    font-family:'SerifaRoman', sans-serif;
+    font-weight: 400;
+}
+.UniversLTBold {
+    font-family:"UniversLTBold", Arial, Helvetica, "Sans-Serif";
+    font-size-adjust: 0.51;
+    font-weight: 400;
+}
+
 @import "bootstrap-sass/lib/bootstrap";
 /* Put your CSS here */
 html, body {
@@ -110,21 +191,24 @@ h1.hero {
 	position:relative;
 }
 .panel h2 {
-	font-weight: 100;
-	font-size: 26px;
+	font-weight: 700;
+	font-size: 30px;
 	padding: 0px 0px 10px 10px;
-	color: #000;
+	color: rgb(255, 61, 0);
+	font-family: "SerifaLight";
+	text-shadow: 1px 1px rgb(255, 255, 255);
 }
 .panel p {
-	font-weight: 100;
-	font-size: 16px;
+	font-weight: 200;
+	font-size: 18px;
 	padding: 0px 10px 10px 20px;
+	line-height: 22px;
+	color: rgba(0, 0, 0, 0.75);
 }
 .well img {
 	max-width: 100%;
-	margin: 0px 5%;
+	margin: 35px 5% 40px 5%;
 	width: 90%;
-	margin-top: 40px;
 	background: whitesmoke;
 }
 .well img.hero-image {
@@ -134,22 +218,24 @@ h1.hero {
 .panel-blurb {
 	position: relative;
 	width: 100%;
-	padding-left: 40px;
-	background: rgb(0, 0, 0);
+	padding-left: 75px;
+	background: rgb(240, 82, 8);
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: rgb(255, 255, 255);
 	font-size: 26px;
 	font-weight: 100;
 	top: -77px;
-	opacity: 0.85;
-	margin-bottom: -40px;
+	margin-bottom: -50px;
+	padding-right: 75px;
 }
 .alpha-content {
-	margin: 0px auto;
-	background: rgb(0, 0, 0);
+	margin: 0px auto 77px;
+	background: rgba(0, 0, 0, 0.14);
 	overflow: hidden;
 	display: block;
+	padding-top: 5px;
+	box-shadow: inset 0px 0px 20px;
 }
 footer {
 	background: rgb(51, 51, 51);
@@ -189,27 +275,34 @@ footer {
 	margin-left:0px;
 	width:100%;
 }
+.mega-header-item:hover {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	border-bottom: 1px solid rgb(245, 63, 6);
+}
 .mega-header-item {
-	font-weight: 100;
-	font-size: 16px;
+	font-weight: 400;
+	font-size: 18px;
 	float: left;
 	width: auto;
 	color: rgb(248, 46, 8);
 	margin-right: 20px;
 	padding-left: 10px;
-	border-radius: 0px 0px 0px 4px;
-	line-height: 40px;
-	padding-top: 5px;
+	padding-top: 12px;
 	padding-bottom: 5px;
 	margin-bottom: 0px;
 	text-transform: uppercase;
+	padding-right: 10px;
+	border-bottom: 1px rgba(0, 0, 0, 0);
+	height: 50px;
 }
 .mega-header-item.active {
 	color: rgb(255, 255, 255);
-}
-.mega-header-item:hover {
-	color:#fff;
 	cursor: pointer;
+	text-shadow: 1px 1px rgb(0, 0, 0);
+	border-bottom: 2px solid rgb(255, 105, 68);
+	border-radius: 0px;
+	height: 50px;
 }
 .mega-footer-item:hover {
 	background: rgb(248, 46, 8);
@@ -234,21 +327,21 @@ footer {
 .carousel-caption {
 	left: 20%;
 	right: 20%;
-	padding-bottom: 30px;
-	background: rgba(0, 0, 0, 0.68);
-	font-size: 26px;
+	background: rgba(0, 0, 0, 0.88);
+	font-size: 32px;
 	font-weight: 100;
-	color: rgb(155, 155, 155);
+	color: rgb(255, 54, 3);
+	font-family: "SerifaStd45Light";
+	text-shadow: 1px 1px rgb(0, 0, 0);
+	height: 36%;
 }
 .carousel-inner {
-	background: #007ea1;
+	background: rgb(21, 144, 179);
 	display: block;
 	width: 100%;
 	height: auto;
 	line-height: 1;
 	margin: 0px auto;
-	min-height: 350px;
-	max-height: 350px;	
 }
 .set-center {
 	margin:0px auto;
