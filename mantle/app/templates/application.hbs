@@ -74,6 +74,8 @@
 
     var map = L.map('map');
 
+    L.Icon.Default.imagePath = '../images';
+
     map.locate({setView: true, maxZoom: 11});
 
     function onLocationFound(e) {
