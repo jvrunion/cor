@@ -32,7 +32,7 @@
     <div class="row-fluid">
         <footer>
             <!-- map placeholder --> 
-            <h1>Where are you?  Let's take a look...</h1>   
+            <h1>Where are you?</h1>   
             <div id="map"></div>   
             <ul class="mega-footer">
                 <li class="mega-footer-item">Mega</li>
@@ -74,7 +74,9 @@
 
     var map = L.map('map');
 
-    L.Icon.Default.imagePath = '../images';
+    console.log(map);
+
+    L.Icon.Default.imagePath = '../images/';
 
     map.locate({setView: true, maxZoom: 11});
 
