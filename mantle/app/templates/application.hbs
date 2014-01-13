@@ -76,7 +76,9 @@
 
     console.log(map);
 
-    L.Icon.Default.imagePath = '/images/';
+    L.Icon.Default.imagePath = '../images';
+
+    console.log(L.Icon.Default.imagePath);
 
     map.locate({setView: true, maxZoom: 11});
 
