@@ -1,6 +1,6 @@
 /* [09] Fonts
 -------------------------------------------------------*/
- @font-face {
+/* @font-face {
     font-family:'SerifaStd45Light';
     src: url('fonts/serifastd-light-webfont.eot?') format('eot'), url('fonts/serifastd-light-webfont.woff') format('woff'), url('fonts/serifastd-light-webfont.ttf') format('truetype'), url('fonts/serifastd-light-webfont.svg#webfonti40PSMy5') format('svg');
     font-style: normal;
@@ -23,14 +23,14 @@
     src: url('fonts/serifa_black-webfont.eot?'), url('fonts/serifa_black-webfont.woff') format('woff'), url('fonts/serifa_black-webfont.ttf') format('truetype'), url('fonts/serifa_black-webfont.svg#webfontDzRjFeN8') format('svg');
     font-style: normal;
     font-weight: 400;
-}
+}*/
 @font-face {
     font-family:'SerifaLight';
     src: url('fonts/serifa_light-webfont.eot?'), url('fonts/serifa_light-webfont.woff') format('woff'), url('fonts/serifa_light-webfont.ttf') format('truetype'), url('fonts/serifa_light-webfont.svg#webfontKqCC3CdP') format('svg');
     font-style: normal;
     font-weight: 400;
 }
-@font-face {
+/*@font-face {
     font-family:'SerifaRoman';
     src: url('fonts/serifa_regular-webfont.eot?'), url('fonts/serifa_regular-webfont.woff') format('woff'), url('fonts/serifa_regular-webfont.ttf') format('truetype'), url('fonts/serifa_regular-webfont.svg#webfonteVsSsEeM') format('svg');
     font-style: normal;
@@ -42,14 +42,14 @@
     font-style: normal;
     font-weight: 400;
 }
-@font-face {
-    /* only has 2 characters in it for a down triangle the letter 's' and ',' */
+@font-face {*/
+    /* only has 2 characters in it for a down triangle the letter 's' and ',' 
     font-family:'TriangleDing';
     src: url('fonts/guifx_v2_transports-webfont.eot?'), url('fonts/guifx_v2_transports-webfont.woff') format('woff'), url('fonts/guifx_v2_transports-webfont.ttf') format('truetype'), url('fonts/guifx_v2_transports-webfont.svg#webfontlhe9bRIp') format('svg');
     font-style: normal;
     font-weight: 400;
-}
-.Serifa45Light {
+}*/
+/*.Serifa45Light {
     font-family:'SerifaStd45Light', sans-serif;
     font-weight: 400;
 }
@@ -64,12 +64,12 @@
 .SerifaBlack {
     font-family:'SerifaBlack', sans-serif;
     font-weight: 400;
-}
+}*/
 .SerifaLight {
     font-family:'SerifaLight', sans-serif;
     font-weight: 400;
 }
-.SerifaRoman {
+/*.SerifaRoman {
     font-family:'SerifaRoman', sans-serif;
     font-weight: 400;
 }
@@ -77,7 +77,7 @@
     font-family:"UniversLTBold", Arial, Helvetica, "Sans-Serif";
     font-size-adjust: 0.51;
     font-weight: 400;
-}
+}*/
 
 @import "bootstrap-sass/lib/bootstrap";
 
@@ -112,6 +112,10 @@ a {
 
 body {
 	color: rgb(129, 129, 129);
+}
+
+h2, h3 {
+	text-transform: uppercase;
 }
 #main {
 	margin: 0px auto;
@@ -204,33 +208,44 @@ strong.routes-group {
 
 h1.hero {
 	opacity: 1.0;
-	font-size: 50px
+	font-size: 50px;
+	font-family: SerifaLight;
 }
 .panel {
 	position:relative;
 }
 .panel h2 {
-	font-weight: 700;
+	font-weight: 200;
 	font-size: 20px;
-	padding: 0 0 10px 10px;
-	color: rgb(255, 61, 0);
+	padding: 0px 50px;
+	color: rgb(36, 174, 201);
 	font-family: SerifaLight;
-	text-shadow: 1px 1px rgb(255, 255, 255);
 	text-align: center;
-	line-height: 30px;
+	line-height: 25px;
+	text-transform: uppercase;
+	margin: 0px 0px 20px 0px;
 }
 .panel p {
-	font-weight: 200;
-	font-size: 18px;
+	font-weight: 400;
+	font-size: 13px;
 	padding: 0px 10px 10px 20px;
-	line-height: 22px;
+	line-height: 15px;
 	color: rgba(0, 0, 0, 0.75);
 }
 h2 + ul {
-	font-weight: 200;
-	font-size: 18px;
-	color: rgb(0, 0, 0);
-	margin-bottom: 50px;
+	font-weight: 400;
+	font-size: 13px;
+	padding: 0px 10px 10px 20px;
+	line-height: 15px;
+	color: rgba(0, 0, 0, 0.75);
+	margin-left: 40px;
+}
+
+h2 + ul li {
+	border-left: 1px solid rgb(236, 125, 22);
+	padding-left: 10px;
+	margin-bottom: 25px;
+	list-style: none;
 }
 .well img {
 	max-width: 100%;
@@ -266,6 +281,7 @@ h2 + ul {
 	line-height: 30px;
 	text-shadow: 1px 1px rgb(19, 62, 75);
 	font-family: "SerifaLight";
+	text-transform: uppercase;
 }
 .alpha-content {
 	margin: 0px auto 77px;
@@ -304,7 +320,7 @@ footer {
 }
 .mega-footer-item {
 	font-weight: 200;
-	font-size: 20px;
+	font-size: 15px;
 	float: left;
 	width: auto;
 	border: none;
@@ -326,8 +342,8 @@ footer {
 	border-bottom: 1px solid rgb(245, 63, 6);
 }
 .mega-header-item {
-	font-weight: 100;
-	font-size: 20px;
+	font-weight: 400;
+	font-size: 15px;
 	font-family: "SerifaLight";
 	float: left;
 	width: auto;
@@ -369,8 +385,9 @@ footer {
 	font-size: 32px;
 	font-weight: 100;
 	color: rgb(255, 54, 3);
-	font-family: "SerifaStd45Light";
+	font-family: "SerifaLight";
 	text-shadow: 1px 1px rgb(0, 0, 0);
+	text-transform: uppercase;
 }
 .carousel-inner {
 	background: rgb(21, 144, 179);
@@ -378,7 +395,7 @@ footer {
 	width: 100%;
 	height: auto;
 	line-height: 1;
-	margin: 0px auto;
+	margin: 0px auto 25px 0px;
 }
 .set-center {
 	margin:0px auto;
@@ -406,4 +423,8 @@ footer h1 {
 	margin: 20px auto;
 	width: 80%;
 	text-align: center;
+}
+.end-of-line {
+	color: rgb(77, 77, 77);
+/*	text-shadow: 1px 1px rgb(0, 0, 0);*/
 }

@@ -11,11 +11,11 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="mega-header">
-                <li class="mega-header-item">User Xperience</li>
-                <li class="mega-header-item">Ember Generators</li>
-                <li class="mega-header-item active">Maps</li>
-                <li class="mega-header-item">Build Tools</li>
-                <li class="mega-header-item">Package Management</li>
+                <li class="mega-header-item">User Xperience <span class="end-of-line">/</span></li>
+                <li class="mega-header-item">Ember Generators <span class="end-of-line">/</span></li>
+                <li class="mega-header-item active">Maps <span class="end-of-line">/</span></li>
+                <li class="mega-header-item">Build Tools <span class="end-of-line">/</span></li>
+                <li class="mega-header-item">Package Management <span class="end-of-line">/</span></li>
             </ul>        
         </div>
     </nav>
@@ -34,11 +34,11 @@
             <h1>Leaflet.js GEO/Location example...fun with maps!</h1>   
             <div id="map"></div>   
             <ul class="mega-footer">
-                <li class="mega-footer-item">User Xperience /</li>
-                <li class="mega-footer-item">Ember Generators /</li>
-                <li class="mega-footer-item">Maps /</li>
-                <li class="mega-footer-item">Build Tools /</li>                
-                <li class="mega-footer-item">Package Management</li>  
+                <li class="mega-footer-item">User Xperience <span class="end-of-line">/</span></li>
+                <li class="mega-footer-item">Ember Generators <span class="end-of-line">/</span></li>
+                <li class="mega-footer-item">Maps <span class="end-of-line">/</span></li>
+                <li class="mega-footer-item">Build Tools <span class="end-of-line">/</span></li>                
+                <li class="mega-footer-item">Package Management <span class="end-of-line">/</span></li>  
             </ul>
             <div class="comment-container">       
                 <div class="disqus-me">
@@ -67,18 +67,10 @@
     </div>    
 </div>
 <script type="text/javascript">
-
     // L.Icon.Default.imagePath = 'dist/images';
-    L.Icon.Default.imagePath = '/images';    
-    
-    // var map = L.map('map').setView([38.88941, -77.00639], 11);
-
+    L.Icon.Default.imagePath = 'images';    
     var map = L.map('map');
-
-    console.log(map);
-
     console.log(L.Icon.Default.imagePath);
-
     map.locate({setView: true, maxZoom: 11});
 
     function onLocationFound(e) {
@@ -100,7 +92,7 @@
 
     L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
         maxZoom: 14,
-        minZoom: 10
+        minZoom: 09
     }).addTo(map);  
 
 </script>
