@@ -119,11 +119,14 @@ strong.routes-group {
     background: rgb(114, 218, 213);
 }
 .list-group-item:hover {
-	border-top: 1px solid rgb(224, 47, 14);
+	border-top: 1px solid rgb(158, 68, 51);
 	cursor: pointer;
 	background-color: rgb(246, 66, 33);
 	text-shadow: 1px 1px rgb(134, 32, 14);
 	color: rgb(255, 255, 255);
+	border-right: 5px solid rgba(94, 0, 0, 0.5);
+	border-bottom: 1px solid rgb(158, 68, 51);
+	border-left: 1px solid rgb(158, 68, 51);
 }
 .list-group-item {
 	position: relative;
