@@ -1,6 +1,6 @@
 /* [09] Fonts
 -------------------------------------------------------*/
- @font-face {
+/* @font-face {
     font-family:'SerifaStd45Light';
     src: url('fonts/serifastd-light-webfont.eot?') format('eot'), url('fonts/serifastd-light-webfont.woff') format('woff'), url('fonts/serifastd-light-webfont.ttf') format('truetype'), url('fonts/serifastd-light-webfont.svg#webfonti40PSMy5') format('svg');
     font-style: normal;
@@ -11,7 +11,7 @@
     src: url('fonts/serifastd-bold-webfont.eot?') format('eot'), url('fonts/serifastd-bold-webfont.woff') format('woff'), url('fonts/serifastd-bold-webfont.ttf') format('truetype'), url('fonts/serifastd-bold-webfont.svg#webfont6rd2oKQN') format('svg');
     font-style: normal;
     font-weight: 400;
-}
+}*/
 @font-face {
     font-family:'SerifaBold';
     src: url('fonts/serifa_bold-webfont.eot?'), url('fonts/serifa_bold-webfont.woff') format('woff'), url('fonts/serifa_bold-webfont.ttf') format('truetype'), url('fonts/serifa_bold-webfont.svg#webfontDzRjFeN8') format('svg');
@@ -40,21 +40,6 @@
     font-family:'UniversLTBold';
     src: url('fonts/universltstd-bold-webfont.eot?'), url('fonts/universltstd-bold-webfont.woff') format('woff'), url('fonts/universltstd-bold-webfont.ttf') format('truetype'), url('fonts/universltstd-bold-webfont.svg#webfontGYp1RLpL') format('svg');
     font-style: normal;
-    font-weight: 400;
-}
-@font-face {
-    /* only has 2 characters in it for a down triangle the letter 's' and ',' */
-    font-family:'TriangleDing';
-    src: url('fonts/guifx_v2_transports-webfont.eot?'), url('fonts/guifx_v2_transports-webfont.woff') format('woff'), url('fonts/guifx_v2_transports-webfont.ttf') format('truetype'), url('fonts/guifx_v2_transports-webfont.svg#webfontlhe9bRIp') format('svg');
-    font-style: normal;
-    font-weight: 400;
-}
-.Serifa45Light {
-    font-family:'SerifaStd45Light', sans-serif;
-    font-weight: 400;
-}
-.Serifa65Bold {
-    font-family:'SerifaStd65Bold', sans-serif;
     font-weight: 400;
 }
 .SerifaBold {
