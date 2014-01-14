@@ -7,23 +7,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">C<span class="brand-pure">&#213;</span>R UI</a>
+            <a class="navbar-brand" href="#">C<span class="brand-pure">&#213;</span>R</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="mega-header">
-                <li class="mega-header-item">Mega</li>
-                <li class="mega-header-item">Menu</li>
-                <li class="mega-header-item active">System</li>
-                <li class="mega-header-item">For</li>
-                <li class="mega-header-item">Site</li>
-                <li class="mega-header-item">Navigation</li>
+                <li class="mega-header-item">User Xperience <span class="end-of-line">/</span></li>
+                <li class="mega-header-item">Ember GenXerators <span class="end-of-line">/</span></li>
+                <li class="mega-header-item active">Maps <span class="end-of-line">/</span></li>
+                <li class="mega-header-item">Build Tools <span class="end-of-line">/</span></li>
+                <li class="mega-header-item">Package Management <span class="end-of-line">/</span></li>
             </ul>        
         </div>
-    </nav>
+    </nav>      
     <div class="container-fluid" id="main">
         <div class="row-fluid">
             <div class="set-center">
-                <div class="col-md-12">            
+                <div class="col-md-3">
+                    <div class="well">               
+                        <ul class="list-group">
+                        {{#each item in controller}}
+                            <li class="list-group-item">{{item}}</li>
+                        {{/each}}
+                        </ul>
+                    </div>      
+                </div>
+                <div class="col-md-9">            
                     {{outlet}}                                    
                 </div>
             </div>
@@ -31,14 +39,15 @@
     </div>
     <div class="row-fluid">
         <footer>
-            <div id="map"></div>           
+            <!-- map placeholder --> 
+            <h1>Leaflet.js GEO/Location example...fun with maps!</h1>   
+            <div id="map"></div>   
             <ul class="mega-footer">
-                <li class="mega-footer-item">Mega</li>
-                <li class="mega-footer-item">Menu</li>
-                <li class="mega-footer-item">System</li>
-                <li class="mega-footer-item">For</li>
-                <li class="mega-footer-item">Site</li>
-                <li class="mega-footer-item">Navigation</li>
+                <li class="mega-footer-item">User Xperience <span class="end-of-line">/</span></li>
+                <li class="mega-footer-item">Ember Generators <span class="end-of-line">/</span></li>
+                <li class="mega-footer-item">Maps <span class="end-of-line">/</span></li>
+                <li class="mega-footer-item">Build Tools <span class="end-of-line">/</span></li>                
+                <li class="mega-footer-item">Package Management <span class="end-of-line">/</span></li>  
             </ul>
             <div class="comment-container">       
                 <div class="disqus-me">
@@ -55,40 +64,37 @@
                     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>                    
                 </div>
-            </div>
-            <div class="well">               
-                <ul class="list-group">
-                {{#each item in controller}}
-                    <li class="list-group-item">{{item}}</li>
-                {{/each}}
-                </ul>
-            </div>              
+            </div>        
         </footer>
     </div>    
 </div>
 <script type="text/javascript">
-    
-    // var map = L.map('map');
-
-    map.locate({setView: true, maxZoom: 12});
+    // L.Icon.Default.imagePath = 'dist/images';
+    L.Icon.Default.imagePath = 'images';    
+    var map = L.map('map');
+    console.log(L.Icon.Default.imagePath);
+    map.locate({setView: true, maxZoom: 11});
 
     function onLocationFound(e) {
-        var radius = e.accuracy / 2;
-        L.marker(e.latlng).addTo(map)
-            .bindPopup("You are within " + radius + " meters from this point").openPopup();
-        L.circle(e.latlng, radius).addTo(map);
-    }
+            var radius = e.accuracy / 2;
+
+            L.marker(e.latlng).addTo(map)
+                .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+            L.circle(e.latlng, radius).addTo(map);
+        }
+
+    map.on('locationfound', onLocationFound);  
 
     function onLocationError(e) {
         alert(e.message);
     }
 
-    map.on('locationfound', onLocationFound);  
-    map.on('locationerror', onLocationError);            
+    map.on('locationerror', onLocationError);    
 
     L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
-       maxZoom: 12,
-       minZoom: 12
-    }).addTo(map);
+        maxZoom: 14,
+        minZoom: 09
+    }).addTo(map);  
 
 </script>

@@ -1,359 +1,375 @@
 /* [09] Fonts
--------------------------------------------------------*/
- @font-face {
-    font-family:'SerifaStd45Light';
-    src: url('fonts/serifastd-light-webfont.eot?') format('eot'), url('fonts/serifastd-light-webfont.woff') format('woff'), url('fonts/serifastd-light-webfont.ttf') format('truetype'), url('fonts/serifastd-light-webfont.svg#webfonti40PSMy5') format('svg');
-    font-style: normal;
-    font-weight: 400;
-}
+-------------------------------------------------------
+   ================================================== */
 @font-face {
-    font-family:'SerifaStd65Bold';
-    src: url('fonts/serifastd-bold-webfont.eot?') format('eot'), url('fonts/serifastd-bold-webfont.woff') format('woff'), url('fonts/serifastd-bold-webfont.ttf') format('truetype'), url('fonts/serifastd-bold-webfont.svg#webfont6rd2oKQN') format('svg');
-    font-style: normal;
-    font-weight: 400;
-}
-@font-face {
-    font-family:'SerifaBold';
-    src: url('fonts/serifa_bold-webfont.eot?'), url('fonts/serifa_bold-webfont.woff') format('woff'), url('fonts/serifa_bold-webfont.ttf') format('truetype'), url('fonts/serifa_bold-webfont.svg#webfontDzRjFeN8') format('svg');
-    font-style: normal;
-    font-weight: 400;
-}
-@font-face {
-    font-family:'SerifaBlack';
-    src: url('fonts/serifa_black-webfont.eot?'), url('fonts/serifa_black-webfont.woff') format('woff'), url('fonts/serifa_black-webfont.ttf') format('truetype'), url('fonts/serifa_black-webfont.svg#webfontDzRjFeN8') format('svg');
-    font-style: normal;
-    font-weight: 400;
-}
-@font-face {
-    font-family:'SerifaLight';
+    font-family: 'SerifaLight';
     src: url('fonts/serifa_light-webfont.eot?'), url('fonts/serifa_light-webfont.woff') format('woff'), url('fonts/serifa_light-webfont.ttf') format('truetype'), url('fonts/serifa_light-webfont.svg#webfontKqCC3CdP') format('svg');
     font-style: normal;
     font-weight: 400;
 }
 @font-face {
-    font-family:'SerifaRoman';
-    src: url('fonts/serifa_regular-webfont.eot?'), url('fonts/serifa_regular-webfont.woff') format('woff'), url('fonts/serifa_regular-webfont.ttf') format('truetype'), url('fonts/serifa_regular-webfont.svg#webfonteVsSsEeM') format('svg');
-    font-style: normal;
-    font-weight: 400;
-}
-@font-face {
-    font-family:'UniversLTBold';
-    src: url('fonts/universltstd-bold-webfont.eot?'), url('fonts/universltstd-bold-webfont.woff') format('woff'), url('fonts/universltstd-bold-webfont.ttf') format('truetype'), url('fonts/universltstd-bold-webfont.svg#webfontGYp1RLpL') format('svg');
-    font-style: normal;
-    font-weight: 400;
-}
-@font-face {
-    /* only has 2 characters in it for a down triangle the letter 's' and ',' */
-    font-family:'TriangleDing';
-    src: url('fonts/guifx_v2_transports-webfont.eot?'), url('fonts/guifx_v2_transports-webfont.woff') format('woff'), url('fonts/guifx_v2_transports-webfont.ttf') format('truetype'), url('fonts/guifx_v2_transports-webfont.svg#webfontlhe9bRIp') format('svg');
-    font-style: normal;
-    font-weight: 400;
-}
-.Serifa45Light {
-    font-family:'SerifaStd45Light', sans-serif;
-    font-weight: 400;
-}
-.Serifa65Bold {
-    font-family:'SerifaStd65Bold', sans-serif;
-    font-weight: 400;
-}
-.SerifaBold {
-    font-family:'SerifaBold', sans-serif;
-    font-weight: 400;
-}
-.SerifaBlack {
-    font-family:'SerifaBlack', sans-serif;
-    font-weight: 400;
+    font-family: 'Glyphicons Halflings';
+    src: url("../fonts/glyphicons-halflings-regular.eot");
+    src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .SerifaLight {
-    font-family:'SerifaLight', sans-serif;
+    font-family: 'SerifaLight', sans-serif;
     font-weight: 400;
 }
-.SerifaRoman {
-    font-family:'SerifaRoman', sans-serif;
-    font-weight: 400;
-}
-.UniversLTBold {
-    font-family:"UniversLTBold", Arial, Helvetica, "Sans-Serif";
-    font-size-adjust: 0.51;
-    font-weight: 400;
-}
-
 @import "bootstrap-sass/lib/bootstrap";
-/* Put your CSS here */
-html, body {
-	margin: 30px 0;
-	background-color: rgb(239, 239, 239);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(239, 239, 239)), to(rgb(255, 255, 255)));
-	background-image: -webkit-linear-gradient(top, rgb(239, 239, 239), rgb(255, 255, 255));
-	background-image: -moz-linear-gradient(top, #efefef, white);
-	background-image: -o-linear-gradient(top, #efefef, white);
-	background-image: linear-gradient(to bottom, rgb(233, 233, 233), rgb(255, 255, 255));
-	height: 100%;
-	background-attachment: fixed;
-}
-
+/* ===[ Put your CSS here ]=== */
+html,
 body {
-	color: rgb(129, 129, 129);
+    margin: 30px 0;
+    background-color: rgb(239, 239, 239);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(239, 239, 239)), to(rgb(255, 255, 255)));
+    background-image: -webkit-linear-gradient(top, rgb(239, 239, 239), rgb(255, 255, 255));
+    background-image: -moz-linear-gradient(top, #efefef, white);
+    background-image: -o-linear-gradient(top, #efefef, white);
+    background-image: linear-gradient(to bottom, rgb(233, 233, 233), rgb(255, 255, 255));
+    height: 100%;
+    background-attachment: fixed;
 }
+a:hover,
+a:focus {
+    color: rgb(22, 172, 201);
+    text-decoration: underline;
+}
+a {
+    color: rgb(230, 76, 16);
+    text-decoration: none;
+}
+body { color: rgb(129, 129, 129) }
+h2,
+h3 { text-transform: uppercase }
 #main {
-	margin: 0px auto;
-	width: 90%;
+    margin: 0px auto;
+    width: 90%;
 }
-.navbar-default {
+.ember-view .navbar-default {
 	background-color: rgb(27, 27, 27);
 	border-color: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	margin-bottom: 0px;
+	height: 50px;
 }
-.navbar-default .navbar-brand {
-	color: #fff;
-	font-size: 25px;
-	font-weight: 100;
-}
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: rgb(217, 233, 224);
-	background-color: rgba(0, 0, 0, 0);
-	color: rgb(190, 189, 189);
-}
+    .ember-view .navbar-default .navbar-brand {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: 100;
+        font-family: "SerifaLight";
+        padding-top: 20px;
+    }
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: rgb(217, 233, 224);
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(190, 189, 189);
+    }
+
+	.ember-view .navbar-collapse.navbar-ex1-collapse.in {
+		background: rgba(0, 0, 0, 0.86);
+		border-color: rgba(0, 0, 0, 0);
+		top: -5px;
+		width: 100%;
+		position: relative;
+		text-shadow: 1px 1px rgb(0, 0, 0);
+	}    
+
+	.ember-view .navbar-default .navbar-toggle {
+		border-color: rgb(0, 0, 0);
+		background: rgb(238, 63, 8);
+		color: rgb(238, 63, 8);
+		box-shadow: 0px 0px 25px rgb(0, 0, 0);
+	}
+
+	.ember-view .navbar-default .navbar-toggle:hover {
+		background: rgb(60, 59, 59);
+		color: rgb(255, 255, 255);
+	}	
 .brand-pure {
-	color: rgb(248, 46, 8);
-	font-weight: 200;
-	padding: 0px;
+    color: rgb(248, 46, 8);
+    font-weight: 200;
+    padding: 0px;
+}
+
+.navbar-brand:hover .brand-pure {
+	color: rgb(255, 255, 255);
+}
+
+.ember-view .navbar-default .navbar-toggle .icon-bar {
+	background-color: rgb(255, 255, 255);
 }
 a.content-brand {
-	font-size: 24px;
-	font-weight: 100;
-	color: rgb(248, 46, 8);
+    font-size: 24px;
+    font-weight: 100;
+    color: rgb(248, 46, 8);
 }
 strong.routes-group {
-	font-weight: 100;
-	font-size: 18px;
+    font-weight: 100;
+    font-size: 18px;
 }
 .list-group {
-	margin-bottom: 20px;
-	padding-left: 0;
-	margin-top: 15px;
-	border-radius: 8px 8px 8px 8px;
-	display: block;
-	background: rgb(114, 218, 213);
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-top: 15px;
+    border-radius: 8px 8px 8px 8px;
+    display: block;
+    background: rgb(114, 218, 213);
+}
+.list-group-item:hover {
+	border-top: 1px solid rgb(158, 68, 51);
+	cursor: pointer;
+	background-color: rgb(246, 66, 33);
+	text-shadow: 1px 1px rgb(134, 32, 14);
+	color: rgb(255, 255, 255);
+	border-right: 5px solid rgba(94, 0, 0, 0.5);
+	border-bottom: 1px solid rgb(158, 68, 51);
+	border-left: 1px solid rgb(158, 68, 51);
 }
 .list-group-item {
 	position: relative;
 	display: block;
 	padding: 10px 15px;
 	margin-bottom: -1px;
-	background-color: rgb(248, 46, 8);
-	border: 1px solid rgb(248, 64, 30);
-	color: rgb(255, 255, 255);
-	text-shadow: -4px 1px rgb(248, 46, 8);
-	font-size: 15px;
-	font-weight: 100;
-}
-.list-group-item:hover {
-	border-top: 1px solid rgb(224, 47, 14);
-	cursor: pointer;
-	background-color: rgb(246, 66, 33);
-	text-shadow: 1px 1px rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(221, 221, 221);
+	color: rgb(246, 66, 33);
 }
 .well h1 {
-	font-size: 30px;
-	font-weight: 100;
-	padding: 0px;
-	color: rgb(34, 19, 3);
-	opacity: .35;
-	margin-top: 0px;
+    font-size: 30px;
+    font-weight: 100;
+    padding: 0px;
+    color: rgb(34, 19, 3);
+    opacity: .35;
+    margin-top: 0px;
 }
-
 .well {
-	min-height: 20px;
-	padding: 19px;
-	margin-bottom: 20px;
-	background-color: whitesmoke;
-	border: 1px solid rgb(227, 227, 227);
-	border-radius: 4px;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-	overflow: auto;
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    overflow: auto;
 }
-
 .well.sidebar-nav {
-	margin-left: 25px;
-/*	position: fixed;*/
-/*	width: 21.22%;*/
+    margin-left: 25px;
+    /*	position: fixed;*/
+    /*	width: 21.22%;*/
 }
-
 h1.hero {
-	opacity: 1.0;
-	font-size: 50px
+    opacity: 1.0;
+    font-size: 50px;
+    font-family: SerifaLight;
 }
-.panel {
-	position:relative;
+.panel { position: relative }
+    .panel h2 {
+        font-weight: 200;
+        font-size: 20px;
+        padding: 0px 50px;
+        color: rgb(36, 174, 201);
+        font-family: SerifaLight;
+        text-align: center;
+        line-height: 25px;
+        text-transform: uppercase;
+        margin: 0px 0px 20px 0px;
+    }
+    .panel p {
+        font-weight: 400;
+        font-size: 13px;
+        padding: 0px 10px 10px 20px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.75);
+    }
+h2 + ul {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 0px 10px 10px 20px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.75);
+    margin-left: 40px;
 }
-.panel h2 {
-	font-weight: 700;
-	font-size: 30px;
-	padding: 0px 0px 10px 10px;
-	color: rgb(255, 61, 0);
-	font-family: "SerifaLight";
-	text-shadow: 1px 1px rgb(255, 255, 255);
-}
-.panel p {
-	font-weight: 200;
-	font-size: 18px;
-	padding: 0px 10px 10px 20px;
-	line-height: 22px;
-	color: rgba(0, 0, 0, 0.75);
-}
+    h2 + ul li {
+        border-left: 1px solid rgb(236, 125, 22);
+        padding-left: 10px;
+        margin-bottom: 25px;
+        list-style: none;
+    }
 .well img {
-	max-width: 100%;
-	margin: 35px 5% 40px 5%;
-	width: 90%;
-	background: whitesmoke;
+    max-width: 100%;
+    margin: 35px 5% 40px 5%;
+    width: 90%;
+    background: whitesmoke;
 }
 .well img.hero-image {
-	width: 83%;
-	margin: 0px auto;
+    width: 83%;
+    margin: 0px auto;
 }
 .panel-blurb {
 	position: relative;
 	width: 100%;
-	padding-left: 75px;
-	background: rgb(240, 82, 8);
+	padding-left: 15px;
+	background: rgb(226, 226, 226);
 	padding-top: 20px;
 	padding-bottom: 20px;
-	color: rgb(255, 255, 255);
-	font-size: 26px;
-	font-weight: 100;
-	top: -77px;
-	margin-bottom: -50px;
-	padding-right: 75px;
+	color: rgb(155, 155, 155);
+	font-size: 35px;
+	font-weight: 200;
+	top: -76px;
+	margin-bottom: -40px;
+	padding-right: 15px;
+	text-align: center;
+	line-height: 30px;
+}
+.blurb-content {
+	font-size: 35px;
+	font-weight: 200;
+	text-align: center;
+	line-height: 30px;
+	font-family: SerifaLight;
+	text-transform: uppercase;
+	text-shadow: 1px 1px rgb(255, 255, 255);
 }
 .alpha-content {
-	margin: 0px auto 77px;
-	background: rgba(0, 0, 0, 0.14);
-	overflow: hidden;
-	display: block;
-	padding-top: 5px;
-	box-shadow: inset 0px 0px 20px;
+    margin: 0px auto 77px;
+    background: rgba(0, 0, 0, 0.14);
+    overflow: hidden;
+    display: block;
+    padding-top: 5px;
+    box-shadow: inset 0px 0px 20px;
 }
 footer {
-	background: rgb(51, 51, 51);
-	padding: 0px;
-	color: rgb(255, 255, 255);
-	overflow: auto;
-	width: 100%;
-	border-top: 1px solid rgb(150, 149, 149);
-	box-shadow: 0px 10px 35px rgb(0, 0, 0);
-	margin-top: 55px;
+    background: rgb(51, 51, 51);
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    overflow: auto;
+    width: 100%;
+    border-top: 1px solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 35px rgb(0, 0, 0);
+    margin-top: 55px;
+    clear: both;
+    float: left;
 }
 .mega-footer {
 	list-style: none;
-	margin-left: 0px;
-	width: 100%;
 	overflow: auto;
-	margin-top: 0px;
-	margin-bottom: 30px;
 	box-shadow: 0px 5px 20px rgb(34, 34, 34);
+	width: 100%;
+	margin: 45px auto;
+	padding: 0px 142px;
+	border-top: 2px solid rgb(134, 134, 134);
+	background: rgb(77, 75, 75);
+}
+.mega-footer-item:hover {
+    background: rgb(248, 46, 8);
+    cursor: pointer;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    border-radius: 10px 0px 10px 0px;
 }
 .mega-footer-item {
-	font-weight: 100;
-	font-size: 15px;
-	float: left;
-	width: 15%;
-	border-left: 1px solid rgb(68, 68, 68);
-	border-bottom: 1px solid rgb(34, 34, 34);
-	margin-bottom: 10px;
-	margin-right: 20px;
-	padding-left: 10px;
-	border-radius: 0px 0px 0px 8px;
-	line-height: 45px;
-	padding-right: 10px;
+    font-weight: 200;
+    font-size: 15px;
+    float: left;
+    width: auto;
+    border: none;
+    line-height: 20px;
+    font-family: "SerifaLight";
+    text-transform: uppercase;
+    min-height: 45px;
+    padding: 15px 10px 10px;
+    margin: 10px 10px 10px 0px;
 }
 .mega-header {
-	list-style: none;
-	margin-left:0px;
-	width:100%;
+    list-style: none;
+    margin-left: 0px;
+    width: 100%;
 }
 .mega-header-item:hover {
 	color: rgb(255, 255, 255);
 	cursor: pointer;
-	border-bottom: 1px solid rgb(245, 63, 6);
+	border-bottom: 4px solid rgb(245, 63, 6);
 }
 .mega-header-item {
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 15px;
+	font-family: SerifaLight;
 	float: left;
 	width: auto;
-	color: rgb(248, 46, 8);
 	margin-right: 20px;
-	padding-left: 10px;
-	padding-top: 12px;
-	padding-bottom: 5px;
-	margin-bottom: 0px;
+	margin-top: 17px;
 	text-transform: uppercase;
-	padding-right: 10px;
-	border-bottom: 1px rgba(0, 0, 0, 0);
-	height: 50px;
+	height: 33px;
+	color: rgb(245, 63, 6);
 }
 .mega-header-item.active {
-	color: rgb(255, 255, 255);
+	color: rgba(175, 175, 175, 0.39);
 	cursor: pointer;
 	text-shadow: 1px 1px rgb(0, 0, 0);
-	border-bottom: 2px solid rgb(255, 105, 68);
-	border-radius: 0px;
-	height: 50px;
-}
-.mega-footer-item:hover {
-	background: rgb(248, 46, 8);
-	cursor: pointer;
-	text-shadow: 1px 1px rgb(0, 0, 0);
-	border-radius: 0px 0px 0px 4px;
-	border-right: 1px solid rgba(10, 10, 10, 0.75);
-	border-bottom: 1px solid rgb(255, 105, 68);
+	border-bottom: 3px solid rgb(0, 200, 255);
+	border-radius: 0;
+	height: 33px;
 }
 .comment-container {
-	width: 100%;
-	background: rgb(68, 68, 68);
-	float: left;
-	clear: both;
-	padding: 10px 0px 95px 15px;
-	min-height:200px;
+    width: 100%;
+    background: rgb(68, 68, 68);
+    float: left;
+    clear: both;
+    padding: 10px 0px 95px 15px;
+    min-height: 200px;
 }
 .disqus-me {
-	width: 100%;
-	margin: 0px auto;
+    width: 100%;
+    margin: 0px auto;
 }
-.carousel-caption {
-	left: 20%;
-	right: 20%;
-	background: rgba(0, 0, 0, 0.88);
+.ember-view .carousel-caption {
+	background: rgba(0, 0, 0, 0.75);
 	font-size: 32px;
-	font-weight: 100;
-	color: rgb(255, 54, 3);
-	font-family: "SerifaStd45Light";
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+	font-family: "SerifaLight";
 	text-shadow: 1px 1px rgb(0, 0, 0);
-	height: 36%;
+	text-transform: uppercase;
+	padding: 20px 40px;
 }
 .carousel-inner {
-	background: rgb(21, 144, 179);
-	display: block;
-	width: 100%;
-	height: auto;
-	line-height: 1;
-	margin: 0px auto;
+    background: rgb(21, 144, 179);
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 1;
+    margin: 0px auto 25px 0px;
 }
 .set-center {
-	margin:0px auto;
+	margin: 50px auto;
 }
 #main .well {
-	max-width: 1040px;
-	margin:0px auto;
+    max-width: 1040px;
+    margin: 0px auto;
 }
-#map { 
-	height: 350px; 
-	margin-bottom: 15px;
+#map {
+    height: 350px;
+    margin-bottom: 15px;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.61);
+    border: 10px solid rgb(46, 46, 46);
 }
-.leaflet-popup-content {
-	color: rgb(51, 51, 51);
+.leaflet-popup-content { color: rgb(51, 51, 51) }
+footer h1 {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-family: "SerifaLight";
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
 }
+.end-of-line { color: rgb(77, 77, 77) }
+
+/* Responsive *-----*/
+
+

@@ -4,8 +4,8 @@
   "dependencies": {
     "ember": "1.2.0",
     "ember-data-shim": "1.0.0-beta.2",
-    "bootstrap-sass": "~3.0.0"
-    
+    "bootstrap-sass": "~3.0.0",
+    "leaflet": "~0.7.1"
   },
   "resolutions": {
     "ember": "1.0.0"
