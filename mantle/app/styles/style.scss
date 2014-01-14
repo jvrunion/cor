@@ -100,6 +100,16 @@ html, body {
 	background-attachment: fixed;
 }
 
+a:hover, a:focus {
+	color: rgb(22, 172, 201);
+	text-decoration: underline;
+}
+
+a {
+	color: rgb(230, 76, 16);
+	text-decoration: none;
+}
+
 body {
 	color: rgb(129, 129, 129);
 }
@@ -114,9 +124,11 @@ body {
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 .navbar-default .navbar-brand {
-	color: #fff;
-	font-size: 25px;
+	color: rgb(255, 255, 255);
+	font-size: 30px;
 	font-weight: 100;
+	font-family: "SerifaLight";
+	padding-top: 20px;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: rgb(217, 233, 224);
@@ -204,6 +216,8 @@ h1.hero {
 	color: rgb(255, 61, 0);
 	font-family: "SerifaLight";
 	text-shadow: 1px 1px rgb(255, 255, 255);
+	text-align: center;
+	line-height: 30px;
 }
 .panel p {
 	font-weight: 200;
@@ -211,6 +225,12 @@ h1.hero {
 	padding: 0px 10px 10px 20px;
 	line-height: 22px;
 	color: rgba(0, 0, 0, 0.75);
+}
+h2 + ul {
+	font-weight: 200;
+	font-size: 18px;
+	color: rgb(0, 0, 0);
+	margin-bottom: 50px;
 }
 .well img {
 	max-width: 100%;
@@ -225,16 +245,27 @@ h1.hero {
 .panel-blurb {
 	position: relative;
 	width: 100%;
-	padding-left: 75px;
-	background: rgb(240, 82, 8);
+	padding-left: 15px;
+	background: rgb(9, 114, 155);
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: rgb(255, 255, 255);
-	font-size: 26px;
-	font-weight: 100;
-	top: -77px;
-	margin-bottom: -50px;
-	padding-right: 75px;
+	font-size: 35px;
+	font-weight: 200;
+	top: -76px;
+	margin-bottom: -40px;
+	padding-right: 15px;
+	text-align: center;
+	line-height: 30px;
+}
+.blurb-content {
+	color: rgb(215, 239, 247);
+	font-size: 35px;
+	font-weight: 200;
+	text-align: center;
+	line-height: 30px;
+	text-shadow: 1px 1px rgb(19, 62, 75);
+	font-family: "SerifaLight";
 }
 .alpha-content {
 	margin: 0px auto 77px;
@@ -250,32 +281,40 @@ footer {
 	color: rgb(255, 255, 255);
 	overflow: auto;
 	width: 100%;
-	border-top: 1px solid rgb(150, 149, 149);
-	box-shadow: 0px 10px 35px rgb(0, 0, 0);
+	border-top: 1px solid rgb(0, 0, 0);
+	box-shadow: 10px 10px 35px rgb(0, 0, 0);
 	margin-top: 55px;
+	clear: both;
+	float: left;
 }
 .mega-footer {
 	list-style: none;
-	margin-left: 0px;
-	width: 100%;
 	overflow: auto;
 	margin-top: 0px;
-	margin-bottom: 30px;
 	box-shadow: 0px 5px 20px rgb(34, 34, 34);
+	width: 75%;
+	margin: 45px auto;
+	padding: 0px 50px;
 }
 .mega-footer-item {
-	font-weight: 100;
-	font-size: 15px;
+	font-weight: 200;
+	font-size: 20px;
 	float: left;
-	width: 15%;
+	width: 22%;
 	border-left: 1px solid rgb(68, 68, 68);
 	border-bottom: 1px solid rgb(34, 34, 34);
-	margin-bottom: 10px;
 	margin-right: 20px;
 	padding-left: 10px;
-	border-radius: 0px 0px 0px 8px;
-	line-height: 45px;
+	border-radius: 0px;
+	line-height: 35px;
 	padding-right: 10px;
+	border-right: 1px solid rgb(46, 46, 46);
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-top: 1px rgba(0, 0, 0, 0);
+	font-family: "SerifaLight";
+	text-transform: uppercase;
+	padding-top: 10px;
 }
 .mega-header {
 	list-style: none;
@@ -288,14 +327,15 @@ footer {
 	border-bottom: 1px solid rgb(245, 63, 6);
 }
 .mega-header-item {
-	font-weight: 400;
-	font-size: 18px;
+	font-weight: 100;
+	font-size: 20px;
+	font-family: "SerifaLight";
 	float: left;
 	width: auto;
 	color: rgb(248, 46, 8);
 	margin-right: 20px;
 	padding-left: 10px;
-	padding-top: 12px;
+	padding-top: 15px;
 	padding-bottom: 5px;
 	margin-bottom: 0px;
 	text-transform: uppercase;
@@ -307,7 +347,7 @@ footer {
 	color: rgb(255, 255, 255);
 	cursor: pointer;
 	text-shadow: 1px 1px rgb(0, 0, 0);
-	border-bottom: 2px solid rgb(255, 105, 68);
+	border-bottom: 2px solid rgb(0, 200, 255);
 	border-radius: 0px;
 	height: 50px;
 }
@@ -315,9 +355,10 @@ footer {
 	background: rgb(248, 46, 8);
 	cursor: pointer;
 	text-shadow: 1px 1px rgb(0, 0, 0);
-	border-radius: 0px 0px 0px 4px;
-	border-right: 1px solid rgba(10, 10, 10, 0.75);
-	border-bottom: 1px solid rgb(255, 105, 68);
+	border-radius: 0px;
+	border-right: 1px solid rgb(189, 189, 189);
+	border-bottom: 1px solid rgb(138, 138, 138);
+	border-top: 1px solid rgb(0, 0, 0);
 }
 .comment-container {
 	width: 100%;
@@ -340,7 +381,6 @@ footer {
 	color: rgb(255, 54, 3);
 	font-family: "SerifaStd45Light";
 	text-shadow: 1px 1px rgb(0, 0, 0);
-	height: 36%;
 }
 .carousel-inner {
 	background: rgb(21, 144, 179);
