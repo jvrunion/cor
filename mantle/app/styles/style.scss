@@ -47,10 +47,12 @@ h3 { text-transform: uppercase }
     width: 90%;
 }
 .ember-view .navbar-default {
-    background-color: rgb(27, 27, 27);
-    border-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+	background-color: rgb(27, 27, 27);
+	border-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	margin-bottom: 0px;
+	height: 50px;
 }
     .navbar-default .navbar-brand {
         color: rgb(255, 255, 255);
@@ -256,34 +258,29 @@ footer {
     width: 100%;
 }
 .mega-header-item:hover {
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    border-bottom: 1px solid rgb(245, 63, 6);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	border-bottom: 4px solid rgb(245, 63, 6);
 }
 .mega-header-item {
-    font-weight: 400;
-    font-size: 15px;
-    font-family: "SerifaLight";
-    float: left;
-    width: auto;
-    color: rgb(248, 46, 8);
-    margin-right: 20px;
-    padding-left: 10px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    padding-right: 10px;
-    border-bottom: 1px rgba(0, 0, 0, 0);
-    height: 50px;
+	font-weight: 400;
+	font-size: 15px;
+	font-family: SerifaLight;
+	float: left;
+	width: auto;
+	margin-right: 20px;
+	margin-top: 17px;
+	text-transform: uppercase;
+	height: 33px;
+	color: rgb(245, 63, 6);
 }
 .mega-header-item.active {
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    text-shadow: 1px 1px rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 200, 255);
-    border-radius: 0px;
-    height: 50px;
+	color: rgba(175, 175, 175, 0.39);
+	cursor: pointer;
+	text-shadow: 1px 1px rgb(0, 0, 0);
+	border-bottom: 3px solid rgb(0, 200, 255);
+	border-radius: 0;
+	height: 33px;
 }
 .comment-container {
     width: 100%;
