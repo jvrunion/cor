@@ -54,7 +54,7 @@ h3 { text-transform: uppercase }
 	margin-bottom: 0px;
 	height: 50px;
 }
-    .navbar-default .navbar-brand {
+    .ember-view .navbar-default .navbar-brand {
         color: rgb(255, 255, 255);
         font-size: 30px;
         font-weight: 100;
@@ -67,10 +67,39 @@ h3 { text-transform: uppercase }
         background-color: rgba(0, 0, 0, 0);
         color: rgb(190, 189, 189);
     }
+
+	.ember-view .navbar-collapse.navbar-ex1-collapse.in {
+		background: rgba(0, 0, 0, 0.86);
+		border-color: rgba(0, 0, 0, 0);
+		top: -5px;
+		width: 100%;
+		position: relative;
+		text-shadow: 1px 1px rgb(0, 0, 0);
+	}    
+
+	.ember-view .navbar-default .navbar-toggle {
+		border-color: rgb(0, 0, 0);
+		background: rgb(238, 63, 8);
+		color: rgb(238, 63, 8);
+		box-shadow: 0px 0px 25px rgb(0, 0, 0);
+	}
+
+	.ember-view .navbar-default .navbar-toggle:hover {
+		background: rgb(60, 59, 59);
+		color: rgb(255, 255, 255);
+	}	
 .brand-pure {
     color: rgb(248, 46, 8);
     font-weight: 200;
     padding: 0px;
+}
+
+.navbar-brand:hover .brand-pure {
+	color: rgb(255, 255, 255);
+}
+
+.ember-view .navbar-default .navbar-toggle .icon-bar {
+	background-color: rgb(255, 255, 255);
 }
 a.content-brand {
     font-size: 24px;
@@ -89,23 +118,21 @@ strong.routes-group {
     display: block;
     background: rgb(114, 218, 213);
 }
-.list-group-item {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: -1px;
-    background-color: rgb(248, 46, 8);
-    border: 1px solid rgb(248, 64, 30);
-    color: rgb(255, 255, 255);
-    text-shadow: -4px 1px rgb(248, 46, 8);
-    font-size: 15px;
-    font-weight: 100;
-}
 .list-group-item:hover {
-    border-top: 1px solid rgb(224, 47, 14);
-    cursor: pointer;
-    background-color: rgb(246, 66, 33);
-    text-shadow: 1px 1px rgb(0, 0, 0);
+	border-top: 1px solid rgb(224, 47, 14);
+	cursor: pointer;
+	background-color: rgb(246, 66, 33);
+	text-shadow: 1px 1px rgb(134, 32, 14);
+	color: rgb(255, 255, 255);
+}
+.list-group-item {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(221, 221, 221);
+	color: rgb(246, 66, 33);
 }
 .well h1 {
     font-size: 30px;
@@ -225,13 +252,14 @@ footer {
     float: left;
 }
 .mega-footer {
-    list-style: none;
-    overflow: auto;
-    margin-top: 0px;
-    box-shadow: 0px 5px 20px rgb(34, 34, 34);
-    width: 75%;
-    margin: 45px auto;
-    padding: 0px 50px;
+	list-style: none;
+	overflow: auto;
+	box-shadow: 0px 5px 20px rgb(34, 34, 34);
+	width: 100%;
+	margin: 45px auto;
+	padding: 0px 142px;
+	border-top: 2px solid rgb(134, 134, 134);
+	background: rgb(77, 75, 75);
 }
 .mega-footer-item:hover {
     background: rgb(248, 46, 8);
@@ -295,15 +323,14 @@ footer {
     margin: 0px auto;
 }
 .ember-view .carousel-caption {
-    left: 20%;
-    right: 20%;
-    background: rgba(0, 0, 0, 0.88);
-    font-size: 32px;
-    font-weight: 100;
-    color: rgb(255, 54, 3);
-    font-family: "SerifaLight";
-    text-shadow: 1px 1px rgb(0, 0, 0);
-    text-transform: uppercase;
+	background: rgba(0, 0, 0, 0.75);
+	font-size: 32px;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+	font-family: "SerifaLight";
+	text-shadow: 1px 1px rgb(0, 0, 0);
+	text-transform: uppercase;
+	padding: 20px 40px;
 }
 .carousel-inner {
     background: rgb(21, 144, 179);
@@ -313,7 +340,9 @@ footer {
     line-height: 1;
     margin: 0px auto 25px 0px;
 }
-.set-center { margin: 0px auto }
+.set-center {
+	margin: 50px auto;
+}
 #main .well {
     max-width: 1040px;
     margin: 0px auto;
