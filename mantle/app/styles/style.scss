@@ -87,8 +87,8 @@ h3 {
     width: 100%;
     border-color: rgb(0, 0, 0);
     background: rgb(17, 17, 17);
-    text-shadow: 1px 1px rgb(0, 0, 0);
     box-shadow: inset 0 50px 25px rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 .ember-view .navbar-default .navbar-toggle {
@@ -321,7 +321,7 @@ footer {
 .mega-footer {
     overflow: auto;
     margin: 0 auto 0 0;
-    padding: 0;
+    padding: 0 70px;
     width: 100%;
     border-top: 2px solid rgb(46, 46, 46);
     background: rgb(77, 75, 75);
@@ -346,6 +346,7 @@ footer {
     min-height: 75px;
     width: 19.875%;
     border-top: 5px solid rgb(196, 196, 196);
+    text-align: center;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
@@ -386,16 +387,29 @@ footer {
 }
 
 .mega-header-item.active:hover {
+    border-bottom-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
 }
 
 .comment-container {
-    float: left;
     clear: both;
-    padding: 10px 0 95px 15px;
+    margin: 1px auto 0 auto;
+    padding: 30px;
     min-height: 200px;
+    width: 89%;
+    background: rgb(51, 51, 51);
+    box-shadow: inset 0 0 25px rgb(0, 0, 0);
+}
+
+.comment-container h2 {
+    display: block;
+    margin: 0 auto;
+    padding: 0 35%;
     width: 100%;
-    background: rgb(68, 68, 68);
+    color: rgb(230, 56, 13);
+    text-align: center;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    font-family: "SerifaLight";
 }
 
 .disqus-me {
@@ -404,35 +418,64 @@ footer {
 }
 
 .ember-view .carousel-caption {
-    padding: 20px 40px;
-    background: rgba(0, 0, 0, 0.50);
+    right: 0;
+    left: 0;
+    z-index: 50;
+    overflow: visible;
+    padding: 40px 85px;
+    width: 100%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.75);
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.28);
     color: rgb(250, 250, 250);
+    text-align: center;
     text-transform: none;
     text-shadow: 1px 1px rgba(13, 86, 109, 0.82);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     font-weight: 300;
     font-size: 35px;
     font-family: "SerifaLight";
     line-height: 40px;
 }
 
-.carousel-inner {
-    min-height: 345px;
-    height: 345px;
-    max-height: 345px;
-    box-shadow: inset 0 -25px 50px rgb(0, 0, 0);
-    border-top: solid 40px rgb(24, 24, 24);
-    background: rgb(29, 29, 29);
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
+.carousel-inner {
+    min-height: 345px;
+    max-height: 345px;
+    height: 345px;
+    border-top: solid 10px rgb(24, 24, 24);
+    background: rgb(29, 29, 29);
+    box-shadow: inset 0 -25px 50px rgb(0, 0, 0);
+}
 
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
     position: absolute;
     top: 50%;
     z-index: 5;
+    z-index: 100;
     display: inline-block;
     color: rgb(255, 255, 255);
     text-shadow: none;
+}
+
+.carousel-control.left, .carousel-control.right {
+    z-index: 100;
+}
+
+.ember-view .carousel-indicators {
+    z-index: 100;
 }
 
 .ember-view .carousel-indicators .active {
@@ -483,6 +526,16 @@ footer h1 {
 .col-md-3.affix {
     left: 2%;
     z-index: 100;
+    padding: 10px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgb(158, 158, 158);
+}
+
+.ember-view .postbox {
+    position: relative;
+    margin: 10px auto;
+    width: 85%;
 }
 
 /* Responsive *-----*/
