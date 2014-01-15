@@ -1,2 +1,2 @@
-Cor.Store = DS.Store.extend();
-Cor.ApplicationAdapter = DS.FixtureAdapter;
+Core.Store = DS.Store.extend();
+Core.ApplicationAdapter = DS.FixtureAdapter;

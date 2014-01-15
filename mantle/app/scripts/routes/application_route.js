@@ -1,4 +1,4 @@
-Cor.ApplicationRoute = Ember.Route.extend({
+Core.ApplicationRoute = Ember.Route.extend({
     model: function() {
         return [
             '<a href="#" class="generated-left-panel" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="All about The Front End">Front End Matters</a>',

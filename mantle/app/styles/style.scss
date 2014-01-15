@@ -180,7 +180,7 @@ strong.routes-group {
     text-shadow: 1px 1px rgb(0, 0, 0);
     font-weight: 200;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 15px;
 }
 
 .well h1 {
@@ -319,38 +319,35 @@ footer {
 
 .mega-footer {
     overflow: auto;
-    margin: 45px auto;
-    padding: 0 142px;
+    margin: 0 auto 0 0;
+    padding: 0;
     width: 100%;
-    border-top: 2px solid rgb(134, 134, 134);
+    border-top: 2px solid rgb(46, 46, 46);
     background: rgb(77, 75, 75);
     box-shadow: 0 5px 20px rgb(34, 34, 34);
     list-style: none;
 }
 
 .mega-footer-item:hover {
-    border-right-color: rgba(116, 116, 116, 0.38);
-    border-left-color: rgba(116, 116, 116, 0.38);
-    border-radius: 4px;
-    background: rgb(206, 206, 206);
-    box-shadow: inset 0 15px 30px rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(248, 46, 8);
+    background: rgb(226, 226, 226);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    color: rgb(248, 46, 8);
     text-shadow: 1px 1px rgb(255, 255, 255);
+    font-weight: 400;
     cursor: pointer;
 }
 
 .mega-footer-item {
     float: left;
-    margin: 10px 10px 10px 0;
-    padding: 15px 10px 10px;
-    min-height: 45px;
-    width: auto;
-    border-right: 25px rgba(0, 0, 0, 0);
-    border-left: 25px rgba(0, 0, 0, 0);
+    margin-bottom: 0;
+    padding: 20px 10px 10px 10px;
+    min-height: 75px;
+    width: 19.875%;
+    border-top: 5px solid rgb(196, 196, 196);
     text-transform: uppercase;
-    font-weight: 200;
-    font-size: 15px;
-    font-family: "SerifaLight";
+    font-weight: 300;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -371,16 +368,15 @@ footer {
     margin-top: 17px;
     margin-right: 20px;
     width: auto;
-    height: 33px;
+    height: 38px;
     color: rgba(6, 207, 245, 0.53);
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 15px;
-    font-family: SerifaLight;
+    font-weight: 200;
+    font-size: 13px;
 }
 
 .mega-header-item.active {
-    height: 33px;
+    height: 38px;
     border-bottom: 3px solid rgb(0, 200, 255);
     border-radius: 0;
     color: rgb(14, 192, 226);
@@ -457,11 +453,11 @@ footer {
 
 #map {
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     width: 75%;
     height: 350px;
-    border: 10px solid rgb(46, 46, 46);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.61);
+    border: 10px solid rgb(116, 115, 115);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.96);
 }
 
 .leaflet-popup-content {
@@ -471,7 +467,7 @@ footer {
 footer h1 {
     margin: 20px auto;
     width: 80%;
-    color: rgb(255, 255, 255);
+    color: rgb(36, 174, 201);
     text-align: center;
     text-shadow: 1px 1px rgb(0, 0, 0);
     font-weight: 700;

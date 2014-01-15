@@ -1,4 +1,4 @@
-var Cor = window.Cor = Ember.Application.create();
+var Core = window.Core = Ember.Application.create();
 
 /* Order and include as you please. */
 require('scripts/controllers/*');
