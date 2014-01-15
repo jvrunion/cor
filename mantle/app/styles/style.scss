@@ -206,16 +206,16 @@ h1.hero {
 }
 
 .panel p {
-    padding: 0px 10px 10px 20px;
+    padding: 0 10px 10px 20px;
     color: rgba(0, 0, 0, 0.75);
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 h2 + ul {
     margin-left: 40px;
-    padding: 0px 10px 10px 20px;
+    padding: 0 10px 10px 20px;
     color: rgba(0, 0, 0, 0.75);
     font-weight: 400;
     font-size: 13px;
@@ -260,21 +260,21 @@ h2 + ul li {
 
 .blurb-content {
     text-align: center;
-    text-transform: uppercase;
+    text-transform: none;
     text-shadow: 1px 1px rgb(255, 255, 255);
     font-weight: 200;
-    font-size: 35px;
-    font-family: SerifaLight;
+    font-size: 40px;
+    font-family: 'SerifaLight';
     line-height: 30px;
 }
 
 .alpha-content {
     display: block;
     overflow: hidden;
-    margin: 0px auto 77px;
+    margin: 0 auto 77px;
     padding-top: 5px;
     background: rgba(0, 0, 0, 0.14);
-    box-shadow: inset 0px 0px 20px;
+    box-shadow: inset 0 0 20px;
 }
 
 footer {
@@ -302,8 +302,9 @@ footer {
 }
 
 .mega-footer-item:hover {
-    border-right: 25px solid rgba(116, 116, 116, 0.38);
-    border-radius: 0px 4px 4px 0px;
+    border-right-color: rgba(116, 116, 116, 0.38);
+    border-left-color: rgba(116, 116, 116, 0.38);
+    border-radius: 4px;
     background: rgb(206, 206, 206);
     box-shadow: inset 0px 15px 30px rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -317,7 +318,8 @@ footer {
     padding: 15px 10px 10px;
     min-height: 45px;
     width: auto;
-    border: none;
+    border-right: 25px rgba(0, 0, 0, 0);
+    border-left: 25px rgba(0, 0, 0, 0);
     text-transform: uppercase;
     font-weight: 200;
     font-size: 15px;
@@ -387,13 +389,15 @@ footer {
 
 .ember-view .carousel-caption {
     padding: 20px 40px;
-    background: rgba(0, 0, 0, 0.75);
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    text-shadow: 1px 1px rgb(0, 0, 0);
+    background: rgba(16, 98, 124, 0.82);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.28);
+    color: rgb(250, 250, 250);
+    text-transform: none;
+    text-shadow: 1px 1px rgba(13, 86, 109, 0.82);
     font-weight: 300;
-    font-size: 32px;
+    font-size: 35px;
     font-family: "SerifaLight";
+    line-height: 40px;
 }
 
 .carousel-inner {
@@ -403,6 +407,23 @@ footer {
     height: auto;
     background: rgb(21, 144, 179);
     line-height: 1;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+}
+
+.ember-view .carousel-indicators .active {
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    background-color: rgb(231, 91, 25);
 }
 
 .set-center {
@@ -447,3 +468,14 @@ footer h1 {
 }
 
 /* Responsive *-----*/
+
+@media (max-width: 992px) {
+    .col-md-3.affix {
+        z-index: 100;
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+        left: 0;
+        box-shadow: 0 0 20px rgb(158, 158, 158);
+    }
+}
