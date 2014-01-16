@@ -73,52 +73,47 @@
     </div>    
 </div>
 <script type="text/javascript">
-    L.Icon.Default.imagePath = 'images';    
-    var map = L.map('map');
-    console.log(L.Icon.Default.imagePath);
-    map.locate({setView: true, maxZoom: 11});
 
-    function onLocationFound(e) {
-        var radius = e.accuracy / 2;
+        // map fire 
+        L.Icon.Default.imagePath = 'images';
+        var map = L.map('map');
+        console.log(L.Icon.Default.imagePath);
+        map.locate({
+            setView: true,
+            maxZoom: 11
+        });
 
-        L.marker(e.latlng).addTo(map)
-        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+        function onLocationFound(e) {
+            var radius = e.accuracy / 2;
 
-        L.circle(e.latlng, radius).addTo(map);
-    }
+            L.marker(e.latlng).addTo(map)
+            .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
-    map.on('locationfound', onLocationFound);  
-
-    function onLocationError(e) {
-        alert(e.message);
-    }
-
-    map.on('locationerror', onLocationError);    
-
-    L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
-        maxZoom: 14,
-        minZoom: 09
-    }).addTo(map);  
-
-
-    var line = $('.view-marker');
-    var last = $('.last-marker');
-    var corApp = $(this.window.Core);
-    console.log(line);
-    console.log(corApp);
-
-    $(line).onScreen({
-        doIn: function() {
-            $('.col-md-3').removeClass('affix');
+            L.circle(e.latlng, radius).addTo(map);
         }
-    });
 
-    $(last).onScreen({
-        doOut: function() {
-            $('.col-md-3').addClass('affix');
-        }        
-    });
+        map.on('locationfound', onLocationFound);
 
-    $('a.generated-left-panel').tooltip();
+        function onLocationError(e) {
+            alert(e.message);
+        }
 
-</script>
+        map.on('locationerror', onLocationError);
+
+        L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+            maxZoom: 14,
+            minZoom: 09
+        }).addTo(map);
+
+        var line = ('footer');
+
+        this.$(line).onScreen({
+            doIn: function() {
+                $('.col-md-3').removeClass('affix');
+            },
+            doOut: function() {
+                $('.col-md-3').addClass('affix');
+            }
+        });        
+
+    </script>

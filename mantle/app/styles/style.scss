@@ -1,5 +1,7 @@
 @import "bootstrap-sass/lib/bootstrap";
 
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Oxygen:400,300,700);
+
 @font-face {
     font-weight: 400;
     font-style: normal;
@@ -68,14 +70,14 @@ h3 {
 }
 
 .ember-view .navbar-default .navbar-brand {
-    margin-top: 15px;
+    margin-top: 6px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
     color: rgb(255, 255, 255);
-    font-weight: 100;
+    font-weight: 200;
     font-size: 38px;
-    font-family: "SerifaLight";
+    font-family: "Oxygen";
     line-height: 38px;
 }
 
@@ -148,6 +150,7 @@ strong.routes-group {
     color: rgb(255, 61, 0);
 }
 .list-group-item:hover {
+    margin-bottom: 0px;
     border-top: 1px solid rgb(100, 100, 100);
     border-right: 15px solid rgba(0, 0, 0, 0.17);
     border-bottom-color: rgb(29, 29, 29);
@@ -155,7 +158,6 @@ strong.routes-group {
     background-color: rgb(107, 107, 107);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(0, 0, 0);
-    margin-bottom: 0px;
 }
 
 .list-group-item {
@@ -219,7 +221,7 @@ strong.routes-group {
 
 h1.hero {
     font-size: 50px;
-    font-family: SerifaLight;
+    font-family: "Oxygen";
     opacity: 1.0;
 }
 
@@ -228,14 +230,15 @@ h1.hero {
 }
 
 .panel h2 {
-    margin: 20px 0 20px;
+    margin: 0 0 30px;
     padding: 0 50px;
     color: rgb(36, 174, 201);
     text-align: center;
     text-transform: none;
-    font-weight: 200;
-    font-size: 22px;
-    line-height: 25px;
+    font-weight: 100;
+    font-size: 28px;
+    font-family: "Oxygen";
+    line-height: 34px;
 }
 
 .panel p {
@@ -293,6 +296,7 @@ h2 + ul li {
     text-align: center;
     font-weight: 200;
     font-size: 35px;
+    font-family: "Oxygen";
     line-height: 30px;
 }
 
@@ -359,7 +363,7 @@ footer {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 17px;
-    font-family: "SerifaLight";
+    font-family: "Oxygen";
     line-height: 20px;
 }
 
@@ -377,14 +381,15 @@ footer {
 
 .mega-header-item {
     float: left;
-    margin-top: 17px;
+    margin-top: 15px;
     margin-right: 20px;
     width: auto;
     height: 38px;
     color: rgba(17, 165, 223, 0.44);
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Oxygen";
 }
 
 .mega-header-item.active {
@@ -419,12 +424,17 @@ footer {
     color: rgb(230, 56, 13);
     text-align: center;
     text-shadow: 1px 1px rgb(0, 0, 0);
-    font-family: "SerifaLight";
+    font-family: "Oxygen";
 }
 
 .disqus-me {
     margin: 0 auto;
     width: 100%;
+}
+
+.carousel {
+    position: relative;
+    margin-bottom: 30px;
 }
 
 .ember-view .carousel-caption {
@@ -447,7 +457,8 @@ footer {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     font-weight: 300;
     font-size: 35px;
-    font-family: "SerifaLight";    
+    /*    font-family: "SerifaLight";  */
+    font-family: 'Oxygen', sans-serif;  
 }
 
 .carousel-inner {
@@ -509,13 +520,14 @@ footer {
 }
 
 footer h1 {
-    margin: 20px auto;
+    margin: 20px auto 40px;
     width: 80%;
-    color: rgb(36, 174, 201);
+    color: rgb(187, 187, 187);
     text-align: center;
     text-shadow: 1px 1px rgb(0, 0, 0);
-    font-weight: 700;
-    font-family: "SerifaLight";
+    font-weight: 500;
+    font-family: "Oxygen";
+    font-size: 40px;
 }
 
 .end-of-line {
