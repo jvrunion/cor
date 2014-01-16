@@ -68,11 +68,15 @@ h3 {
 }
 
 .ember-view .navbar-default .navbar-brand {
-    padding-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     color: rgb(255, 255, 255);
     font-weight: 100;
-    font-size: 30px;
+    font-size: 38px;
     font-family: "SerifaLight";
+    line-height: 38px;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -140,15 +144,18 @@ strong.routes-group {
 .list-group-item:hover a {
     color: rgb(255, 255, 255);
 }
-
+.mega-header-item:hover span {
+    color: rgb(255, 61, 0);
+}
 .list-group-item:hover {
-    border-top: 1px solid rgb(168, 168, 168);
-    border-right: 15px solid rgba(255, 255, 255, 0.45);
-    border-bottom: 1px solid rgba(83, 83, 83, 0.32);
+    border-top: 1px solid rgb(100, 100, 100);
+    border-right: 15px solid rgba(0, 0, 0, 0.17);
+    border-bottom-color: rgb(29, 29, 29);
     border-left: 1px solid rgb(160, 160, 160);
     background-color: rgb(107, 107, 107);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(0, 0, 0);
+    margin-bottom: 0px;
 }
 
 .list-group-item {
@@ -174,14 +181,16 @@ strong.routes-group {
 
 .list-group .tooltip-inner {
     overflow: visible;
-    margin-left: 40px;
     padding: 10px 15px;
-    max-width: 80%;
+    min-width:125px;
+    max-width: 125px;
+    width:125px;
     box-shadow: 0 0 15px #000;
+    color:#ccc;
     text-shadow: 1px 1px rgb(0, 0, 0);
     font-weight: 200;
     font-size: 13px;
-    line-height: 15px;
+    line-height: 18px;
 }
 
 .well h1 {
@@ -345,11 +354,12 @@ footer {
     padding: 20px 10px 10px 10px;
     min-height: 75px;
     width: 19.875%;
-    border-top: 5px solid rgb(196, 196, 196);
+    border-top: 5px solid rgb(236, 52, 16);
     text-align: center;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 17px;
+    font-family: "SerifaLight";
     line-height: 20px;
 }
 
@@ -371,10 +381,10 @@ footer {
     margin-right: 20px;
     width: auto;
     height: 38px;
-    color: rgba(6, 207, 245, 0.53);
+    color: rgba(17, 165, 223, 0.44);
     text-transform: uppercase;
-    font-weight: 200;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .mega-header-item.active {
@@ -418,9 +428,12 @@ footer {
 }
 
 .ember-view .carousel-caption {
+    position: absolute;
     right: 0;
+    bottom: 0;
     left: 0;
     z-index: 50;
+    z-index: 10;
     overflow: visible;
     padding: 40px 85px;
     width: 100%;
@@ -428,27 +441,13 @@ footer {
     background: rgba(0, 0, 0, 0.75);
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.28);
     color: rgb(250, 250, 250);
+    color: rgb(255, 255, 255);
     text-align: center;
     text-transform: none;
-    text-shadow: 1px 1px rgba(13, 86, 109, 0.82);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     font-weight: 300;
     font-size: 35px;
-    font-family: "SerifaLight";
-    line-height: 40px;
-}
-
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    font-family: "SerifaLight";    
 }
 
 .carousel-inner {
@@ -538,9 +537,20 @@ footer h1 {
     width: 85%;
 }
 
+.last-marker {
+    float: left;
+    clear:both;
+}
+
 /* Responsive *-----*/
 
-@media (max-width: 768px) { }
+@media (max-width: 768px) {
+    .mega-header-item {
+        clear: both;
+        margin-left: -20px;
+        width: 100%;
+    }    
+}
 
 @media (max-width: 992px) {
     .col-md-3.affix {
