@@ -187,12 +187,15 @@ strong.routes-group {
     min-width:125px;
     max-width: 125px;
     width:125px;
-    box-shadow: 0 0 15px #000;
-    color:#ccc;
+    background: rgb(236, 73, 22);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color:rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(0, 0, 0);
     font-weight: 200;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 18px;
+    opacity: 0.95;
+    text-transform: uppercase;
 }
 
 .well h1 {
@@ -220,11 +223,11 @@ strong.routes-group {
 }
 
 .col-md-3 .well h3 {
-    font-family: "Oxygen";
     margin: 0px;
     color: rgb(156, 156, 156);
     text-shadow: 1px 1px rgb(255, 255, 255);
     font-size: 20px;
+    font-family: "Oxygen";
 }
 
 h1.hero {
@@ -240,6 +243,8 @@ h1.hero {
 .panel h2 {
     margin: 0 0 30px;
     padding: 0 50px 10px;
+    border-bottom: 10px solid rgba(49, 47, 47, 0);
+    box-shadow: 0 15px 26px rgba(150, 150, 150, 0.21);
     color: rgb(36, 174, 201);
     text-align: center;
     text-transform: uppercase;
@@ -247,8 +252,6 @@ h1.hero {
     font-size: 35px;
     font-family: "Oxygen";
     line-height: 45px;
-    border-bottom: 10px solid rgba(49, 47, 47, 0);
-    box-shadow: 0 15px 26px rgba(150, 150, 150, 0.21);
 }
 
 .panel p {
@@ -280,10 +283,42 @@ h2 + ul li, h3 + ul li {
     list-style: none;
 }
 
-h2+ul li:hover, h3+ul li:hover {
-    background: rgb(53, 52, 52);
+h2 + ul li:hover, h3 + ul li:hover, .ember-view li.html5-list-item:hover {
+    border-color: rgb(0, 0, 0);
+    background: rgb(236, 73, 22);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.ember-view li.html5-list-item a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(255, 151, 102);
+}
+
+.ember-view li.html5-list-item:hover a {
+    color: #000; 
+    text-shadow: none;
+}
+
+.ember-view li.html5-list-item {
+   margin-bottom: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   width: 95%;
+   border-left: 10px solid rgb(236, 73, 22);
+   border-radius: 4px;
+   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
+   list-style: none; 
+}
+
+.ember-view li.html5-list-item a:hover {
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.launch-pad-std {
+    margin: 20px 0px 20px 15px;
 }
 
 section h3 {
@@ -576,8 +611,8 @@ footer h1 {
     width: 80%;
     color: rgb(187, 187, 187);
     text-align: center;
-    text-shadow: 1px 1px rgb(0, 0, 0);
     text-transform: uppercase;
+    text-shadow: 1px 1px rgb(0, 0, 0);
     font-weight: 500;
     font-size: 40px;
     font-family: "Oxygen";
@@ -610,25 +645,34 @@ footer h1 {
 /* pre code styles *----------*/
 .ember-view pre {
     display: block;
-    margin: 5px 20px;
+    margin: 20px 35px 25px 35px;
     padding: 0px;
+    padding-top: 10px;
+    width: 89%;
     border: 1px solid rgb(53, 53, 53);
     border-radius: 4px;
-    background-color: rgba(10, 10, 10, 0.75);
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6);
-    color: rgb(199, 199, 199);
+    background-color: rgba(10, 10, 10, 0.85);
+    box-shadow: inset 0 0 20px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     word-wrap: break-word;
     word-break: break-all;
     font-size: 13px;
     line-height: 13px;
 }
 .classic-git:before {
-    color: rgb(255, 255, 255);
+    color: rgb(236, 73, 22);
     content: "$ ";
 }
 .classic-git {
     display: block;
-    margin-left: 10px;
+    margin: 0 25px 0 25px;
+    padding: 15px 20px 15px 20px;
+    width: 91.5%;
+    border-top: 1px solid rgb(90, 90, 90);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(90, 90, 90);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px rgb(37, 37, 37);
 }
 
