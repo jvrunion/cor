@@ -219,6 +219,14 @@ strong.routes-group {
     margin-left: 25px;
 }
 
+.col-md-3 .well h3 {
+    font-family: "Oxygen";
+    margin: 0px;
+    color: rgb(156, 156, 156);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-size: 20px;
+}
+
 h1.hero {
     font-size: 50px;
     font-family: "Oxygen";
@@ -234,11 +242,11 @@ h1.hero {
     padding: 0 50px;
     color: rgb(36, 174, 201);
     text-align: center;
-    text-transform: none;
+    text-transform: uppercase;
     font-weight: 100;
-    font-size: 28px;
+    font-size: 35px;
     font-family: "Oxygen";
-    line-height: 34px;
+    line-height: 45px;
 }
 
 .panel p {
@@ -258,16 +266,30 @@ h2 + ul {
     line-height: 15px;
 }
 
-h2 + ul li {
+h2 + ul li, h3 + ul li {
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border-bottom: 1px solid rgb(235, 235, 235);
-    border-left: 1px solid rgba(236, 125, 22, 0.5);
-    border-radius: 0 0 0 4px;
+    width: 100%;
+    border-left: 10px solid rgb(236, 73, 22);
+    border-radius: 0px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
     list-style: none;
+}
+
+section h3 {
+    margin-left: 20px;
+    color: rgb(230, 65, 13);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Oxygen";
+}
+
+section ul {
+    margin-left: 0px;
+    padding-right: 10px;
+    padding-left: 20px;
 }
 
 .well img {
@@ -291,7 +313,9 @@ h2 + ul li {
     padding-bottom: 20px;
     padding-left: 15px;
     width: 100%;
+    border-bottom: 1px solid rgb(172, 172, 172);
     background: rgb(226, 226, 226);
+    box-shadow: inset 0 0 20px rgb(145, 145, 145);
     color: rgb(155, 155, 155);
     text-align: center;
     font-weight: 200;
@@ -302,11 +326,11 @@ h2 + ul li {
 
 .blurb-content {
     text-align: center;
-    text-transform: none;
+    text-transform: uppercase;
     text-shadow: 1px 1px rgb(255, 255, 255);
     font-weight: 100;
-    font-size: 35px;
-    line-height: 30px;
+    font-size: 45px;
+    line-height: 55px;
 }
 
 .alpha-content {
@@ -314,8 +338,14 @@ h2 + ul li {
     overflow: hidden;
     margin: 0 auto 77px;
     padding-top: 5px;
-    background: rgba(0, 0, 0, 0.14);
+    background: rgba(0, 0, 0, 0.71);
     box-shadow: inset 0 0 20px;
+}
+
+.alpha-content img {
+    border: 10px solid;
+    border-radius: 0;
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
 }
 
 footer {
@@ -352,19 +382,24 @@ footer {
     cursor: pointer;
 }
 
+.mega-footer-item.active {
+    border-bottom: 5px solid rgb(111, 111, 111);
+    background: rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
 .mega-footer-item {
     float: left;
     margin-bottom: 0;
-    padding: 20px 10px 10px 10px;
-    min-height: 75px;
-    width: 19.875%;
+    padding: 10px;
+    min-height: 60px;
+    width: 15.875%;
     border-top: 5px solid rgb(236, 52, 16);
     text-align: center;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 13px;
     font-family: "Oxygen";
-    line-height: 20px;
+    line-height: 15px;
 }
 
 .mega-header {
@@ -388,7 +423,7 @@ footer {
     color: rgba(17, 165, 223, 0.44);
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
     font-family: "Oxygen";
 }
 
@@ -413,7 +448,7 @@ footer {
     min-height: 200px;
     width: 89%;
     background: rgb(51, 51, 51);
-    box-shadow: inset 0 0 25px rgb(0, 0, 0);
+    box-shadow: inset 0 0 50px rgb(0, 0, 0);
 }
 
 .comment-container h2 {
@@ -421,9 +456,9 @@ footer {
     margin: 0 auto;
     padding: 0 35%;
     width: 100%;
-    color: rgb(230, 56, 13);
+    color: rgb(83, 83, 83);
     text-align: center;
-    text-shadow: 1px 1px rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(20, 20, 20);
     font-family: "Oxygen";
 }
 
@@ -462,11 +497,10 @@ footer {
 }
 
 .carousel-inner {
-    min-height: 345px;
-    max-height: 345px;
-    height: 345px;
-    border-top: solid 10px rgb(24, 24, 24);
-    background: rgb(29, 29, 29);
+    min-height: 400px;
+    max-height: 400px;
+    height: 400px;
+    background: rgba(29, 29, 29, 0.93);
     box-shadow: inset 0 -25px 50px rgb(0, 0, 0);
 }
 
@@ -482,6 +516,16 @@ footer {
 
 .carousel-control.left, .carousel-control.right {
     z-index: 100;
+    width:5%;
+}
+
+.ember-view .carousel-inner > .item > img, .ember-view .carousel-inner > .item > a > img {
+    display: block;
+    min-height: 400px;
+    max-width: 100%;
+    max-height: 400px;
+    height: 400px;
+    line-height: 1;
 }
 
 .ember-view .carousel-indicators {
@@ -509,7 +553,7 @@ footer {
 #map {
     margin: 0 auto;
     margin-bottom: 50px;
-    width: 75%;
+    width: 90%;
     height: 350px;
     border: 10px solid rgb(116, 115, 115);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.96);
@@ -525,9 +569,10 @@ footer h1 {
     color: rgb(187, 187, 187);
     text-align: center;
     text-shadow: 1px 1px rgb(0, 0, 0);
+    text-transform: uppercase;
     font-weight: 500;
-    font-family: "Oxygen";
     font-size: 40px;
+    font-family: "Oxygen";
 }
 
 .end-of-line {
@@ -552,6 +597,31 @@ footer h1 {
 .last-marker {
     float: left;
     clear:both;
+}
+
+/* pre code styles *----------*/
+.ember-view pre {
+    display: block;
+    margin: 5px 20px;
+    padding: 0px;
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 4px;
+    background-color: rgba(10, 10, 10, 0.75);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6);
+    color: rgb(199, 199, 199);
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 13px;
+    line-height: 13px;
+}
+.classic-git:before {
+    color: rgb(255, 255, 255);
+    content: "$ ";
+}
+.classic-git {
+    display: block;
+    margin-left: 10px;
+    text-shadow: 1px 1px rgb(37, 37, 37);
 }
 
 /* Responsive *-----*/
