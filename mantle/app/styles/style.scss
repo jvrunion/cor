@@ -1,375 +1,747 @@
-/* [09] Fonts
--------------------------------------------------------
-   ================================================== */
+@import "bootstrap-sass/lib/bootstrap";
+
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Oxygen:400,300,700);
+
 @font-face {
-    font-family: 'SerifaLight';
-    src: url('fonts/serifa_light-webfont.eot?'), url('fonts/serifa_light-webfont.woff') format('woff'), url('fonts/serifa_light-webfont.ttf') format('truetype'), url('fonts/serifa_light-webfont.svg#webfontKqCC3CdP') format('svg');
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
+    font-family: 'SerifaLight';
+    src: url("fonts/serifa_light-webfont.eot?"), url("fonts/serifa_light-webfont.woff") format("woff"), url("fonts/serifa_light-webfont.ttf") format("truetype"), url("fonts/serifa_light-webfont.svg#webfontKqCC3CdP") format("svg");
 }
+
+
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url("../fonts/glyphicons-halflings-regular.eot");
     src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
+
+
 .SerifaLight {
-    font-family: 'SerifaLight', sans-serif;
     font-weight: 400;
+    font-family: 'SerifaLight', sans-serif;
 }
-@import "bootstrap-sass/lib/bootstrap";
-/* ===[ Put your CSS here ]=== */
+
 html,
 body {
     margin: 30px 0;
+    height: 100%;
     background-color: rgb(239, 239, 239);
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(239, 239, 239)), to(rgb(255, 255, 255)));
     background-image: -webkit-linear-gradient(top, rgb(239, 239, 239), rgb(255, 255, 255));
     background-image: -moz-linear-gradient(top, #efefef, white);
     background-image: -o-linear-gradient(top, #efefef, white);
     background-image: linear-gradient(to bottom, rgb(233, 233, 233), rgb(255, 255, 255));
-    height: 100%;
     background-attachment: fixed;
 }
-a:hover,
-a:focus {
-    color: rgb(22, 172, 201);
-    text-decoration: underline;
+
+.ember-view a:hover {
+    color: rgb(179, 179, 179);
+    text-shadow: 1px 1px rgb(255, 255, 255);
 }
-a {
+
+.ember-view a {
     color: rgb(230, 76, 16);
     text-decoration: none;
 }
-body { color: rgb(129, 129, 129) }
+
+body {
+    color: rgb(129, 129, 129);
+}
+
 h2,
-h3 { text-transform: uppercase }
+h3 {
+    text-transform: uppercase;
+}
+
 #main {
-    margin: 0px auto;
+    margin: 0 auto;
     width: 90%;
 }
+
 .ember-view .navbar-default {
-	background-color: rgb(27, 27, 27);
-	border-color: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-	margin-bottom: 0px;
-	height: 50px;
+    overflow: inherit;
+    margin-bottom: 0;
+    max-height: 100px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
 }
-    .ember-view .navbar-default .navbar-brand {
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-        font-weight: 100;
-        font-family: "SerifaLight";
-        padding-top: 20px;
-    }
-    .navbar-default .navbar-brand:hover,
-    .navbar-default .navbar-brand:focus {
-        color: rgb(217, 233, 224);
-        background-color: rgba(0, 0, 0, 0);
-        color: rgb(190, 189, 189);
-    }
 
-	.ember-view .navbar-collapse.navbar-ex1-collapse.in {
-		background: rgba(0, 0, 0, 0.86);
-		border-color: rgba(0, 0, 0, 0);
-		top: -5px;
-		width: 100%;
-		position: relative;
-		text-shadow: 1px 1px rgb(0, 0, 0);
-	}    
+.ember-view .navbar-default .navbar-brand {
+    margin-top: 6px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 38px;
+    font-family: "Oxygen";
+    line-height: 38px;
+}
 
-	.ember-view .navbar-default .navbar-toggle {
-		border-color: rgb(0, 0, 0);
-		background: rgb(238, 63, 8);
-		color: rgb(238, 63, 8);
-		box-shadow: 0px 0px 25px rgb(0, 0, 0);
-	}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: rgb(49, 114, 134);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0);
+}
 
-	.ember-view .navbar-default .navbar-toggle:hover {
-		background: rgb(60, 59, 59);
-		color: rgb(255, 255, 255);
-	}	
+.ember-view .navbar-collapse.navbar-ex1-collapse.in {
+    position: relative;
+    top: -5px;
+    width: 100%;
+    border-color: rgb(0, 0, 0);
+    background: rgb(17, 17, 17);
+    box-shadow: inset 0 50px 25px rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.ember-view .navbar-default .navbar-toggle {
+    border-color: rgb(0, 0, 0);
+    background: rgb(238, 63, 8);
+    box-shadow: 0 0 25px rgb(0, 0, 0);
+    color: rgb(238, 63, 8);
+}
+
+.ember-view .navbar-default .navbar-toggle:hover {
+    background: rgb(60, 59, 59);
+    color: rgb(255, 255, 255);
+}
+
 .brand-pure {
+    padding: 0;
     color: rgb(248, 46, 8);
     font-weight: 200;
-    padding: 0px;
 }
 
 .navbar-brand:hover .brand-pure {
-	color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .ember-view .navbar-default .navbar-toggle .icon-bar {
-	background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
+
 a.content-brand {
-    font-size: 24px;
-    font-weight: 100;
     color: rgb(248, 46, 8);
+    font-weight: 100;
+    font-size: 24px;
 }
+
 strong.routes-group {
     font-weight: 100;
     font-size: 18px;
 }
+
 .list-group {
+    display: block;
+    margin-top: 15px;
     margin-bottom: 20px;
     padding-left: 0;
-    margin-top: 15px;
     border-radius: 8px 8px 8px 8px;
-    display: block;
     background: rgb(114, 218, 213);
 }
+
+.list-group-item:hover a {
+    color: rgb(255, 255, 255);
+}
+.mega-header-item:hover span {
+    color: rgb(255, 61, 0);
+}
 .list-group-item:hover {
-	border-top: 1px solid rgb(158, 68, 51);
-	cursor: pointer;
-	background-color: rgb(246, 66, 33);
-	text-shadow: 1px 1px rgb(134, 32, 14);
-	color: rgb(255, 255, 255);
-	border-right: 5px solid rgba(94, 0, 0, 0.5);
-	border-bottom: 1px solid rgb(158, 68, 51);
-	border-left: 1px solid rgb(158, 68, 51);
+    margin-bottom: -1px;
+    border-top: 1px solid rgba(100, 100, 100, 0.69);
+    border-right: 1px solid rgba(160, 160, 160, 0.23);
+    border-bottom: 1px solid rgb(29, 29, 29);
+    border-left: 1px solid rgb(243, 61, 15);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
-.list-group-item {
-	position: relative;
-	display: block;
-	padding: 10px 15px;
-	margin-bottom: -1px;
-	background-color: rgb(255, 255, 255);
-	border: 1px solid rgb(221, 221, 221);
-	color: rgb(246, 66, 33);
+
+.ember-view .list-group-item:hover {
+    margin-bottom: -1px;
+    border-top: 1px solid rgba(100, 100, 100, 0.69);
+    border-right: 1px solid rgba(160, 160, 160, 0.23);
+    border-bottom: 1px solid rgb(29, 29, 29);
+    border-left: 1px solid rgb(243, 61, 15);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
-.well h1 {
-    font-size: 30px;
-    font-weight: 100;
-    padding: 0px;
-    color: rgb(34, 19, 3);
-    opacity: .35;
-    margin-top: 0px;
+
+.ember-view .list-group-item {
+    position: relative;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 15px 10px 10px;
+    border: 1px solid rgb(80, 80, 80);
+    background-color: rgb(255, 255, 255);
 }
-.well {
-    min-height: 20px;
-    padding: 19px;
-    margin-bottom: 20px;
-    background-color: whitesmoke;
-    border: 1px solid rgb(227, 227, 227);
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    overflow: auto;
+
+.list-group-item a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
-.well.sidebar-nav {
-    margin-left: 25px;
-    /*	position: fixed;*/
-    /*	width: 21.22%;*/
+
+.list-group-item a {
+    padding-left: 0px;
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 13px;
 }
-h1.hero {
-    opacity: 1.0;
-    font-size: 50px;
-    font-family: SerifaLight;
-}
-.panel { position: relative }
-    .panel h2 {
-        font-weight: 200;
-        font-size: 20px;
-        padding: 0px 50px;
-        color: rgb(36, 174, 201);
-        font-family: SerifaLight;
-        text-align: center;
-        line-height: 25px;
-        text-transform: uppercase;
-        margin: 0px 0px 20px 0px;
-    }
-    .panel p {
-        font-weight: 400;
-        font-size: 13px;
-        padding: 0px 10px 10px 20px;
-        line-height: 15px;
-        color: rgba(0, 0, 0, 0.75);
-    }
-h2 + ul {
+
+.list-group .tooltip-inner {
+    overflow: visible;
+    padding: 10px 18px 10px 26px;
+    min-width:175px;
+    min-height: 75px;
+    max-width: 175px;
+    max-height: 100px;
+    width:175px;
+    height: auto;
+    border:1px solid #333;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color:rgb(14, 192, 226);
+    text-align: left;
+    text-shadow: 1px 1px rgb(0, 0, 0);
     font-weight: 400;
     font-size: 13px;
-    padding: 0px 10px 10px 20px;
-    line-height: 15px;
-    color: rgba(0, 0, 0, 0.75);
-    margin-left: 40px;
+    line-height: 16px;
+    opacity: 1.0;
 }
-    h2 + ul li {
-        border-left: 1px solid rgb(236, 125, 22);
-        padding-left: 10px;
-        margin-bottom: 25px;
-        list-style: none;
-    }
+
+.well h1 {
+    margin-top: 0;
+    padding: 0;
+    color: rgb(34, 19, 3);
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.well {
+    overflow: auto;
+    margin-bottom: 20px;
+    padding: 19px;
+    min-height: 20px;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 4px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.well.sidebar-nav {
+    margin-left: 25px;
+}
+
+.col-md-3 .well h3 {
+    margin: 0px;
+    color: rgb(14, 192, 226);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Oxygen";
+}
+
+h1.hero {
+    font-size: 50px;
+    font-family: "Oxygen";
+    opacity: 1.0;
+}
+
+.panel {
+    position: relative;
+}
+
+.panel h2 {
+    margin: 0 0 30px;
+    padding: 15px 50px 25px;
+    border-bottom: 10px solid rgba(49, 47, 47, 0);
+    box-shadow: 0 15px 26px rgba(150, 150, 150, 0.21);
+    color: rgb(14, 192, 226);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 38px;
+    font-family: "Oxygen";
+    line-height: 44px;
+}
+
+.panel p {
+    padding: 0 10px 10px 20px;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+h2 + ul {
+    margin-left: 0;
+    padding: 0 10px 10px 10px;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+h2 + ul li, h3 + ul li {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 100%;
+    border-left: 10px solid rgb(236, 73, 22);
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
+    list-style: none;
+}
+
+h2 + ul li:hover, h3 + ul li:hover, .ember-view li.html5-list-item:hover {
+    border-color: rgb(0, 0, 0);
+    background: rgb(14, 192, 226);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.ember-view li.html5-list-item a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px rgb(255, 151, 102);
+}
+
+.ember-view li.html5-list-item:hover a {
+    color: #000; 
+    text-shadow: none;
+}
+
+.ember-view li.html5-list-item {
+   margin-bottom: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   width: 95%;
+   border-left: 10px solid rgb(14, 192, 226);
+   border-radius: 4px;
+   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
+   list-style: none; 
+   font-weight: 400;
+}
+
+.ember-view li.html5-list-item a:hover {
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.launch-pad-std {
+    margin: 20px 0px 20px 15px;
+}
+
+#main section {
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    margin: 20px;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-size: 28px;
+    font-family: "Oxygen";
+}
+
+section ul {
+    margin-left: 0px;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
 .well img {
-    max-width: 100%;
     margin: 35px 5% 40px 5%;
+    max-width: 100%;
     width: 90%;
     background: whitesmoke;
 }
+
 .well img.hero-image {
+    margin: 0 auto;
     width: 83%;
-    margin: 0px auto;
 }
+
 .panel-blurb {
-	position: relative;
-	width: 100%;
-	padding-left: 15px;
-	background: rgb(226, 226, 226);
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color: rgb(155, 155, 155);
-	font-size: 35px;
-	font-weight: 200;
-	top: -76px;
-	margin-bottom: -40px;
-	padding-right: 15px;
-	text-align: center;
-	line-height: 30px;
+    position: relative;
+    top: -76px;
+    margin-bottom: -40px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    width: 100%;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    background: rgb(226, 226, 226);
+    box-shadow: inset 0 0 20px rgb(145, 145, 145);
+    color: rgb(155, 155, 155);
+    text-align: center;
+    font-weight: 200;
+    font-size: 35px;
+    font-family: "Oxygen";
+    line-height: 30px;
 }
+
 .blurb-content {
-	font-size: 35px;
-	font-weight: 200;
-	text-align: center;
-	line-height: 30px;
-	font-family: SerifaLight;
-	text-transform: uppercase;
-	text-shadow: 1px 1px rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 45px;
+    line-height: 55px;
 }
+
 .alpha-content {
-    margin: 0px auto 77px;
-    background: rgba(0, 0, 0, 0.14);
-    overflow: hidden;
     display: block;
+    overflow: hidden;
+    margin: 20px auto 13px;
     padding-top: 5px;
-    box-shadow: inset 0px 0px 20px;
+    background: rgba(0, 0, 0, 0.71);
+    box-shadow: inset 0 0 20px;
 }
+
+.alpha-content img {
+    border: 20px solid;
+    border-radius: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
+}
+
 footer {
-    background: rgb(51, 51, 51);
-    padding: 0px;
-    color: rgb(255, 255, 255);
+    float: left;
+    clear: both;
     overflow: auto;
+    margin-top: 55px;
+    padding: 0;
     width: 100%;
     border-top: 1px solid rgb(0, 0, 0);
+    background: rgb(51, 51, 51);
     box-shadow: 10px 10px 35px rgb(0, 0, 0);
-    margin-top: 55px;
-    clear: both;
-    float: left;
+    color: rgb(255, 255, 255);
 }
+
 .mega-footer {
-	list-style: none;
-	overflow: auto;
-	box-shadow: 0px 5px 20px rgb(34, 34, 34);
-	width: 100%;
-	margin: 45px auto;
-	padding: 0px 142px;
-	border-top: 2px solid rgb(134, 134, 134);
-	background: rgb(77, 75, 75);
+    overflow: auto;
+    margin: 0 auto 0 0;
+    padding: 0 70px;
+    width: 100%;
+    border-top: 2px solid rgb(46, 46, 46);
+    background: rgb(77, 75, 75);
+    box-shadow: 0 5px 20px rgb(34, 34, 34);
+    list-style: none;
 }
+
 .mega-footer-item:hover {
-    background: rgb(248, 46, 8);
+    border-bottom: 5px solid rgb(248, 46, 8);
+    background: rgb(226, 226, 226);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    color: rgb(248, 46, 8);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-weight: 400;
     cursor: pointer;
+}
+
+.mega-footer-item.active {
+    border-bottom: 5px solid rgb(111, 111, 111);
+    background: rgb(0, 0, 0);
     text-shadow: 1px 1px rgb(0, 0, 0);
-    border-radius: 10px 0px 10px 0px;
 }
 .mega-footer-item {
-    font-weight: 200;
-    font-size: 15px;
     float: left;
-    width: auto;
-    border: none;
-    line-height: 20px;
-    font-family: "SerifaLight";
-    text-transform: uppercase;
-    min-height: 45px;
-    padding: 15px 10px 10px;
-    margin: 10px 10px 10px 0px;
-}
-.mega-header {
-    list-style: none;
-    margin-left: 0px;
-    width: 100%;
-}
-.mega-header-item:hover {
-	color: rgb(255, 255, 255);
-	cursor: pointer;
-	border-bottom: 4px solid rgb(245, 63, 6);
-}
-.mega-header-item {
-	font-weight: 400;
-	font-size: 15px;
-	font-family: SerifaLight;
-	float: left;
-	width: auto;
-	margin-right: 20px;
-	margin-top: 17px;
-	text-transform: uppercase;
-	height: 33px;
-	color: rgb(245, 63, 6);
-}
-.mega-header-item.active {
-	color: rgba(175, 175, 175, 0.39);
-	cursor: pointer;
-	text-shadow: 1px 1px rgb(0, 0, 0);
-	border-bottom: 3px solid rgb(0, 200, 255);
-	border-radius: 0;
-	height: 33px;
-}
-.comment-container {
-    width: 100%;
-    background: rgb(68, 68, 68);
-    float: left;
-    clear: both;
-    padding: 10px 0px 95px 15px;
-    min-height: 200px;
-}
-.disqus-me {
-    width: 100%;
-    margin: 0px auto;
-}
-.ember-view .carousel-caption {
-	background: rgba(0, 0, 0, 0.75);
-	font-size: 32px;
-	font-weight: 300;
-	color: rgb(255, 255, 255);
-	font-family: "SerifaLight";
-	text-shadow: 1px 1px rgb(0, 0, 0);
-	text-transform: uppercase;
-	padding: 20px 40px;
-}
-.carousel-inner {
-    background: rgb(21, 144, 179);
-    display: block;
-    width: 100%;
-    height: auto;
-    line-height: 1;
-    margin: 0px auto 25px 0px;
-}
-.set-center {
-	margin: 50px auto;
-}
-#main .well {
-    max-width: 1040px;
-    margin: 0px auto;
-}
-#map {
-    height: 350px;
-    margin-bottom: 15px;
-    width: 75%;
-    margin: 0px auto;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.61);
-    border: 10px solid rgb(46, 46, 46);
-}
-.leaflet-popup-content { color: rgb(51, 51, 51) }
-footer h1 {
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    font-family: "SerifaLight";
-    text-shadow: 1px 1px rgb(0, 0, 0);
-    margin: 20px auto;
-    width: 80%;
+    margin-bottom: 0;
+    padding: 10px;
+    min-height: 60px;
+    width: 15.875%;
+    border-top: 5px solid rgb(236, 52, 16);
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 13px;
+    font-family: "Oxygen";
+    line-height: 15px;
 }
-.end-of-line { color: rgb(77, 77, 77) }
+
+.mega-header {
+    margin-left: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.mega-header-item:hover {
+    border-bottom: 4px solid rgb(245, 63, 6);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.mega-header-item {
+    float: left;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: auto;
+    height: 38px;
+    color: rgb(10, 81, 109);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: "Oxygen";
+}
+
+.mega-header-item.active {
+    height: 38px;
+    border-bottom: 3px solid rgb(0, 200, 255);
+    border-radius: 0;
+    color: rgb(14, 192, 226);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.mega-header-item.active:hover {
+    border-bottom-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.comment-container {
+    clear: both;
+    margin: 1px auto 0 auto;
+    padding: 30px;
+    min-height: 200px;
+    width: 89%;
+    background: rgb(51, 51, 51);
+    box-shadow: inset 0 0 50px rgb(0, 0, 0);
+}
+
+.comment-container h2 {
+    display: block;
+    margin: 0 auto;
+    padding: 0 35%;
+    width: 100%;
+    color: rgb(83, 83, 83);
+    text-align: center;
+    text-shadow: 1px 1px rgb(20, 20, 20);
+    font-family: "Oxygen";
+}
+
+.disqus-me {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.carousel {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.ember-view .carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    overflow: visible;
+    padding: 15px 85px;
+    width: 100%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.67);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.28);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 46px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.carousel-inner {
+    min-height: 400px;
+    max-height: 400px;
+    height: 400px;
+    background: rgba(29, 29, 29, 0.93);
+    box-shadow: inset 0 -25px 50px rgb(0, 0, 0);
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    z-index: 100;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+}
+
+.carousel-control.left, .carousel-control.right {
+    z-index: 100;
+    width:5%;
+}
+
+.ember-view .carousel-inner > .item > img, .ember-view .carousel-inner > .item > a > img {
+    display: block;
+    min-height: 400px;
+    max-width: 100%;
+    max-height: 400px;
+    height: 400px;
+    line-height: 1;
+    -webkit-filter: grayscale(100%);  
+}
+
+.ember-view .carousel-inner > .item > img:hover, .ember-view .carousel-inner > .item > a > img:hover {
+    -webkit-filter: grayscale(0%);  
+}
+
+.ember-view .carousel-indicators {
+    z-index: 100;
+}
+
+.ember-view .carousel-indicators .active {
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    background-color: rgb(231, 91, 25);
+}
+
+.set-center {
+    margin: 50px auto;
+}
+
+#main .well {
+    overflow: visible;
+    margin: 0 auto;
+    max-width: 1040px;
+    border-color: rgb(204, 204, 204);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+#main .col-md-3 .well {
+    border: 20px solid rgb(190, 190, 190);
+    border-color: rgb(221, 221, 221);
+    border-radius: 4px;
+    background: rgb(66, 66, 66);
+    box-shadow: inset 0 0 40px rgb(0, 0, 0);
+}
+
+#main .col-md-3 .well ul li {
+    background: rgb(51, 51, 51);
+}
+
+.ember-view #main .col-md-3 .well ul li:hover {
+    background: rgb(0, 0, 0);
+}
+
+.ember-view #main .col-md-3 .well ul li:hover:before {
+    content: "+ ";
+    color:rgb(14, 192, 226);
+}
+
+#map {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 90%;
+    height: 350px;
+    border: 10px solid rgb(116, 115, 115);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.96);
+}
+
+.leaflet-popup-content {
+    color: rgb(51, 51, 51);
+}
+
+footer h1 {
+    margin: 20px auto 40px;
+    width: 80%;
+    color: rgb(187, 187, 187);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 40px;
+    font-family: "Oxygen";
+}
+
+.end-of-line {
+    color: rgb(77, 77, 77);
+}
+
+.col-md-3.affix {
+    left: 2%;
+    z-index: 100;
+    margin-top: -10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.ember-view .postbox {
+    position: relative;
+    margin: 10px auto;
+    width: 85%;
+}
+
+.last-marker {
+    float: left;
+    clear:both;
+}
+
+/* pre code styles *----------*/
+.ember-view pre {
+    display: block;
+    margin: 20px 35px 25px 35px;
+    padding: 0px;
+    padding-top: 10px;
+    width: 89%;
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 4px;
+    background-color: rgba(10, 10, 10, 0.85);
+    box-shadow: inset 0 0 20px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 13px;
+    line-height: 13px;
+}
+.classic-git:before {
+    color: rgb(236, 73, 22);
+    content: "$ ";
+}
+.classic-git {
+    display: block;
+    margin: 0 25px 0 25px;
+    padding: 15px 20px 15px 20px;
+    width: 91.5%;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(90, 90, 90);
+    border-bottom: 1px solid rgb(90, 90, 90);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px rgb(37, 37, 37);
+}
 
 /* Responsive *-----*/
 
+@media (max-width: 768px) {
+    .mega-header-item {
+        clear: both;
+        margin-left: -20px;
+        width: 100%;
+    }    
+}
 
+@media (max-width: 992px) {
+    .col-md-3.affix {
+        position: relative;
+        left: 0;
+        z-index: 100;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
