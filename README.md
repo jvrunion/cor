@@ -13,6 +13,7 @@ Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, 
 
 ```bash
   git clone https://github.com/jvrunion/cor.git
+  cd cor
 ```
 
 ```bash
@@ -24,16 +25,19 @@ Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, 
 ```bash
   npm install -g yo
 ```				
-* Install the Bower packages then update them
+* Check for updates to the Bower packages
 
-```bash
-  bower install --save
-```	
 ```bash
   bower update --save
 ```	
 
-* Create a dist package with Grunt
+* Install your local node packages
+
+```bash
+  npm update
+```
+
+* Create an initial dist package with Grunt
 
 ```bash
   grunt
@@ -44,6 +48,14 @@ Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, 
 ```bash
   grunt server
 ```	
+
+Your cloned app will be availible at:
+
+```bash
+  http://localhost:9000
+```
+
+####Happy Coding!
 
 ### This is a work in progress and will probably not be stable for another couple of weeks.
 

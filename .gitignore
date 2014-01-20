@@ -4,5 +4,4 @@ temp
 .tmp
 app/bower_components
 .gitattributes
-.jshintrc
 .editorconfig
