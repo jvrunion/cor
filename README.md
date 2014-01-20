@@ -37,7 +37,7 @@ Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, 
   grunt
 ```	
 
-* Start your dev server with Grrunt
+* Start your dev server with Grunt
 
 ```bash
   grunt server
