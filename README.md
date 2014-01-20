@@ -31,6 +31,12 @@ Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, 
   bower update --save
 ```	
 
+* Install your local node packages
+
+```bash
+  npm update
+```
+
 * Create an initial dist package with Grunt
 
 ```bash
