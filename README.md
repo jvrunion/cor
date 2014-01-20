@@ -11,9 +11,9 @@ Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, 
 
 * Clone a copy of C&#213;R
 
-'''bash
+```bash
   git clone https://github.com/jvrunion/cor.git
-'''
+```
 
 ```bash
   npm install -g grunt-contrib-compass
