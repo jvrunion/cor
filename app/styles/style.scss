@@ -24,7 +24,8 @@
 
 html,
 body {
-    margin: 30px 0;
+    /*    margin: 30px 0;*/
+    margin:0;
     height: 100%;
     background-color: rgb(239, 239, 239);
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(239, 239, 239)), to(rgb(255, 255, 255)));
@@ -117,6 +118,26 @@ h3 {
 
 .navbar-brand:hover .brand-pure {
     color: rgb(255, 255, 255);
+}
+
+.ember-view .navbar-inverse .navbar-brand {
+    margin-left: -10px;
+    padding: 15px 0 15px 0;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.ember-view .navbar-inverse .navbar-brand:hover {
+    color: rgb(90, 90, 90);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.ember-view .navbar-inverse .navbar-brand {
+    margin-left: -10px;
+    padding: 15px 0 15px 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 30px;
 }
 
 .ember-view .navbar-default .navbar-toggle .icon-bar {
@@ -478,6 +499,7 @@ footer {
 }
 
 .mega-header-item:hover {
+    height: 36px;
     border-bottom: 4px solid rgb(245, 63, 6);
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -488,8 +510,8 @@ footer {
     margin-top: 15px;
     margin-right: 20px;
     width: auto;
-    height: 38px;
-    color: rgb(10, 81, 109);
+    height: 36px;
+    color: rgb(79, 143, 168);
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
@@ -612,7 +634,10 @@ footer {
 }
 
 .set-center {
-    margin: 50px auto;
+    float: left;
+    clear: both;
+    margin: 75px auto;
+    width: 100%;
 }
 
 #main .well {
@@ -640,8 +665,8 @@ footer {
 }
 
 .ember-view #main .col-md-3 .well ul li:hover:before {
-    content: "+ ";
     color:rgb(14, 192, 226);
+    content: "+ ";
 }
 
 #map {
@@ -679,6 +704,10 @@ footer h1 {
     margin-top: -10px;
     padding: 10px;
     border-radius: 4px;
+}
+
+.nav.navbar-nav.mega-header.affix {
+    margin-left: 8%;
 }
 
 .ember-view .postbox {
@@ -729,10 +758,11 @@ footer h1 {
 /* Responsive *-----*/
 
 @media (max-width: 768px) {
-    .mega-header-item {
+    .mega-header-item,  .mega-header-item.active{
         clear: both;
-        margin-left: -20px;
-        width: 100%;
+        margin-left: 10px;
+        padding-left: 10px;
+        width: 85%;
     }    
 }
 
@@ -741,7 +771,210 @@ footer h1 {
         position: relative;
         left: 0;
         z-index: 100;
+        margin-top: 20px;
         margin-bottom: 30px;
         width: 100%;
+    }
+}
+
+
+/* Responsive Left Bar Test *-----*/
+
+body.slide-active {
+    overflow-x: hidden;
+}
+
+.no-margin-top {
+    margin-top: 0!important;
+}
+
+#page-content, #main {
+    position: relative;
+    left: 0;
+    padding-top: 10px;
+}
+#page-content.slide-active {
+    padding-top: 0;
+}
+
+#slide-nav .navbar-toggle {
+    position: fixed;
+    right: 10px;
+    margin: 8px 0;
+    padding: 3px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid rgb(139, 139, 139);
+    background: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.66);
+    line-height: 0;
+    cursor: pointer;
+}
+
+#slide-nav .navbar-toggle > .icon-bar {
+    display: block;
+    margin: 5px 0 0 0;
+    width: 100%;
+    height: 3px;
+}
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+    background: rgb(230, 65, 13);
+}
+.navbar-header {
+    position: relative;
+}
+/* un fix the navbar when active so that all the menu items are accessible */
+.navbar.navbar-fixed-top.slide-active {
+    position: relative;
+}
+
+@media (max-width:767px) { 
+
+    .panel h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .panel p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .ember-view .html5-list-item {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .ember-view .carousel-caption {
+        height: 30%;
+        font-size: 20px;
+    }
+
+    .ember-view .navbar-inverse .navbar-brand {
+        margin-left: 4%;
+    }
+
+    .ember-view .navbar-inverse .navbar-brand {
+        margin-left: 22px;
+    }
+
+    section h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .ember-view pre {
+        margin: 0;
+        padding: 3px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #layout {
+        overflow: hidden;
+        font-size: 12px;
+    }
+
+    .classic-git {
+        margin: 0 0 0 15px;
+        padding: 15px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+
+    .set-center {
+        margin:30px 0;
+    }
+
+    .col-md-9.pull-right {
+        width:100%;
+    }
+
+    #slide-nav {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-top: 0;
+    }
+
+    #slide-nav .container {
+        margin: 0;
+        padding: 0!important;
+    }
+    #slide-nav .navbar-header {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    #slide-nav .navbar.slide-active {
+        position: absolute;
+        top: -1px;
+        z-index: 1000;
+        width: 40%;
+    }
+    #slide-nav #slidemenu {
+        position: absolute;
+        top: -8px;
+        left: -100%;
+        z-index: 2;
+        margin: 0;
+        padding-left: 0;
+        min-width: 0;
+        width: 40%;
+        background: #f7f7f7;
+    }
+    #slide-nav #slidemenu .navbar-nav {
+        margin: 15px 0 0 0;
+        min-width: 0;
+        width: 40%;
+    }
+    #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+        min-width: 0;
+        width: 40%;
+        white-space: normal;
+    }
+    #slide-nav {
+        border-top: 0;
+    }
+    #slide-nav.navbar-inverse #slidemenu {
+        background: #333;
+    }
+
+    #slide-nav #navbar-height-col {
+        position: fixed;
+        top: 0;
+        left: -40%;
+        width: 40%;
+        height: 100%;
+        background: #eee;
+    }
+    #slide-nav.navbar-inverse #navbar-height-col {
+        z-index: 1;
+        border: 0;
+        border-left: 10px solid rgb(41, 41, 41);
+        background: rgb(0, 0, 0);
+    }
+    #slide-nav .navbar-form {
+        overflow: hidden;
+        margin: 8px 0;
+        width: 100%;
+        text-align: center;
+        /*fast clearfixer*/
+    }
+    #slide-nav .navbar-form .form-control {
+        text-align: center;
+    }
+    #slide-nav .navbar-form .btn {
+        width: 100%;
+    }
+}
+@media (min-width:768px) { 
+    #page-content {
+        left: 0!important;
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed;
+    }
+    .navbar-header {
+        left: 0!important;
     }
 }
