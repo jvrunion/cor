@@ -1,6 +1,6 @@
-#C&#213;R - An Ember.js driven Micro Framework
+#C&#213;R - An Ember.js Micro Framework
 
-Responsive Micro Site Template using Bootstrap 3, Ember.js, Leaflet.js, and Yeoman, Grunt and Bower for Package Managment
+Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, and Grunt
 
 ###PRE-REQUISITES
 
