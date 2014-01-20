@@ -340,16 +340,16 @@ h2 + ul li:hover, h3 + ul li:hover, .ember-view li.html5-list-item:hover {
 }
 
 .ember-view li.html5-list-item {
-   margin-bottom: 10px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   padding-left: 10px;
-   width: 95%;
-   border-left: 10px solid rgb(14, 192, 226);
-   border-radius: 4px;
-   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
-   list-style: none; 
-   font-weight: 400;
+ margin-bottom: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-left: 10px;
+ width: 95%;
+ border-left: 10px solid rgb(14, 192, 226);
+ border-radius: 4px;
+ box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
+ list-style: none; 
+ font-weight: 400;
 }
 
 .ember-view li.html5-list-item a:hover {
