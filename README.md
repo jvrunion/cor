@@ -1,8 +1,50 @@
-C&#213;R UI
-====
+#C&#213;R - An Ember.js Micro Framework
 
-Responsive Micro Site Template using Bootstrap 3, Ember.js, Leaflet.js, D3.js, and Yeoman, Grunt and Bower for Package Managment
+Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, and Grunt
+
+###PRE-REQUISITES
+
+* You have to have NPM installed for Node.js package managment
+* You will also need to have Grunt installed as your task runner
+
+###QUICK INSTALL
+
+* Clone a copy of C&#213;R
+
+```bash
+  git clone https://github.com/jvrunion/cor.git
+```
+
+```bash
+  npm install -g grunt-contrib-compass
+```
+
+* Then install Yeoman via npm
+
+```bash
+  npm install -g yo
+```				
+* Install the Bower packages then update them
+
+```bash
+  bower install --save
+```	
+```bash
+  bower update --save
+```	
+
+* Create a dist package with Grunt
+
+```bash
+  grunt
+```	
+
+* Start your dev server with Grunt
+
+```bash
+  grunt server
+```	
 
 ### This is a work in progress and will probably not be stable for another couple of weeks.
 
-Thanks and happy Forking!
+Thanks and Happy Forking!

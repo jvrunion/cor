@@ -1,6 +1,6 @@
 @import "bootstrap-sass/lib/bootstrap";
 
-@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Oxygen:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Oxygen:400,300,700|Montserrat:400,700);
 
 @font-face {
     font-weight: 400;
@@ -24,7 +24,7 @@
 
 html,
 body {
-    margin: 30px 0;
+    margin:0;
     height: 100%;
     background-color: rgb(239, 239, 239);
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(239, 239, 239)), to(rgb(255, 255, 255)));
@@ -75,9 +75,9 @@ h3 {
     padding-top: 0px;
     padding-bottom: 0px;
     color: rgb(255, 255, 255);
-    font-weight: 200;
+    font-weight: normal;
     font-size: 38px;
-    font-family: "Oxygen";
+    font-family: "Montserrat";
     line-height: 38px;
 }
 
@@ -117,6 +117,28 @@ h3 {
 
 .navbar-brand:hover .brand-pure {
     color: rgb(255, 255, 255);
+}
+
+.ember-view .navbar-inverse .navbar-brand {
+    margin-left: -10px;
+    padding: 15px 0 15px 0;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: normal
+}
+
+.ember-view .navbar-inverse .navbar-brand:hover {
+    color: rgb(90, 90, 90);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.ember-view .navbar-inverse .navbar-brand {
+    margin-left: -10px;
+    padding: 15px 0 15px 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 30px;
 }
 
 .ember-view .navbar-default .navbar-toggle .icon-bar {
@@ -241,16 +263,16 @@ strong.routes-group {
 
 .col-md-3 .well h3 {
     margin: 0px;
-    color: rgb(14, 192, 226);
+    color: rgb(163, 163, 163);
     text-shadow: 1px 1px rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     font-family: "Oxygen";
 }
 
 h1.hero {
     font-size: 50px;
-    font-family: "Oxygen";
+    font-family: "Montserrat";
     opacity: 1.0;
 }
 
@@ -261,22 +283,24 @@ h1.hero {
 .panel h2 {
     margin: 0 0 30px;
     padding: 15px 50px 25px;
-    border-bottom: 10px solid rgba(49, 47, 47, 0);
+    border-bottom: 10px solid rgba(49, 47, 47, 0.19);
     box-shadow: 0 15px 26px rgba(150, 150, 150, 0.21);
-    color: rgb(14, 192, 226);
+    color: rgb(36, 190, 219);
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-weight: 400;
     font-size: 38px;
-    font-family: "Oxygen";
-    line-height: 44px;
+    font-family: "Montserrat";
+    line-height: 40px;
 }
 
 .panel p {
     padding: 0 10px 10px 20px;
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.5);
     font-weight: 500;
     font-size: 15px;
+    font-family: "Oxygen";
     line-height: 20px;
 }
 
@@ -286,6 +310,7 @@ h2 + ul {
     color: rgba(0, 0, 0, 0.75);
     font-weight: 300;
     font-size: 15px;
+    font-family: "Oxygen";
     line-height: 15px;
 }
 
@@ -329,6 +354,7 @@ h2 + ul li:hover, h3 + ul li:hover, .ember-view li.html5-list-item:hover {
    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
    list-style: none; 
    font-weight: 400;
+   font-family: "Oxygen";
 }
 
 .ember-view li.html5-list-item a:hover {
@@ -389,7 +415,7 @@ section ul {
     text-align: center;
     font-weight: 200;
     font-size: 35px;
-    font-family: "Oxygen";
+    font-family: "Montserrat";
     line-height: 30px;
 }
 
@@ -478,6 +504,7 @@ footer {
 }
 
 .mega-header-item:hover {
+    height: 36px;
     border-bottom: 4px solid rgb(245, 63, 6);
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -488,8 +515,8 @@ footer {
     margin-top: 15px;
     margin-right: 20px;
     width: auto;
-    height: 38px;
-    color: rgb(10, 81, 109);
+    height: 36px;
+    color: rgb(79, 143, 168);
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
@@ -516,7 +543,7 @@ footer {
     padding: 30px;
     min-height: 200px;
     width: 89%;
-    background: rgb(51, 51, 51);
+    background: rgba(22, 22, 22, 0.8);
     box-shadow: inset 0 0 50px rgb(0, 0, 0);
 }
 
@@ -558,8 +585,9 @@ footer {
     text-transform: uppercase;
     text-shadow: 0 1px 2px rgb(0, 0, 0);
     font-weight: 300;
-    font-size: 46px;
-    font-family: 'Oxygen', sans-serif;
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 44px;
 }
 
 .carousel-inner {
@@ -612,7 +640,10 @@ footer {
 }
 
 .set-center {
-    margin: 50px auto;
+    float: left;
+    clear: both;
+    margin: 75px auto;
+    width: 100%;
 }
 
 #main .well {
@@ -633,6 +664,7 @@ footer {
 
 #main .col-md-3 .well ul li {
     background: rgb(51, 51, 51);
+    font-family: "Oxygen";
 }
 
 .ember-view #main .col-md-3 .well ul li:hover {
@@ -640,8 +672,8 @@ footer {
 }
 
 .ember-view #main .col-md-3 .well ul li:hover:before {
-    content: "+ ";
     color:rgb(14, 192, 226);
+    content: "+ ";
 }
 
 #map {
@@ -679,6 +711,10 @@ footer h1 {
     margin-top: -10px;
     padding: 10px;
     border-radius: 4px;
+}
+
+.nav.navbar-nav.mega-header.affix {
+    margin-left: 8%;
 }
 
 .ember-view .postbox {
@@ -729,10 +765,11 @@ footer h1 {
 /* Responsive *-----*/
 
 @media (max-width: 768px) {
-    .mega-header-item {
+    .mega-header-item,  .mega-header-item.active{
         clear: both;
-        margin-left: -20px;
-        width: 100%;
+        margin-left: 10px;
+        padding-left: 10px;
+        width: 85%;
     }    
 }
 
@@ -741,7 +778,213 @@ footer h1 {
         position: relative;
         left: 0;
         z-index: 100;
+        margin-top: 20px;
         margin-bottom: 30px;
         width: 100%;
+    }
+}
+
+
+/* Responsive Left Bar Test *-----*/
+
+body.slide-active {
+    overflow-x: hidden;
+}
+
+.no-margin-top {
+    margin-top: 0!important;
+}
+
+#page-content, #main {
+    position: relative;
+    left: 0;
+    padding-top: 10px;
+}
+#page-content.slide-active {
+    padding-top: 0;
+}
+
+#slide-nav .navbar-toggle {
+    position: fixed;
+    right: 10px;
+    margin: 8px 0;
+    padding: 3px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid rgb(139, 139, 139);
+    background: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.66);
+    line-height: 0;
+    cursor: pointer;
+}
+
+#slide-nav .navbar-toggle > .icon-bar {
+    display: block;
+    margin: 5px 0 0 0;
+    width: 100%;
+    height: 3px;
+}
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+    background: rgb(230, 65, 13);
+}
+.navbar-header {
+    position: relative;
+}
+/* un fix the navbar when active so that all the menu items are accessible */
+.navbar.navbar-fixed-top.slide-active {
+    position: relative;
+}
+
+@media (max-width:767px) { 
+
+    .panel h2 {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .panel p {
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .ember-view .html5-list-item {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .ember-view .carousel-caption {
+        height: 30%;
+        font-size: 20px;
+    }
+
+    .ember-view .navbar-inverse .navbar-brand {
+        margin-left: 4%;
+    }
+
+    .ember-view .navbar-inverse .navbar-brand {
+        margin-left: 22px;
+    }
+
+    section h3 {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center
+    }
+
+    .ember-view pre {
+        margin: 0;
+        padding: 3px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #layout {
+        overflow: hidden;
+        font-size: 12px;
+    }
+
+    .classic-git {
+        margin: 0 0 0 15px;
+        padding: 15px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+
+    .set-center {
+        margin:30px 0;
+    }
+
+    .col-md-9.pull-right {
+        width:100%;
+    }
+
+    #slide-nav {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-top: 0;
+    }
+
+    #slide-nav .container {
+        margin: 0;
+        padding: 0!important;
+    }
+    #slide-nav .navbar-header {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    #slide-nav .navbar.slide-active {
+        position: absolute;
+        top: -1px;
+        z-index: 1000;
+        width: 40%;
+    }
+    #slide-nav #slidemenu {
+        position: absolute;
+        top: -8px;
+        left: -100%;
+        z-index: 2;
+        margin: 0;
+        padding-left: 0;
+        min-width: 0;
+        width: 40%;
+        background: #f7f7f7;
+    }
+    #slide-nav #slidemenu .navbar-nav {
+        margin: 15px 0 0 0;
+        min-width: 0;
+        width: 40%;
+    }
+    #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+        min-width: 0;
+        width: 40%;
+        white-space: normal;
+    }
+    #slide-nav {
+        border-top: 0;
+    }
+    #slide-nav.navbar-inverse #slidemenu {
+        background: #333;
+    }
+
+    #slide-nav #navbar-height-col {
+        position: fixed;
+        top: 0;
+        left: -40%;
+        width: 40%;
+        height: 100%;
+        background: #eee;
+    }
+    #slide-nav.navbar-inverse #navbar-height-col {
+        z-index: 1;
+        border: 0;
+        border-left: 10px solid rgb(41, 41, 41);
+        background: rgb(0, 0, 0);
+    }
+    #slide-nav .navbar-form {
+        overflow: hidden;
+        margin: 8px 0;
+        width: 100%;
+        text-align: center;
+        /*fast clearfixer*/
+    }
+    #slide-nav .navbar-form .form-control {
+        text-align: center;
+    }
+    #slide-nav .navbar-form .btn {
+        width: 100%;
+    }
+}
+@media (min-width:768px) { 
+    #page-content {
+        left: 0!important;
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed;
+    }
+    .navbar-header {
+        left: 0!important;
     }
 }
