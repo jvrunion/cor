@@ -1,10 +1,9 @@
 Cor.ApplicationView = Ember.View.extend({
     didInsertElement: function(window, document) {
-
         var panelTip = ('.generated-left-panel');
         jQuery(panelTip).tooltip();
-        var line = ('footer');
 
+        var line = ('footer');
         jQuery(line).onScreen({
             doIn: function() {
                 jQuery('.col-md-3').removeClass('affix');
@@ -15,7 +14,6 @@ Cor.ApplicationView = Ember.View.extend({
         });
 
         var map = L.map('map');
-
         map.locate({
             setView: true,
             maxZoom: 11
@@ -40,21 +38,18 @@ Cor.ApplicationView = Ember.View.extend({
             minZoom: 09
         }).addTo(map);
 
-        //stick in the fixed 100% height behind the navbar but don't wrap it
+        // settings for responsive left panel
         jQuery('#slide-nav.navbar .container').append(jQuery('<div id="navbar-height-col"></div>'));
-
-        // Enter your ids or classes
         var toggler = '.navbar-toggle';
         var pagewrapper = '#main';
         var navigationwrapper = '.navbar-header';
-        var menuwidth = '100%'; // the menu inside the slide menu itself
+        var menuwidth = '100%';
         var slidewidth = '40%';
         var menuneg = '-100%';
         var slideneg = '-80%';
 
         jQuery("#slide-nav").on("click", toggler, function(e) {
             var selected = jQuery(this).hasClass('slide-active');
-
             jQuery('#slidemenu').stop().animate({
                 left: selected ? menuneg : '0px'
             });
@@ -78,7 +73,6 @@ Cor.ApplicationView = Ember.View.extend({
 
         var selected = '#slidemenu, #main, body, .navbar, .navbar-header';
         jQuery(window).on("resize", function() {
-
             if (jQuery(window).width() > 767 && jQuery('.navbar-toggle').is(':hidden')) {
                 jQuery(selected).removeClass('slide-active');
             }

@@ -1,6 +1,6 @@
 @import "bootstrap-sass/lib/bootstrap";
 
-@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Oxygen:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Oxygen:400,300,700|Montserrat:400,700);
 
 @font-face {
     font-weight: 400;
@@ -24,7 +24,6 @@
 
 html,
 body {
-    /*    margin: 30px 0;*/
     margin:0;
     height: 100%;
     background-color: rgb(239, 239, 239);
@@ -76,9 +75,9 @@ h3 {
     padding-top: 0px;
     padding-bottom: 0px;
     color: rgb(255, 255, 255);
-    font-weight: 200;
+    font-weight: normal;
     font-size: 38px;
-    font-family: "Oxygen";
+    font-family: "Montserrat";
     line-height: 38px;
 }
 
@@ -125,6 +124,8 @@ h3 {
     padding: 15px 0 15px 0;
     color: rgb(255, 255, 255);
     font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: normal
 }
 
 .ember-view .navbar-inverse .navbar-brand:hover {
@@ -262,16 +263,16 @@ strong.routes-group {
 
 .col-md-3 .well h3 {
     margin: 0px;
-    color: rgb(14, 192, 226);
+    color: rgb(163, 163, 163);
     text-shadow: 1px 1px rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     font-family: "Oxygen";
 }
 
 h1.hero {
     font-size: 50px;
-    font-family: "Oxygen";
+    font-family: "Montserrat";
     opacity: 1.0;
 }
 
@@ -282,22 +283,24 @@ h1.hero {
 .panel h2 {
     margin: 0 0 30px;
     padding: 15px 50px 25px;
-    border-bottom: 10px solid rgba(49, 47, 47, 0);
+    border-bottom: 10px solid rgba(49, 47, 47, 0.19);
     box-shadow: 0 15px 26px rgba(150, 150, 150, 0.21);
-    color: rgb(14, 192, 226);
+    color: rgb(36, 190, 219);
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-weight: 400;
     font-size: 38px;
-    font-family: "Oxygen";
-    line-height: 44px;
+    font-family: "Montserrat";
+    line-height: 40px;
 }
 
 .panel p {
     padding: 0 10px 10px 20px;
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.5);
     font-weight: 500;
     font-size: 15px;
+    font-family: "Oxygen";
     line-height: 20px;
 }
 
@@ -307,6 +310,7 @@ h2 + ul {
     color: rgba(0, 0, 0, 0.75);
     font-weight: 300;
     font-size: 15px;
+    font-family: "Oxygen";
     line-height: 15px;
 }
 
@@ -340,16 +344,17 @@ h2 + ul li:hover, h3 + ul li:hover, .ember-view li.html5-list-item:hover {
 }
 
 .ember-view li.html5-list-item {
- margin-bottom: 10px;
- padding-top: 10px;
- padding-bottom: 10px;
- padding-left: 10px;
- width: 95%;
- border-left: 10px solid rgb(14, 192, 226);
- border-radius: 4px;
- box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
- list-style: none; 
- font-weight: 400;
+   margin-bottom: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   width: 95%;
+   border-left: 10px solid rgb(14, 192, 226);
+   border-radius: 4px;
+   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
+   list-style: none; 
+   font-weight: 400;
+   font-family: "Oxygen";
 }
 
 .ember-view li.html5-list-item a:hover {
@@ -410,7 +415,7 @@ section ul {
     text-align: center;
     font-weight: 200;
     font-size: 35px;
-    font-family: "Oxygen";
+    font-family: "Montserrat";
     line-height: 30px;
 }
 
@@ -538,7 +543,7 @@ footer {
     padding: 30px;
     min-height: 200px;
     width: 89%;
-    background: rgb(51, 51, 51);
+    background: rgba(22, 22, 22, 0.8);
     box-shadow: inset 0 0 50px rgb(0, 0, 0);
 }
 
@@ -580,8 +585,9 @@ footer {
     text-transform: uppercase;
     text-shadow: 0 1px 2px rgb(0, 0, 0);
     font-weight: 300;
-    font-size: 46px;
-    font-family: 'Oxygen', sans-serif;
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 44px;
 }
 
 .carousel-inner {
@@ -658,6 +664,7 @@ footer {
 
 #main .col-md-3 .well ul li {
     background: rgb(51, 51, 51);
+    font-family: "Oxygen";
 }
 
 .ember-view #main .col-md-3 .well ul li:hover {
@@ -834,11 +841,13 @@ body.slide-active {
     .panel h2 {
         font-size: 20px;
         line-height: 24px;
+        text-align: center;
     }
 
     .panel p {
         font-size: 13px;
-        line-height: 15px;
+        line-height: 18px;
+        text-align: center;
     }
 
     .ember-view .html5-list-item {
@@ -862,6 +871,7 @@ body.slide-active {
     section h3 {
         font-size: 18px;
         line-height: 22px;
+        text-align: center
     }
 
     .ember-view pre {
