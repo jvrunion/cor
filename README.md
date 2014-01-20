@@ -1,19 +1,19 @@
-#C&#213;R
+#C&#213;R - An Ember.js driven Micro Framework
 
 Responsive Micro Site Template using Bootstrap 3, Ember.js, Leaflet.js, and Yeoman, Grunt and Bower for Package Managment
 
-##PRE-REQUISITES
+###PRE-REQUISITES
 
-*You have to have NPM installed for Node.js package managment
-*You will also need to have Grunt installed as your task runner
+* You have to have NPM installed for Node.js package managment
+* You will also need to have Grunt installed as your task runner
 
-##QUICK INSTALL
+###QUICK INSTALL
 
 ```bash
   npm install -g grunt-contrib-compass
 ```
 
-Then install Yeoman via npm
+* Then install Yeoman via npm
 
 ```bash
   npm install -g yo
