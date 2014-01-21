@@ -2,7 +2,6 @@ Cor.ApplicationView = Ember.View.extend({
     didInsertElement: function(window, document) {
         var panelTip = ('.generated-left-panel');
         jQuery(panelTip).tooltip();
-
         // scrolling panel config
         var line = ('footer');
         jQuery(line).onScreen({
@@ -14,7 +13,7 @@ Cor.ApplicationView = Ember.View.extend({
             }
         });
 
-        // settings for responsive left panel
+        // responsive left panel config
         jQuery('#slide-nav.navbar .container').append(jQuery('<div id="navbar-height-col"></div>'));
         var toggler = '.navbar-toggle';
         var pagewrapper = '#main';

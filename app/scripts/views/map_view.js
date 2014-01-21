@@ -3,6 +3,7 @@ Cor.MapView = Ember.View.extend({
     didInsertElement: function(window, document) {
         // leaflet config
         var map = L.map('map');
+
         map.locate({
             setView: true,
             maxZoom: 11
@@ -14,16 +15,13 @@ Cor.MapView = Ember.View.extend({
             L.circle(e.latlng, radius).addTo(map);
         }
 
-        map.on('locationfound', onLocationFound);
-
         function onLocationError(e) {
             window.alert(e.message);
         }
-
+        map.on('locationfound', onLocationFound);
         map.on('locationerror', onLocationError);
 
         var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/{styleId}/256/{z}/{x}/{y}.png';
-
         var minimal = L.tileLayer(cloudmadeUrl, {
             styleId: 22677
         }),
@@ -42,15 +40,17 @@ Cor.MapView = Ember.View.extend({
             "Night View": midnight,
             "Streets": streets
         };
-
         var overlayMaps = {
             "Motorways": motorways
         };
 
         L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
-            updateWhenIdle: true
+            updateWhenIdle: true,
+            touchZoom: false,
         }).addTo(map);
-
         L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+        map.touchZoom.disable();
+        map.scrollWheelZoom.disable();
     }
 });
