@@ -33,10 +33,34 @@ Cor.ApplicationView = Ember.View.extend({
 
         map.on('locationerror', onLocationError);
 
+        var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/{styleId}/256/{z}/{x}/{y}.png';
+
+        var minimal = L.tileLayer(cloudmadeUrl, {
+            styleId: 22677
+        }),
+            midnight = L.tileLayer(cloudmadeUrl, {
+                styleId: 999
+            }),
+            motorways = L.tileLayer(cloudmadeUrl, {
+                styleId: 46561
+            });
+
+        var baseMaps = {
+            "Minimal": minimal,
+            "Night View": midnight
+        };
+
+        var overlayMaps = {
+            "Motorways": motorways
+        };
+
         L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
             maxZoom: 14,
-            minZoom: 09
+            minZoom: 09,
+            layers: [minimal, motorways]
         }).addTo(map);
+
+        L.control.layers(baseMaps, overlayMaps).addTo(map);
 
         // settings for responsive left panel
         jQuery('#slide-nav.navbar .container').append(jQuery('<div id="navbar-height-col"></div>'));
