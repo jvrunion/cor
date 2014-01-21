@@ -23,6 +23,7 @@
         "L": false,
         "self": false,
         "buffer": false,
-        "Read": false     
+        "Read": false,
+        "map": false     
     }
 }
