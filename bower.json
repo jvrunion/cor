@@ -8,7 +8,8 @@
     "onScreen": "*",
     "ember-addons.bs_for_ember": "~0.5.2",
     "ember-data": "~0.0.14",
-    "ember-data-shim": "~0.0.14"
+    "ember-data-shim": "~0.0.14",
+    "leaflet.fullscreen": "https://github.com/brunob/leaflet.fullscreen.git#~1.0.0"
   },
   "devDependencies": {
     "ember-mocha-adapter": "0.1.2"

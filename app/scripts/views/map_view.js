@@ -44,13 +44,16 @@ Cor.MapView = Ember.View.extend({
             "Motorways": motorways
         };
 
+        var fullScreen = new L.Control.FullScreen();
+
         L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
             updateWhenIdle: true,
-            touchZoom: false,
+            touchZoom: false
         }).addTo(map);
         L.control.layers(baseMaps, overlayMaps).addTo(map);
 
         map.touchZoom.disable();
         map.scrollWheelZoom.disable();
+        map.addControl(fullScreen);
     }
 });
