@@ -3,6 +3,7 @@ Cor.ApplicationView = Ember.View.extend({
         var panelTip = ('.generated-left-panel');
         jQuery(panelTip).tooltip();
 
+        // scrolling panel config
         var line = ('footer');
         jQuery(line).onScreen({
             doIn: function() {
@@ -13,6 +14,7 @@ Cor.ApplicationView = Ember.View.extend({
             }
         });
 
+        // leaflet config
         var map = L.map('map');
         map.locate({
             setView: true,
@@ -55,8 +57,7 @@ Cor.ApplicationView = Ember.View.extend({
         };
 
         L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
-            maxZoom: 14,
-            minZoom: 09,
+            updateWhenIdle: true,
             layers: [minimal, motorways]
         }).addTo(map);
 
