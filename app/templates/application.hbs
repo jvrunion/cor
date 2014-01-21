@@ -11,7 +11,7 @@
             <a class="navbar-brand" href="#">C<span class="brand-pure">&#213;</span>R</a>
         </div>
         <div id="slidemenu">
-           <ul class="nav navbar-nav mega-header affix">
+         <ul class="nav navbar-nav mega-header affix">
             <li class="mega-header-item">Launch-Pad <span class="end-of-line">{ Blog }</span></li>
             <li class="mega-header-item">Architecture <span class="end-of-line">{ UX }</span></li>
             <li class="mega-header-item">Generators <span class="end-of-line">{ JS }</span></li>
@@ -36,15 +36,15 @@
                 </div>      
             </div>
             <div class="col-md-9 pull-right">            
-                {{outlet}}                                    
+                {{outlet}}                                
             </div>
         </div>
     </div>
 </div>
 <div class="row-fluid">
     <footer>
-        <h1>Where are You?</h1>   
-        <div id="map"></div>   
+        <h1>Where are You?</h1> 
+        {{view Cor.MapView}}
         <ul class="mega-footer">
             <li class="mega-footer-item active">Launch-Pad</li>
             <li class="mega-footer-item">Architecture</li>
@@ -58,18 +58,17 @@
             <div class="disqus-me">
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
-                        var disqus_shortname = 'freshjs'; // required: replace example with your forum shortname
-                        /* * * DON'T EDIT BELOW THIS LINE * * */
-                        (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>                    
-                </div>
-            </div>        
-        </footer>
-    </div>    
+                    var disqus_shortname = 'freshjs';
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>                    
+            </div>
+        </div>        
+    </footer>
+</div>    
 </div>
