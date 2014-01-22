@@ -52,7 +52,7 @@ Cor.ApplicationView = Ember.View.extend({
                 jQuery(selected).removeClass('slide-active');
             }
             if (jQuery(window).width() === 768) {
-                jQuery(selected).addClass('slide-active');
+                jQuery(selected).addClass('slide-active').animate('.navbar-header');
             }
         });
     }

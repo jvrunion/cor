@@ -851,6 +851,9 @@ body.slide-active {
         margin: 0 auto;
         padding: 0 15px;
     }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed;
+    }    
     #slide-nav .navbar.slide-active {
         position: absolute;
         top: -1px;
@@ -932,7 +935,8 @@ body.slide-active {
     }
 
     .navbar-header.slide-active {
-        left: 43%!important;
+        left: 35%!important;
+        position: relative;
     }    
 
     #page-content,
