@@ -1,4 +1,4 @@
-<div>
+<div class="ember-super-wrapper">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
       <div class="container">
         <div class="navbar-header">
@@ -11,7 +11,7 @@
             <a class="navbar-brand" href="#">C<span class="brand-pure">&#213;</span>R</a>
         </div>
         <div id="slidemenu">
-         <ul class="nav navbar-nav mega-header affix">
+           <ul class="nav navbar-nav mega-header affix">
             <li class="mega-header-item">Launch-Pad <span class="end-of-line">{ Blog }</span></li>
             <li class="mega-header-item">Architecture <span class="end-of-line">{ UX }</span></li>
             <li class="mega-header-item">Generators <span class="end-of-line">{ JS }</span></li>
@@ -22,20 +22,11 @@
     </div>
 </div>
 </div>
+{{view Cor.CarouselView}} 
 <div class="container-fluid" id="main">
-    <div class="row-fluid no-margin-top">
+    <div class="row-fluid no-margin-top">       
         <div class="set-center">
-            <div class="col-md-3 affix">
-                <div class="well"> 
-                    <h3>Trends</h3>              
-                    <ul class="list-group">
-                        {{#each item in controller}}
-                        <li class="list-group-item">{{item}}</li>
-                        {{/each}}
-                    </ul>
-                </div>      
-            </div>
-            <div class="col-md-9 pull-right">            
+            <div class="col-md-12 pull-right">            
                 {{outlet}}                                
             </div>
         </div>
