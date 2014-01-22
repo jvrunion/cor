@@ -1,5 +1,8 @@
+/* -- standard file import directives ---- */
+
 @import "bootstrap-sass/lib/bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Oxygen:400,300,700|Montserrat:400,700);
+
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url("../fonts/glyphicons-halflings-regular.eot");
@@ -10,10 +13,28 @@
 
 $cor-brand: rgb(248, 46, 8);
 $std-white: rgb(255, 255, 255);
+$std-black: rgb(0, 0, 0);
+
+/* -- margins and padding / for pixels ---- */
+
+$null-pixel: 0;
+$margin-level-one: 10px;
+$margin-level-two: 20px;
+$margin-level-three: 30px;
+$margin-level-four: 40px;
+$margin-level-five: 50px;
+
+/* -- margins and padding / for percents ---- */
+
+$margin-percent-level-one: 10%;
+$margin-percent-level-two: 20%;
+$margin-percent-level-three: 30%;
+$margin-percent-level-four: 40%;
+$margin-percent-level-five: 50%;
 
 html,
 body {
-    margin: 0;
+    margin: $null-pixel;
     height: 100%;
     background-color: rgb(239, 239, 239);
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(239, 239, 239)), to($std-white));
@@ -23,6 +44,15 @@ body {
     background-image: linear-gradient(to bottom, rgb(233, 233, 233), $std-white);
     background-attachment: fixed;
 }
+
+body {
+    color: rgb(129, 129, 129);
+}
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
 .ember-view a:hover {
     color: rgb(179, 179, 179);
     text-shadow: 1px 1px $std-white;
@@ -31,13 +61,7 @@ body {
     color: $cor-brand;
     text-decoration: none;
 }
-body {
-    color: rgb(129, 129, 129);
-}
-h2,
-h3 {
-    text-transform: uppercase;
-}
+
 #main {
     margin: 0 auto;
     width: 90%;
@@ -295,32 +319,33 @@ h3 + ul li:hover,
     text-shadow: none;
 }
 .ember-view li.html5-list-item {
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    width: 95%;
+    margin: 10px 0;
+    width: 100%;
     border-left: 10px solid rgb(14, 192, 226);
     border-radius: 4px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
     list-style: none;
     font-weight: 400;
     font-family: "Oxygen";
+    padding: 10px;
+    line-height: 24px;
 }
 .ember-view li.html5-list-item a:hover {
     text-decoration: none;
     text-shadow: none;
 }
 .launch-pad-std {
-    margin: 20px 0 20px 15px;
+    margin: 10px 0px;
+    padding: 0 10px;
 }
 #main section {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 0;
     padding-top: 15px;
-    padding-bottom: 20px;
-    border-top: 1px solid rgb(238, 238, 238);
+    padding-bottom: 0;
+    border-top: 1px solid rgb(255, 255, 255);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(223, 223, 223);
 }
 section h3 {
     margin: 20px;
@@ -331,8 +356,6 @@ section h3 {
 }
 section ul {
     margin-left: 0px;
-    padding-right: 10px;
-    padding-left: 20px;
 }
 .well img {
     margin: 35px 5% 40px 5%;
@@ -593,7 +616,7 @@ footer {
 #main .well {
     overflow: visible;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
     max-width: 100%;
     border-color: rgb(204, 204, 204);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
@@ -714,7 +737,9 @@ footer h1 {
         width: 85%;
     }
 }
-/* ===[ Responsive Left Bar Test *----- ]=== */
+
+/* -- responsive left panel config ---- */
+
 body.slide-active {
     overflow-x: hidden;
 }
@@ -775,9 +800,16 @@ body.slide-active {
         font-size: 13px;
         line-height: 18px;
     }
+    .launch-pad-std {
+        margin: 15px 0;
+    }    
     .ember-view .html5-list-item {
-        font-size: 12px;
-        line-height: 15px;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 0px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center
     }
     .ember-view .carousel-caption {
         top: 90px;
@@ -899,7 +931,9 @@ body.slide-active {
         z-index: 1;
         border: 0;
         border-left: 10px solid rgb(41, 41, 41);
-        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.86);
+        border-right: 10px solid rgb(0, 0, 0);
+        margin-top: 51px;
     }
     .slide-active #slide-nav.navbar-inverse #navbar-height-col {
         min-width: 200px;
@@ -931,12 +965,12 @@ body.slide-active {
 @media (max-width:768px) {
 
     #slide-nav .navbar-toggle {
-        display: block
+        display: block;
     }
 
     .navbar-header.slide-active {
-        left: 35%!important;
         position: relative;
+        left: 35%!important;
     }    
 
     #page-content,
@@ -945,8 +979,8 @@ body.slide-active {
     }
     .panel h2 {
         text-align: center;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 28px;
+        line-height: 34px;
     }
     .panel p {
         text-align: center;
@@ -954,16 +988,19 @@ body.slide-active {
         line-height: 18px;
     }
     .ember-view .html5-list-item {
-        font-size: 12px;
-        line-height: 15px;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 0px;
+        font-size: 14px;
+        line-height: 18px;
     }
     .ember-view .carousel-caption {
         top: 90px;
-        padding: 10px 20px;
+        padding: 20px;
         height: 150px;
+        font-size: 30px;
+        line-height: 34px;
         text-align: center;
-        font-size: 18px;
-        line-height: 22px;
     }
     .ember-view .carousel-inner {
         padding: 0;
@@ -1037,14 +1074,14 @@ body.slide-active {
     }
     #slide-nav #slidemenu {
         position: absolute;
-        top: -8px;
+        top: 50px;
         left: -100%;
         z-index: 2;
         margin: 0;
         padding-left: 0;
         min-width: 0;
         width: 40%;
-        background: #f7f7f7;
+        background: rgb(247, 247, 247);
     }
     #slide-nav #slidemenu .navbar-nav {
         margin: 15px 0 0 0;
@@ -1074,7 +1111,9 @@ body.slide-active {
         z-index: 1;
         border: 0;
         border-left: 10px solid rgb(41, 41, 41);
-        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.85);
+        border-right: 10px solid rgb(0, 0, 0);
+        box-shadow: 5px -10px 20px rgba(0, 0, 0, 0.7);
     }
     .slide-active #slide-nav.navbar-inverse #navbar-height-col {
         min-width: 200px;
@@ -1096,4 +1135,52 @@ body.slide-active {
     .carousel-indicators {
         bottom: 55px;
     }
+}
+
+
+/* New set of media query directives for standard devices ----- */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
 }
