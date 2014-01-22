@@ -1,5 +1,7 @@
 #C&#213;R - An Ember.js Micro Framework
 
+<img src="app/images/cor-hero.png">
+
 Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, and Grunt
 
 ###PRE-REQUISITES
