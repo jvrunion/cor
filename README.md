@@ -1,3 +1,6 @@
+<p><a href="http://travis-ci.org/gruntjs/grunt"><img src="https://secure.travis-ci.org/gruntjs/grunt.png?branch=master" alt="Build Status" style="max-width:100%;"></a>
+<a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt" style="max-width:100%;"></a></p>
+
 #C&#213;R - An Ember.js Micro Framework
 
 Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, and Grunt
