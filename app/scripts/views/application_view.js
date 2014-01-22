@@ -51,6 +51,9 @@ Cor.ApplicationView = Ember.View.extend({
             if (jQuery(window).width() > 767 && jQuery('.navbar-toggle').is(':hidden')) {
                 jQuery(selected).removeClass('slide-active');
             }
+            if (jQuery(window).width() === 768) {
+                jQuery(selected).addClass('slide-active');
+            }
         });
     }
 });
