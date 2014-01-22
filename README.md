@@ -1,8 +1,9 @@
-#C&#213;R - An Ember.js Micro Framework
+<p><a href="http://travis-ci.org/gruntjs/grunt"><img src="https://secure.travis-ci.org/gruntjs/grunt.png?branch=master" alt="Build Status" style="max-width:100%;"></a>
+<a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt" style="max-width:100%;"></a></p>
 
-<img src="app/images/cor-hero.png">
+<p><img src="https://raw.github.com/jvrunion/cor/gh-pages/app/images/cor-hero.png" style="max-width:100%;"></p>
 
-Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, and Grunt
+Responsive Ember.js Micro Framework using Bootstrap 3, Leaflet.js, Yeoman, and Grunt
 
 ###PRE-REQUISITES
 
@@ -36,7 +37,7 @@ Responsive Micro Site Template using Ember.js, Bootstrap 3, Leaflet.js, Yeoman, 
 * Install your local node packages
 
 ```bash
-  npm update
+  npm install
 ```
 
 * Create an initial dist package with Grunt
