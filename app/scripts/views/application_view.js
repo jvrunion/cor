@@ -16,7 +16,7 @@ Cor.ApplicationView = Ember.View.extend({
         // responsive left panel config
         jQuery('#slide-nav.navbar .container').append(jQuery('<div id="navbar-height-col"></div>'));
         var toggler = '.navbar-toggle';
-        var pagewrapper = '#main';
+        var pagewrapper = '.ember-super-wrapper';
         var navigationwrapper = '.navbar-header';
         var menuwidth = '100%';
         var slidewidth = '40%';
@@ -50,6 +50,9 @@ Cor.ApplicationView = Ember.View.extend({
         jQuery(window).on("resize", function() {
             if (jQuery(window).width() > 767 && jQuery('.navbar-toggle').is(':hidden')) {
                 jQuery(selected).removeClass('slide-active');
+            }
+            if (jQuery(window).width() === 768) {
+                jQuery(selected).addClass('slide-active').animate('.navbar-header');
             }
         });
     }

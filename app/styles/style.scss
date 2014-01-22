@@ -1,64 +1,47 @@
 @import "bootstrap-sass/lib/bootstrap";
-
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Oxygen:400,300,700|Montserrat:400,700);
-
-@font-face {
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'SerifaLight';
-    src: url("fonts/serifa_light-webfont.eot?"), url("fonts/serifa_light-webfont.woff") format("woff"), url("fonts/serifa_light-webfont.ttf") format("truetype"), url("fonts/serifa_light-webfont.svg#webfontKqCC3CdP") format("svg");
-}
-
-
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url("../fonts/glyphicons-halflings-regular.eot");
     src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
+/* -- sass swatches --*/
 
-.SerifaLight {
-    font-weight: 400;
-    font-family: 'SerifaLight', sans-serif;
-}
+$cor-brand: rgb(248, 46, 8);
+$std-white: rgb(255, 255, 255);
 
 html,
 body {
-    margin:0;
+    margin: 0;
     height: 100%;
     background-color: rgb(239, 239, 239);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(239, 239, 239)), to(rgb(255, 255, 255)));
-    background-image: -webkit-linear-gradient(top, rgb(239, 239, 239), rgb(255, 255, 255));
-    background-image: -moz-linear-gradient(top, #efefef, white);
-    background-image: -o-linear-gradient(top, #efefef, white);
-    background-image: linear-gradient(to bottom, rgb(233, 233, 233), rgb(255, 255, 255));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(239, 239, 239)), to($std-white));
+    background-image: -webkit-linear-gradient(top, rgb(239, 239, 239), $std-white);
+    background-image: -moz-linear-gradient(top, #efefef, $std-white);
+    background-image: -o-linear-gradient(top, #efefef, $std-white);
+    background-image: linear-gradient(to bottom, rgb(233, 233, 233), $std-white);
     background-attachment: fixed;
 }
-
 .ember-view a:hover {
     color: rgb(179, 179, 179);
-    text-shadow: 1px 1px rgb(255, 255, 255);
+    text-shadow: 1px 1px $std-white;
 }
-
 .ember-view a {
-    color: rgb(230, 76, 16);
+    color: $cor-brand;
     text-decoration: none;
 }
-
 body {
     color: rgb(129, 129, 129);
 }
-
 h2,
 h3 {
     text-transform: uppercase;
 }
-
 #main {
     margin: 0 auto;
     width: 90%;
 }
-
 .ember-view .navbar-default {
     overflow: inherit;
     margin-bottom: 0;
@@ -66,27 +49,24 @@ h3 {
     border-color: rgb(0, 0, 0);
     background-color: rgb(27, 27, 27);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    color: rgb(255, 255, 255);
+    color: $std-white;
 }
-
 .ember-view .navbar-default .navbar-brand {
     margin-top: 6px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    color: rgb(255, 255, 255);
+    color: $std-white;
     font-weight: normal;
     font-size: 38px;
     font-family: "Montserrat";
     line-height: 38px;
 }
-
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: rgb(49, 114, 134);
     text-shadow: 1px 1px rgba(0, 0, 0, 0);
 }
-
 .ember-view .navbar-collapse.navbar-ex1-collapse.in {
     position: relative;
     top: -5px;
@@ -96,66 +76,55 @@ h3 {
     box-shadow: inset 0 50px 25px rgb(0, 0, 0);
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
-
 .ember-view .navbar-default .navbar-toggle {
     border-color: rgb(0, 0, 0);
     background: rgb(238, 63, 8);
     box-shadow: 0 0 25px rgb(0, 0, 0);
     color: rgb(238, 63, 8);
 }
-
 .ember-view .navbar-default .navbar-toggle:hover {
     background: rgb(60, 59, 59);
-    color: rgb(255, 255, 255);
+    color: $std-white;
 }
-
 .brand-pure {
     padding: 0;
-    color: rgb(248, 46, 8);
+    color: $cor-brand;
     font-weight: 200;
 }
-
 .navbar-brand:hover .brand-pure {
-    color: rgb(255, 255, 255);
+    color: $std-white;
 }
-
 .ember-view .navbar-inverse .navbar-brand {
     margin-left: -10px;
     padding: 15px 0 15px 0;
-    color: rgb(255, 255, 255);
+    color: $std-white;
     font-weight: normal;
     font-size: 30px;
     font-family: "Montserrat";
 }
-
 .ember-view .navbar-inverse .navbar-brand:hover {
     color: rgb(90, 90, 90);
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
-
 .ember-view .navbar-inverse .navbar-brand {
     margin-left: -10px;
     padding: 15px 0 15px 0px;
-    color: rgb(255, 255, 255);
+    color: $std-white;
     font-weight: 200;
     font-size: 30px;
 }
-
 .ember-view .navbar-default .navbar-toggle .icon-bar {
-    background-color: rgb(255, 255, 255);
+    background-color: $std-white;
 }
-
 a.content-brand {
     color: rgb(248, 46, 8);
     font-weight: 100;
     font-size: 24px;
 }
-
 strong.routes-group {
     font-weight: 100;
     font-size: 18px;
 }
-
 .list-group {
     display: block;
     margin-top: 15px;
@@ -164,12 +133,11 @@ strong.routes-group {
     border-radius: 8px 8px 8px 8px;
     background: rgb(114, 218, 213);
 }
-
 .list-group-item:hover a {
-    color: rgb(255, 255, 255);
+    color: $std-white;
 }
 .mega-header-item:hover span {
-    color: rgb(255, 61, 0);
+    color: $cor-brand;
 }
 .list-group-item:hover {
     margin-bottom: -1px;
@@ -177,35 +145,31 @@ strong.routes-group {
     border-right: 1px solid rgba(160, 160, 160, 0.23);
     border-bottom: 1px solid rgb(29, 29, 29);
     border-left: 1px solid rgb(243, 61, 15);
-    color: rgb(255, 255, 255);
+    color: $std-white;
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
-
 .ember-view .list-group-item:hover {
     margin-bottom: -1px;
     border-top: 1px solid rgba(100, 100, 100, 0.69);
     border-right: 1px solid rgba(160, 160, 160, 0.23);
     border-bottom: 1px solid rgb(29, 29, 29);
     border-left: 1px solid rgb(243, 61, 15);
-    color: rgb(255, 255, 255);
+    color: $std-white;
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
-
 .ember-view .list-group-item {
     position: relative;
     display: block;
     margin-bottom: -1px;
     padding: 10px 15px 10px 10px;
     border: 1px solid rgb(80, 80, 80);
-    background-color: rgb(255, 255, 255);
+    background-color: $std-white;
 }
-
 .list-group-item a:hover {
-    color: rgb(255, 255, 255);
+    color: $std-white;
     text-decoration: none;
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
-
 .list-group-item a {
     padding-left: 0px;
     color: rgb(90, 90, 90);
@@ -215,20 +179,19 @@ strong.routes-group {
     font-weight: 500;
     font-size: 13px;
 }
-
 .list-group .tooltip-inner {
     overflow: visible;
     padding: 10px 18px 10px 26px;
-    min-width:175px;
+    min-width: 175px;
     min-height: 75px;
     max-width: 175px;
     max-height: 100px;
-    width:175px;
+    width: 175px;
     height: auto;
-    border:1px solid #333;
+    border: 1px solid #333;
     background: rgb(0, 0, 0);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    color:rgb(14, 192, 226);
+    color: rgb(14, 192, 226);
     text-align: left;
     text-shadow: 1px 1px rgb(0, 0, 0);
     font-weight: 400;
@@ -236,7 +199,6 @@ strong.routes-group {
     line-height: 16px;
     opacity: 1.0;
 }
-
 .well h1 {
     margin-top: 0;
     padding: 0;
@@ -244,7 +206,6 @@ strong.routes-group {
     font-weight: 100;
     font-size: 30px;
 }
-
 .well {
     overflow: auto;
     margin-bottom: 20px;
@@ -256,11 +217,9 @@ strong.routes-group {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-
 .well.sidebar-nav {
     margin-left: 25px;
 }
-
 .col-md-3 .well h3 {
     margin: 0px;
     color: rgb(163, 163, 163);
@@ -269,32 +228,27 @@ strong.routes-group {
     font-size: 18px;
     font-family: "Oxygen";
 }
-
 h1.hero {
     font-size: 50px;
     font-family: "Montserrat";
     opacity: 1.0;
 }
-
 .panel {
     position: relative;
 }
-
 .panel h2 {
     margin: 0 0 30px;
     padding: 15px 50px 25px;
-    border-bottom: 10px solid rgba(49, 47, 47, 0.19);
     box-shadow: 0 15px 26px rgba(150, 150, 150, 0.21);
     color: rgb(36, 190, 219);
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 1px 1px rgb(255, 255, 255);
+    text-shadow: 1px 1px $std-white;
     font-weight: 400;
     font-size: 38px;
     font-family: "Montserrat";
     line-height: 40px;
 }
-
 .panel p {
     padding: 0 10px 10px 20px;
     color: rgba(0, 0, 0, 0.5);
@@ -303,7 +257,6 @@ h1.hero {
     font-family: "Oxygen";
     line-height: 20px;
 }
-
 h2 + ul {
     margin-left: 0;
     padding: 0 10px 10px 10px;
@@ -313,8 +266,8 @@ h2 + ul {
     font-family: "Oxygen";
     line-height: 15px;
 }
-
-h2 + ul li, h3 + ul li {
+h2 + ul li,
+h3 + ul li {
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -325,80 +278,72 @@ h2 + ul li, h3 + ul li {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
     list-style: none;
 }
-
-h2 + ul li:hover, h3 + ul li:hover, .ember-view li.html5-list-item:hover {
+h2 + ul li:hover,
+h3 + ul li:hover,
+.ember-view li.html5-list-item:hover {
     border-color: rgb(0, 0, 0);
     background: rgb(14, 192, 226);
-    color: rgb(255, 255, 255);
+    color: $std-white;
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
-
 .ember-view li.html5-list-item a:hover {
     text-decoration: none;
     text-shadow: 1px 1px rgb(255, 151, 102);
 }
-
 .ember-view li.html5-list-item:hover a {
-    color: #000; 
+    color: #000;
     text-shadow: none;
 }
-
 .ember-view li.html5-list-item {
-   margin-bottom: 10px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   padding-left: 10px;
-   width: 95%;
-   border-left: 10px solid rgb(14, 192, 226);
-   border-radius: 4px;
-   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
-   list-style: none; 
-   font-weight: 400;
-   font-family: "Oxygen";
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 95%;
+    border-left: 10px solid rgb(14, 192, 226);
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.11);
+    list-style: none;
+    font-weight: 400;
+    font-family: "Oxygen";
 }
-
 .ember-view li.html5-list-item a:hover {
     text-decoration: none;
     text-shadow: none;
 }
-
 .launch-pad-std {
-    margin: 20px 0px 20px 15px;
+    margin: 20px 0 20px 15px;
 }
-
 #main section {
-    margin-bottom: 50px;
-    padding-bottom: 35px;
-    border-bottom: 1px solid rgb(228, 228, 228);
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgb(238, 238, 238);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
-
 section h3 {
     margin: 20px;
-    color: rgb(255, 0, 0);
-    text-shadow: 1px 1px rgb(255, 255, 255);
+    color: $cor-brand;
+    text-shadow: 1px 1px $std-white;
     font-size: 28px;
     font-family: "Oxygen";
 }
-
 section ul {
     margin-left: 0px;
     padding-right: 10px;
     padding-left: 20px;
 }
-
 .well img {
     margin: 35px 5% 40px 5%;
     max-width: 100%;
     width: 90%;
     background: whitesmoke;
 }
-
 .well img.hero-image {
     margin: 0 auto;
     width: 83%;
 }
-
 .panel-blurb {
     position: relative;
     top: -76px;
@@ -418,16 +363,14 @@ section ul {
     font-family: "Montserrat";
     line-height: 30px;
 }
-
 .blurb-content {
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 1px 1px rgb(255, 255, 255);
+    text-shadow: 1px 1px $std-white;
     font-weight: 100;
     font-size: 45px;
     line-height: 55px;
 }
-
 .alpha-content {
     display: block;
     overflow: hidden;
@@ -436,13 +379,11 @@ section ul {
     background: rgba(0, 0, 0, 0.71);
     box-shadow: inset 0 0 20px;
 }
-
 .alpha-content img {
     border: 20px solid;
     border-radius: 0;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
 }
-
 footer {
     float: left;
     clear: both;
@@ -455,7 +396,6 @@ footer {
     box-shadow: 10px 10px 35px rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
-
 .mega-footer {
     overflow: auto;
     margin: 0 auto 0 0;
@@ -466,17 +406,15 @@ footer {
     box-shadow: 0 5px 20px rgb(34, 34, 34);
     list-style: none;
 }
-
 .mega-footer-item:hover {
     border-bottom: 5px solid rgb(248, 46, 8);
     background: rgb(226, 226, 226);
     box-shadow: 0 0 20px rgb(0, 0, 0);
     color: rgb(248, 46, 8);
-    text-shadow: 1px 1px rgb(255, 255, 255);
+    text-shadow: 1px 1px $std-white;
     font-weight: 400;
     cursor: pointer;
 }
-
 .mega-footer-item.active {
     border-bottom: 5px solid rgb(111, 111, 111);
     background: rgb(0, 0, 0);
@@ -496,20 +434,17 @@ footer {
     font-family: "Oxygen";
     line-height: 15px;
 }
-
 .mega-header {
     margin-left: 0;
     width: 100%;
     list-style: none;
 }
-
 .mega-header-item:hover {
     height: 36px;
-    border-bottom: 4px solid rgb(245, 63, 6);
-    color: rgb(255, 255, 255);
+    border-bottom: 4px solid $cor-brand;
+    color: $std-white;
     cursor: pointer;
 }
-
 .mega-header-item {
     float: left;
     margin-top: 15px;
@@ -522,7 +457,6 @@ footer {
     font-size: 12px;
     font-family: "Oxygen";
 }
-
 .mega-header-item.active {
     height: 38px;
     border-bottom: 3px solid rgb(0, 200, 255);
@@ -531,22 +465,19 @@ footer {
     text-shadow: 1px 1px rgb(0, 0, 0);
     cursor: pointer;
 }
-
 .mega-header-item.active:hover {
-    border-bottom-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
+    border-bottom-color: $std-white;
+    color: $std-white;
 }
-
 .comment-container {
     clear: both;
     margin: 1px auto 0 auto;
     padding: 30px;
     min-height: 200px;
-    width: 89%;
-    background: rgba(22, 22, 22, 0.8);
+    width: 100%;
+    background: rgba(24, 24, 24, 0.8);
     box-shadow: inset 0 0 50px rgb(0, 0, 0);
 }
-
 .comment-container h2 {
     display: block;
     margin: 0 auto;
@@ -557,30 +488,47 @@ footer {
     text-shadow: 1px 1px rgb(20, 20, 20);
     font-family: "Oxygen";
 }
-
 .disqus-me {
     margin: 0 auto;
     width: 100%;
 }
-
 .carousel {
     position: relative;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    border-top: 10px solid rgb(73, 73, 73);
 }
-
+.carousel + .panel {
+    margin-bottom: 50px;
+    padding-top: 10px;
+    border-radius: 0;
+    background: rgb(238, 238, 238);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.carousel+.panel h2 {
+    margin-bottom: 0;
+    border-bottom: none;
+    box-shadow: none;
+    color: rgb(226, 226, 226);
+    text-shadow: 1px 1px $std-white;
+}
+.slide-active .carousel {
+    margin-top: 0;
+}
 .ember-view .carousel-caption {
     position: absolute;
+    top: 155px;
     right: 0;
-    bottom: 0;
     left: 0;
     z-index: 10;
     overflow: visible;
-    padding: 15px 85px;
+    padding: 15px 60px;
     width: 100%;
-    height: 60%;
+    height: 195px;
+    border-bottom: 20px solid $cor-brand;
     background: rgba(0, 0, 0, 0.67);
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.28);
-    color: rgb(255, 255, 255);
+    color: $std-white;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0 1px 2px rgb(0, 0, 0);
@@ -589,71 +537,67 @@ footer {
     font-family: 'Montserrat', sans-serif;
     line-height: 44px;
 }
-
 .carousel-inner {
-    min-height: 400px;
-    max-height: 400px;
-    height: 400px;
+    min-height: 350px;
+    max-height: 350px;
     background: rgba(29, 29, 29, 0.93);
     box-shadow: inset 0 -25px 50px rgb(0, 0, 0);
 }
-
-.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
     position: absolute;
     top: 50%;
     z-index: 5;
     z-index: 100;
     display: inline-block;
-    color: rgb(255, 255, 255);
+    color: $std-white;
     text-shadow: none;
 }
-
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left,
+.carousel-control.right {
     z-index: 100;
-    width:5%;
+    width: 5%;
 }
-
-.ember-view .carousel-inner > .item > img, .ember-view .carousel-inner > .item > a > img {
+.ember-view .carousel-inner > .item > img:hover,
+.ember-view .carousel-inner > .item > a > img:hover {
+    opacity: 1.0;
+    -webkit-filter: grayscale(0%);
+}
+.ember-view .carousel-inner > .item > img,
+.ember-view .carousel-inner > .item > a > img {
     display: block;
-    min-height: 400px;
     max-width: 100%;
-    max-height: 400px;
-    height: 400px;
+    width: 100%;
     line-height: 1;
-    -webkit-filter: grayscale(100%);  
+    opacity: .25;
+    -webkit-filter: grayscale(100%);
 }
-
-.ember-view .carousel-inner > .item > img:hover, .ember-view .carousel-inner > .item > a > img:hover {
-    -webkit-filter: grayscale(0%);  
-}
-
 .ember-view .carousel-indicators {
     z-index: 100;
 }
-
 .ember-view .carousel-indicators .active {
     margin: 0;
-    width: 14px;
-    height: 14px;
-    border: 2px solid #fff;
-    background-color: rgb(231, 91, 25);
+    width: 16px;
+    height: 16px;
+    border: 3px solid #fff;
+    background-color: $cor-brand;
 }
-
 .set-center {
     float: left;
     clear: both;
-    margin: 75px auto;
+    margin: 0 auto;
     width: 100%;
 }
-
 #main .well {
     overflow: visible;
     margin: 0 auto;
-    max-width: 1040px;
+    padding: 40px;
+    max-width: 100%;
     border-color: rgb(204, 204, 204);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
-
 #main .col-md-3 .well {
     border: 20px solid rgb(190, 190, 190);
     border-color: rgb(221, 221, 221);
@@ -661,34 +605,30 @@ footer {
     background: rgb(66, 66, 66);
     box-shadow: inset 0 0 40px rgb(0, 0, 0);
 }
-
 #main .col-md-3 .well ul li {
     background: rgb(51, 51, 51);
     font-family: "Oxygen";
 }
-
 .ember-view #main .col-md-3 .well ul li:hover {
     background: rgb(0, 0, 0);
 }
-
 .ember-view #main .col-md-3 .well ul li:hover:before {
-    color:rgb(14, 192, 226);
+    color: rgb(14, 192, 226);
     content: "+ ";
 }
-
 #map {
     margin: 0 auto;
     margin-bottom: 50px;
-    width: 90%;
+    width: 100%;
     height: 350px;
     border: 10px solid rgb(116, 115, 115);
+    border-right: none;
+    border-left: none;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.96);
 }
-
 .leaflet-popup-content {
     color: rgb(51, 51, 51);
 }
-
 footer h1 {
     margin: 20px auto 40px;
     width: 80%;
@@ -700,11 +640,9 @@ footer h1 {
     font-size: 40px;
     font-family: "Oxygen";
 }
-
 .end-of-line {
     color: rgb(77, 77, 77);
 }
-
 .col-md-3.affix {
     left: 2%;
     z-index: 100;
@@ -712,23 +650,18 @@ footer h1 {
     padding: 10px;
     border-radius: 4px;
 }
-
 .nav.navbar-nav.mega-header.affix {
     margin-left: 8%;
 }
-
 .ember-view .postbox {
     position: relative;
     margin: 10px auto;
     width: 85%;
 }
-
 .last-marker {
     float: left;
-    clear:both;
+    clear: both;
 }
-
-/* pre code styles *----------*/
 .ember-view pre {
     display: block;
     margin: 0;
@@ -739,14 +672,14 @@ footer h1 {
     border-radius: 0;
     background-color: rgba(10, 10, 10, 0.85);
     box-shadow: inset 0 0 20px rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    color: $std-white;
     word-wrap: break-word;
     word-break: break-all;
     font-size: 13px;
     line-height: 13px;
 }
 .classic-git:before {
-    color: rgb(236, 73, 22);
+    color: $cor-brand;
     content: "$ ";
 }
 .classic-git {
@@ -761,55 +694,43 @@ footer h1 {
     background: rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px rgb(37, 37, 37);
 }
-
 .ember-view .leaflet-control-layers-toggle {
     width: 36px;
     height: 36px;
     background-image: url(../images/layers.png);
 }
 
-/* Responsive *-----*/
+.comment-container a.publisher-anchor-color {
+    color: $cor-brand;
+}
 
-@media (max-width: 768px) {
-    .mega-header-item,  .mega-header-item.active{
+/* ===[ Responsive *----- ]=== */
+@media (max-width: 768px) { 
+    .mega-header-item,
+    .mega-header-item.active {
         clear: both;
         margin-left: 10px;
         padding-left: 10px;
         width: 85%;
-    }    
-}
-
-@media (max-width: 992px) {
-    .col-md-3.affix {
-        position: relative;
-        left: 0;
-        z-index: 100;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        width: 100%;
     }
 }
-
-
-/* Responsive Left Bar Test *-----*/
-
+/* ===[ Responsive Left Bar Test *----- ]=== */
 body.slide-active {
     overflow-x: hidden;
 }
-
 .no-margin-top {
     margin-top: 0!important;
 }
-
-#page-content, #main {
+#page-content,
+#main {
     position: relative;
     left: 0;
-    padding-top: 10px;
+    padding: 0;
+    width: 80%;
 }
 #page-content.slide-active {
     padding-top: 0;
 }
-
 #slide-nav .navbar-toggle {
     position: fixed;
     right: 10px;
@@ -824,7 +745,6 @@ body.slide-active {
     line-height: 0;
     cursor: pointer;
 }
-
 #slide-nav .navbar-toggle > .icon-bar {
     display: block;
     margin: 5px 0 0 0;
@@ -837,82 +757,270 @@ body.slide-active {
 .navbar-header {
     position: relative;
 }
-/* un fix the navbar when active so that all the menu items are accessible */
 .navbar.navbar-fixed-top.slide-active {
     position: relative;
 }
-
 @media (max-width:767px) { 
-
+    #page-content,
+    #main {
+        width: 100%;
+    }
     .panel h2 {
         text-align: center;
         font-size: 20px;
         line-height: 24px;
     }
-
     .panel p {
         text-align: center;
         font-size: 13px;
         line-height: 18px;
     }
-
     .ember-view .html5-list-item {
         font-size: 12px;
         line-height: 15px;
     }
-
     .ember-view .carousel-caption {
-        height: 30%;
-        font-size: 20px;
+        top: 90px;
+        padding: 10px 20px;
+        height: 150px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
     }
-
+    .ember-view .carousel-inner {
+        padding: 0;
+        min-height: 240px;
+        max-height: 240px;
+    }
     .ember-view .navbar-inverse .navbar-brand {
         margin-left: 4%;
     }
-
     .ember-view .navbar-inverse .navbar-brand {
         margin-left: 22px;
     }
-
+    .ember-view .carousel-indicators {
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        z-index: 15;
+        padding-left: 0;
+        width: 60%;
+        list-style: none;
+        text-align: center;
+    }
     section h3 {
         text-align: center;
         font-size: 18px;
         line-height: 22px;
     }
-
     .ember-view pre {
         margin: 0;
         padding: 3px;
         width: 100%;
         border-radius: 0;
     }
-
     #layout {
         overflow: hidden;
         font-size: 12px;
     }
-
     .classic-git {
         margin: 0 0 0 15px;
         padding: 15px;
         padding-left: 10px;
         font-size: 10px;
     }
-
     .set-center {
-        margin:30px 0;
+        float: left;
+        clear: both;
+        margin: 0 auto;
+        width: 100%;
     }
-
     .col-md-9.pull-right {
-        width:100%;
+        width: 100%;
     }
-
     #slide-nav {
         margin-bottom: 0;
         padding-bottom: 0;
         border-top: 0;
     }
+    #slide-nav .container {
+        margin: 0;
+        padding: 0!important;
+    }
+    #slide-nav .navbar-header {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed;
+    }    
+    #slide-nav .navbar.slide-active {
+        position: absolute;
+        top: -1px;
+        z-index: 1000;
+        width: 40%;
+    }
+    #slide-nav #slidemenu {
+        position: absolute;
+        top: -8px;
+        left: -100%;
+        z-index: 2;
+        margin: 0;
+        padding-left: 0;
+        min-width: 0;
+        width: 40%;
+        background: #f7f7f7;
+    }
+    #slide-nav #slidemenu .navbar-nav {
+        margin: 15px 0 0 0;
+        min-width: 0;
+        width: 40%;
+    }
+    #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+        min-width: 0;
+        width: 40%;
+        white-space: normal;
+    }
+    #slide-nav {
+        border-top: 0;
+    }
+    #slide-nav.navbar-inverse #slidemenu {
+        background: #333;
+    }
+    #slide-nav #navbar-height-col {
+        position: fixed;
+        top: 0;
+        left: -40%;
+        width: 40%;
+        height: 100%;
+        background: #eee;
+    }
+    #slide-nav.navbar-inverse #navbar-height-col {
+        z-index: 1;
+        border: 0;
+        border-left: 10px solid rgb(41, 41, 41);
+        background: rgb(0, 0, 0);
+    }
+    .slide-active #slide-nav.navbar-inverse #navbar-height-col {
+        min-width: 200px;
+    }
+    #slide-nav .navbar-form {
+        overflow: hidden;
+        margin: 8px 0;
+        width: 100%;
+        text-align: center;
+    }
+    #slide-nav .navbar-form .form-control {
+        text-align: center;
+    }
+    #slide-nav .navbar-form .btn {
+        width: 100%;
+    }
+}
+@media (min-width:768px) { 
+    #page-content {
+        left: 0!important;
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed;
+    }
+    .navbar-header {
+        left: 0!important;
+    }
+}
+@media (max-width:768px) {
 
+    #slide-nav .navbar-toggle {
+        display: block
+    }
+
+    .navbar-header.slide-active {
+        left: 35%!important;
+        position: relative;
+    }    
+
+    #page-content,
+    #main {
+        width: 100%;
+    }
+    .panel h2 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .panel p {
+        text-align: center;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .ember-view .html5-list-item {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .ember-view .carousel-caption {
+        top: 90px;
+        padding: 10px 20px;
+        height: 150px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .ember-view .carousel-inner {
+        padding: 0;
+        min-height: 240px;
+        max-height: 240px;
+    }
+    .ember-view .navbar-inverse .navbar-brand {
+        margin-left: 4%;
+    }
+    .ember-view .navbar-inverse .navbar-brand {
+        margin-left: 22px;
+    }
+    .ember-view .carousel-indicators {
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        z-index: 15;
+        padding-left: 0;
+        width: 60%;
+        list-style: none;
+        text-align: center;
+    }
+    section h3 {
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .ember-view pre {
+        margin: 0;
+        padding: 3px;
+        width: 100%;
+        border-radius: 0;
+    }
+    #layout {
+        overflow: hidden;
+        font-size: 12px;
+    }
+    .classic-git {
+        margin: 0 0 0 15px;
+        padding: 15px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .set-center {
+        float: left;
+        clear: both;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .col-md-9.pull-right {
+        width: 100%;
+    }
+    #slide-nav {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-top: 0;
+    }
     #slide-nav .container {
         margin: 0;
         padding: 0!important;
@@ -954,7 +1062,6 @@ body.slide-active {
     #slide-nav.navbar-inverse #slidemenu {
         background: #333;
     }
-
     #slide-nav #navbar-height-col {
         position: fixed;
         top: 0;
@@ -969,28 +1076,24 @@ body.slide-active {
         border-left: 10px solid rgb(41, 41, 41);
         background: rgb(0, 0, 0);
     }
+    .slide-active #slide-nav.navbar-inverse #navbar-height-col {
+        min-width: 200px;
+    }
     #slide-nav .navbar-form {
         overflow: hidden;
         margin: 8px 0;
         width: 100%;
         text-align: center;
-        /*fast clearfixer*/
     }
     #slide-nav .navbar-form .form-control {
         text-align: center;
     }
     #slide-nav .navbar-form .btn {
         width: 100%;
-    }
+    }    
 }
-@media (min-width:768px) { 
-    #page-content {
-        left: 0!important;
-    }
-    .navbar.navbar-fixed-top.slide-active {
-        position: fixed;
-    }
-    .navbar-header {
-        left: 0!important;
+@media screen and (min-width: 768px){
+    .carousel-indicators {
+        bottom: 55px;
     }
 }
