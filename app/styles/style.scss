@@ -366,10 +366,12 @@ h2 + ul li:hover, h3 + ul li:hover, .ember-view li.html5-list-item:hover {
 }
 
 #main section {
+    margin-top: 40px;
     margin-bottom: 0;
+    padding-top: 15px;
     padding-bottom: 20px;
+    border-top: 1px solid rgb(238, 238, 238);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    padding-top: 35px;
 }
 
 section h3 {
@@ -570,18 +572,18 @@ footer {
 }
 
 .carousel + .panel {
-    background: rgb(238, 238, 238);
-    padding-top: 10px;
     margin-bottom: 50px;
+    padding-top: 10px;
+    background: rgb(238, 238, 238);
     box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
 .carousel+.panel h2 {
-    color: rgb(226, 226, 226);
-    text-shadow: 1px 1px rgb(255, 255, 255);
+    margin-bottom: 0;
     border-bottom: none;
     box-shadow: none;
-    margin-bottom: 0;
+    color: rgb(226, 226, 226);
+    text-shadow: 1px 1px rgb(255, 255, 255);
 }
 
 .slide-active .carousel {
@@ -668,6 +670,7 @@ footer {
 #main .well {
     overflow: visible;
     margin: 0 auto;
+    padding: 40px;
     max-width: 100%;
     border-color: rgb(204, 204, 204);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
@@ -866,6 +869,10 @@ body.slide-active {
 
 @media (max-width:767px) { 
 
+    #page-content, #main {
+        width: 100%;
+    }
+
     .panel h2 {
         text-align: center;
         font-size: 20px;
@@ -1024,7 +1031,6 @@ body.slide-active {
         margin: 8px 0;
         width: 100%;
         text-align: center;
-        /*fast clearfixer*/
     }
     #slide-nav .navbar-form .form-control {
         text-align: center;
