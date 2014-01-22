@@ -1,4 +1,6 @@
 <p><a href="http://travis-ci.org/gruntjs/grunt"><img src="https://secure.travis-ci.org/gruntjs/grunt.png?branch=master" alt="Build Status" style="max-width:100%;"></a>
+<a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt" style="max-width:100%;"></a></p>
+
 <p><img src="https://raw.github.com/jvrunion/cor/gh-pages/app/images/cor-hero.png" style="max-width:100%;"></p>
 
 Responsive Ember.js Micro Framework using Bootstrap 3, Leaflet.js, Yeoman, and Grunt
