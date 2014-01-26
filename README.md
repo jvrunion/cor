@@ -63,3 +63,7 @@ Your cloned app will be availible at:
 ### This is a work in progress and will probably not be stable for another couple of weeks.
 
 Thanks and Happy Forking!
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jvrunion/cor/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
